@@ -14,9 +14,9 @@
     <color name="md_theme_secondaryContainer">#D6F5C7</color>
     <color name="md_theme_onSecondaryContainer">#0A2000</color>
     <!-- Light tertiary colors -->
-    <color name="md_theme_tertiary">#5D6300</color>
+    <color name="md_theme_tertiary">#CADF44</color>
     <color name="md_theme_onTertiary">#FFFFFF</color>
-    <color name="md_theme_tertiaryContainer">#CADF44</color>
+    <color name="md_theme_tertiaryContainer">#E2EF92</color>
     <color name="md_theme_onTertiaryContainer">#1A1E00</color>
     <!-- Light error colors -->
     <color name="md_theme_error">#BA1A1A</color>

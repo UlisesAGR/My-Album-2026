@@ -1,9 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+ - activity_welcome.xml
+ - Copyright (c) 2026. All rights reserved
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".presenter.ui.welcome.WelcomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toTopOf="@+id/contentLinearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/il_logo_two" />
+
+        <LinearLayout
+            android:id="@+id/contentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_24"
+            android:paddingVertical="@dimen/padding_96"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                style="@style/text_extra.bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name" />
+
+            <TextView
+                style="@style/text_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:gravity="center"
+                android:text="@string/welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do" />
+
+            <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                android:id="@+id/startCustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_24"
+                android:text="@string/start"
+                android:textSize="16sp"
+                app:btnType="btn_primary" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

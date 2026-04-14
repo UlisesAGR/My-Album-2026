@@ -6,6 +6,7 @@ package com.myalbum2026.mobile.presenter.ui.welcome
 
 import com.myalbum2026.mobile.databinding.ActivityWelcomeBinding
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
+import com.myalbum2026.mobile.utils.extensions.navigateTo
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -15,6 +16,19 @@ class WelcomeActivity : BaseOnlyActivity<ActivityWelcomeBinding>() {
         ActivityWelcomeBinding.inflate(layoutInflater)
 
     override fun init() {
+        setListeners()
+    }
 
+    private fun setListeners() {
+        binding.startCustomButton.setOnClickListener {
+            goToDashboard()
+        }
+    }
+
+    private fun goToDashboard() {
+        navigateTo(
+            destination = WelcomeActivity::class.java,
+            finishCurrent = true,
+        )
     }
 }
