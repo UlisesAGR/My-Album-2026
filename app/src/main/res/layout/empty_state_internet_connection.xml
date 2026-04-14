@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+- empty_state_internet_connection.xml
+- Copyright © 2026. All rights reserved
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emptyStateConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/text_big.bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title_retry_error_internet_text"
+        app:layout_constraintBottom_toTopOf="@+id/subTitleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/subTitleTextView"
+        style="@style/text_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/subtitle_retry_error_internet_text"
+        app:layout_constraintBottom_toTopOf="@+id/logoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_signal_wifi_connected_no_internet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+        android:id="@+id/retryCustomButton"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:enabled="true"
+        android:text="@string/retry"
+        android:textSize="16sp"
+        app:btnType="btn_primary"
+        app:layout_constraintEnd_toEndOf="@+id/logoImageView"
+        app:layout_constraintStart_toStartOf="@+id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

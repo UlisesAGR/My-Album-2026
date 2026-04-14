@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ - styles
+ - Copyright (c) 2026. All rights reserved
+-->
+<resources>
+    <style name="selectableStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+    <style name="Ripple">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="Ripple.Borderless">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+    <style name="imageButton" parent="Ripple.Borderless">
+        <item name="tint">@color/text_white_color</item>
+    </style>
+    <style name="bottomNavigation">
+        <item name="android:background">@color/md_theme_primary</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="itemActiveIndicatorStyle">@style/App.CustomIndicator</item>
+    </style>
+</resources>

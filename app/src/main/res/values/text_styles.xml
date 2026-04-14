@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_extra.bold_secondary">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra_secondary">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big_secondary">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big_secondary.bold">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium_secondary">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium_secondary.bold">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_secondary">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_secondary.bold">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small_secondary">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small_secondary.bold">
+        <item name="android:textColor">@color/md_theme_secondary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra.bold_primary">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra_primary">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big_primary">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big_primary.bold">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium_primary">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium_primary.bold">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_primary">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_primary.bold">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small_primary">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small_primary.bold">
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra.bold">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big.bold">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium.bold">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular.bold">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small.bold">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra_white">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_extra_white.bold">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big_white">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_big_white.bold">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium_white">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_medium_white.bold">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_white">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_white.bold">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small_white">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_small_white.bold">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_toolbar">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_subtitle_toolbar">
+        <item name="android:textColor">@color/text_white_color</item>
+        <item name="android:fontFamily">@font/amx_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

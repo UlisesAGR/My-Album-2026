@@ -1,0 +1,11 @@
+/*
+ * UserRepository.kt
+ * Copyright (c) 2026. All rights reserved
+ */
+package com.myalbum2026.mobile.domain.repository
+
+import kotlinx.coroutines.flow.Flow
+
+interface UserRepository {
+    fun isFirstTime(): Flow<Boolean>
+}

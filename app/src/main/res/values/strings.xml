@@ -1,0 +1,30 @@
+<!--
+ - strings.xml - english
+ - Copyright (c) 2026. All rights reserved
+-->
+<resources>
+    <string name="version" translatable="false">Version %1$s</string>
+    <string name="subject">Hello Dr. Daniela Martinez, I would like to get in touch with you, my name is %1$s</string>
+    <string name="subject_admin">Hello %1$s, I am Dr. Daniela Martinez, </string>
+    <string name="greeting">Hi, %1$s</string>
+    <string name="dateAndTime">%1$s - %2$s</string>
+    <!-- App -->
+    <string name="app_name" translatable="false">DMG Dental</string>
+    <string name="name_app" translatable="false">Dra.Daniela Martinez</string>
+    <string name="dental_office">Dental office</string>
+    <string name="idle" translatable="false">idle</string>
+    <string name="other" translatable="false">other</string>
+    <string name="n_a" translatable="false">N/A</string>
+    <!-- Talk -->
+    <string name="back">Back</string>
+    <!-- Internet Connection -->
+    <string name="retry">Retry</string>
+    <string name="title_retry_error_internet_text">Internet connection lost</string>
+    <string name="subtitle_retry_error_internet_text">Connect to a network to continue browsing</string>
+    <string name="loader_default_text">Loading…</string>
+    <!-- Errors -->
+    <string name="check_your_internet_connection">Check your internet connection</string>
+    <string name="timeout">Timeout</string>
+    <string name="there_are_problems_with_the_servant_try_again_later">There are problems with the servant, try again later</string>
+    <string name="please_try_again_later">At the moment we cannot perform this action, please try again later</string>
+</resources>
