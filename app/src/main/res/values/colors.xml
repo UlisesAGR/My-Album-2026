@@ -42,7 +42,7 @@
     <color name="md_theme_scrim">#000000</color>
     <!-- Other colors -->
     <color name="transparent">#00000000</color>
-    <color name="text_color">#121318</color>
+    <color name="text_color">#1B1B21</color>
     <color name="text_white_color">#FBF8FF</color>
     <color name="white_color">#FFFFFF</color>
     <color name="black_color">#1B1B1B</color>

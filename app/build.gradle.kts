@@ -17,7 +17,6 @@ android {
     compileSdk = BuildConfig.COMPILE_SDK_VERSION
 
     defaultConfig {
-        resValue("string", "APP_NAME", "${properties["app.name"]}")
 
         buildConfigField("String", "DATABASE_NAME", "\"${properties["database.name"]}\"")
 
@@ -31,6 +30,7 @@ android {
 
     buildTypes {
         getByName(BuildTypes.RELEASE) {
+            resValue("string", "APP_NAME", "${properties["app.name"]}")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
@@ -41,6 +41,7 @@ android {
             enableUnitTestCoverage = Build.Release.isDebuggable
         }
         getByName(BuildTypes.DEBUG) {
+            resValue("string", "APP_NAME", "${properties["app.name.debug"]}")
             isMinifyEnabled = Build.Debug.isMinifyEnabled
             isDebuggable = Build.Debug.isDebuggable
             enableUnitTestCoverage = Build.Debug.enableUnitTestCoverage

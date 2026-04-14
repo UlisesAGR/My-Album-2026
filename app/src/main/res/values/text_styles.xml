@@ -71,7 +71,7 @@
         <item name="android:includeFontPadding">false</item>
     </style>
 
-    <style name="text_extra.bold_primary">
+    <style name="text_extra_primary.bold">
         <item name="android:textColor">@color/md_theme_primary</item>
         <item name="android:fontFamily">@font/amx_medium</item>
         <item name="android:textSize">28sp</item>

@@ -4,14 +4,8 @@
 -->
 <resources>
     <string name="version" translatable="false">Version %1$s</string>
-    <string name="subject">Hello Dr. Daniela Martinez, I would like to get in touch with you, my name is %1$s</string>
-    <string name="subject_admin">Hello %1$s, I am Dr. Daniela Martinez, </string>
-    <string name="greeting">Hi, %1$s</string>
-    <string name="dateAndTime">%1$s - %2$s</string>
     <!-- App -->
-    <string name="app_name" translatable="false">DMG Dental</string>
-    <string name="name_app" translatable="false">Dra.Daniela Martinez</string>
-    <string name="dental_office">Dental office</string>
+    <string name="app_name" translatable="false">My Album 2026</string>
     <string name="idle" translatable="false">idle</string>
     <string name="other" translatable="false">other</string>
     <string name="n_a" translatable="false">N/A</string>

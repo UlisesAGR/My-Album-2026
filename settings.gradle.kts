@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DMG Dental"
+rootProject.name = "My Album 2026"
 include(":app")
