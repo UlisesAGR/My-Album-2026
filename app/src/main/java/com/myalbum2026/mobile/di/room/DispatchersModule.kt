@@ -1,3 +1,7 @@
+/*
+ * DispatchersModule.kt
+ * Copyright (c) 2026. All rights reserved
+ */
 package com.myalbum2026.mobile.di.room
 
 import dagger.Module

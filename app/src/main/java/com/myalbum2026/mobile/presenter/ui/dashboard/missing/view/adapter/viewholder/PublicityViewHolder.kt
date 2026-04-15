@@ -14,7 +14,6 @@ class PublicityViewHolder(
 
     fun render(
         item: CardsMissingItem.Publicity,
-        onPublicityItemClick: (String) -> Unit,
     ) = with(binding) {
 
     }

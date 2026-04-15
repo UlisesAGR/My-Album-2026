@@ -12,9 +12,11 @@ class ProgressViewHolder(
     private val binding: ItemProgressBinding,
 ) : RecyclerView.ViewHolder(binding.root) {
 
-    fun render(
-        item: CardsMissingItem.Progress,
-    ) = with(binding) {
-
+    fun render(item: CardsMissingItem.Progress) = with(binding) {
+        tvPercentage.text = item.percentage
+        val progressInt = item.percentage.replace("%", "").toIntOrNull() ?: 0
+        progressIndicator.setProgress(progressInt, true)
+        tvTotalCards.text = item.total
+        tvMissingCards.text = item.missing
     }
 }

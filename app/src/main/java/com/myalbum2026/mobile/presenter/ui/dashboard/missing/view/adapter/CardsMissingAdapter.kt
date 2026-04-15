@@ -8,6 +8,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ItemCardsBinding
 import com.myalbum2026.mobile.databinding.ItemProgressBinding
 import com.myalbum2026.mobile.databinding.ItemPublicityBinding
@@ -18,9 +19,10 @@ import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewho
 
 class CardsMissingAdapter(
     private var items: List<CardsMissingItem> = emptyList(),
-    val onPublicityItemClick: (String) -> Unit = {},
-    val onCardsItemClick: () -> Unit = {},
+    val onCardsItemClick: (CardEntity) -> Unit = {},
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    private val viewPool = RecyclerView.RecycledViewPool()
 
     companion object {
         private const val TYPE_PUBLICITY = 0
@@ -63,6 +65,7 @@ class CardsMissingAdapter(
                         parent,
                         false,
                     ),
+                    viewPool = viewPool,
                 )
             }
         }
@@ -75,7 +78,6 @@ class CardsMissingAdapter(
             is CardsMissingItem.Publicity -> {
                 (holder as PublicityViewHolder).render(
                     item = item,
-                    onPublicityItemClick = onPublicityItemClick,
                 )
             }
             is CardsMissingItem.Progress -> {

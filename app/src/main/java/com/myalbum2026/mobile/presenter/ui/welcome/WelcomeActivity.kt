@@ -5,7 +5,7 @@
 package com.myalbum2026.mobile.presenter.ui.welcome
 
 import com.myalbum2026.mobile.databinding.ActivityWelcomeBinding
-import com.myalbum2026.mobile.presenter.ui.dashboard.DashboardActivity
+import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import dagger.hilt.android.AndroidEntryPoint

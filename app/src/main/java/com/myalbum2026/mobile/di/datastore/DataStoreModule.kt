@@ -7,7 +7,7 @@ package com.myalbum2026.mobile.di.datastore
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
-import com.myalbum2026.mobile.data.datastore.UserPreferencesManager
+import com.myalbum2026.mobile.data.datastore.PreferencesManager
 import com.myalbum2026.mobile.data.datastore.dataStore
 import dagger.Module
 import dagger.Provides
@@ -27,6 +27,6 @@ object DataStoreModule {
 
     @Provides
     @Singleton
-    fun provideUserPreferencesManager(dataStore: DataStore<Preferences>): UserPreferencesManager =
-        UserPreferencesManager(dataStore)
+    fun providePreferencesManager(dataStore: DataStore<Preferences>): PreferencesManager =
+        PreferencesManager(dataStore)
 }
