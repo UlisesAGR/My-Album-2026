@@ -5,6 +5,7 @@
 package com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel
 
 import androidx.lifecycle.ViewModel
+import com.myalbum2026.mobile.domain.usecase.user.SaveFirstTimeUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 

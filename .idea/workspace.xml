@@ -74,74 +74,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b9a80f-2a45-41cf-a467-9d763e290d18" name="Changes" comment="problems">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/database/AlbumDao.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/database/DataBase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/user/UserLocalDataSourceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/model/CardEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/model/TeamEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/model/TeamWithCards.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/repository/user/UserRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/app/AppModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/room/RoomModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/TeamRemoteEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/repository/album/AlbumRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/repository/user/UserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/usecase/album/InitializeAlbumUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/usecase/user/SaveFirstTimeUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/container/view/DashboardActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/container/viewmodel/DashboardViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/InnerCardsAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+    <list default="true" id="61b9a80f-2a45-41cf-a467-9d763e290d18" name="Changes" comment="update json">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/welcome/view/WelcomeActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/welcome/viewmodel/WelcomeViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/album_2026.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/album_2026.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/UserLocalDataSourceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/album/AlbumLocalDataSourceImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/UserLocalDataStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/album/AlbumLocalDataStore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datastore/UserPreferencesManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datastore/PreferencesManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/repository/UserRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/repository/album/AlbumRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/datasource/UserDataSourceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/datasource/DataSourceModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/datastore/DataStoreModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/datastore/DataStoreModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/repository/UserRepositoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/repository/RepositoryModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/room/DispatchersModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/di/room/DispatchersModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/CardsDataModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/AlbumDataResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/CardsMissingItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/CardsMissingItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/CardsModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/model/CardRemoteEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/user/UserLocalDataStore.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/usecase/IsFirstTimeUserUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/usecase/user/IsFirstTimeUseCase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/DashboardActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/CardsMissingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/CardsMissingActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/CardsMissingAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/CardsMissingAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/viewholder/CardsViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/viewholder/CardsViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/viewholder/ProgressViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/viewholder/ProgressViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/viewholder/PublicityViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/view/adapter/viewholder/PublicityViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/viewmodel/CardsMissingViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/missing/viewmodel/CardsMissingViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/user/UserLocalDataSourceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/user/UserLocalDataSourceImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/user/UserLocalDataStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/datasource/user/UserLocalDataStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/repository/user/UserRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/data/repository/user/UserRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/repository/user/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/repository/user/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/usecase/user/SaveFirstTimeUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/domain/usecase/user/SetFirstTimeCompletedUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/container/viewmodel/DashboardViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/dashboard/container/viewmodel/DashboardViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/splash/view/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/splash/view/SplashActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/splash/viewmodel/SplashViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/splash/viewmodel/SplashViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/welcome/WelcomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/welcome/WelcomeActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_cards.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cards.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_progress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_progress.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/9.1.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/9.1.0/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compileKotlin/cacheable/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/kotlin/compilePluginsBlocks/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/kotlin/compilePluginsBlocks/cacheable/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/9.1.0/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/build/tmp/generatePrecompiledScriptPluginAccessors/accessors14778325320641256783/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myalbum2026/mobile/presenter/ui/welcome/WelcomeActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

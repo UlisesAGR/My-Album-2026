@@ -14,7 +14,7 @@ import com.myalbum2026.mobile.databinding.ActivitySplashBinding
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
 import com.myalbum2026.mobile.presenter.ui.splash.viewmodel.SplashUiEvent
 import com.myalbum2026.mobile.presenter.ui.splash.viewmodel.SplashViewModel
-import com.myalbum2026.mobile.presenter.ui.welcome.WelcomeActivity
+import com.myalbum2026.mobile.presenter.ui.welcome.view.WelcomeActivity
 import com.myalbum2026.mobile.utils.binding.viewBinding
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.navigateTo

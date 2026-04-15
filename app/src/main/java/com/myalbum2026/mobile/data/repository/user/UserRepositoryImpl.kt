@@ -1,3 +1,7 @@
+/*
+ * UserRepositoryImpl.kt
+ * Copyright (c) 2026. All rights reserved
+ */
 package com.myalbum2026.mobile.data.repository.user
 
 import com.myalbum2026.mobile.data.datasource.user.UserLocalDataStore
@@ -12,6 +16,6 @@ class UserRepositoryImpl @Inject constructor(
     override fun isFirstTime(): Flow<Boolean> =
         userDataStore.isFirstTime()
 
-    override suspend fun saveFirstTimeStatus(isFirstTime: Boolean) =
-        userDataStore.saveFirstTimeStatus(isFirstTime = isFirstTime)
+    override suspend fun saveFirstTimeStatus() =
+        userDataStore.saveFirstTimeStatus()
 }

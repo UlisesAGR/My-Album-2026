@@ -8,5 +8,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface UserLocalDataStore {
     fun isFirstTime(): Flow<Boolean>
-    suspend fun saveFirstTimeStatus(isFirstTime: Boolean)
+    suspend fun saveFirstTimeStatus()
 }
