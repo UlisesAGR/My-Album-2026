@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivitySplashBinding
+import com.myalbum2026.mobile.presenter.ui.dashboard.DashboardActivity
 import com.myalbum2026.mobile.presenter.ui.splash.viewmodel.SplashUiEvent
 import com.myalbum2026.mobile.presenter.ui.splash.viewmodel.SplashViewModel
 import com.myalbum2026.mobile.presenter.ui.welcome.WelcomeActivity
@@ -61,7 +62,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun goToDashboard() {
         navigateTo(
-            destination = WelcomeActivity::class.java,
+            destination = DashboardActivity::class.java,
             finishCurrent = true,
         )
     }

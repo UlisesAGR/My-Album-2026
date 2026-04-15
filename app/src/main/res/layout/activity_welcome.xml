@@ -56,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_24"
                 android:gravity="center"
+                android:justificationMode="inter_word"
                 android:text="@string/welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do" />
 
             <com.myalbum2026.mobile.presenter.widget.button.CustomButton

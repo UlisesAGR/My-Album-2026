@@ -16,8 +16,24 @@
         android:theme="@style/Theme.MyAlbum2026">
 
         <activity
-            android:name="com.myalbum2026.mobile.presenter.ui.welcome.WelcomeActivity"
+            android:name=".presenter.ui.dashboard.DashboardActivity"
             android:exported="false"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presenter.ui.dashboard.missing.view.CardsMissingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presenter.ui.dashboard.obtained.view.CardsObtainedActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presenter.ui.welcome.WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.splash.view.SplashActivity"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - activity_cards_missing.xml
+ - Copyright (c) 2026. All rights reserved
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/systemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_primary"
+    tools:context=".presenter.ui.dashboard.missing.view.CardsMissingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_background">
+
+        <com.myalbum2026.mobile.presenter.widget.toolbar.CustomToolbar
+            android:id="@+id/cardsMissingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardsMissingToolbar">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cardsMissingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/padding_16"
+                android:paddingBottom="@dimen/padding_64"
+                android:scrollbars="none"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_card"
+                tools:visibility="visible" />
+
+            <include
+                android:id="@+id/emptyState"
+                layout="@layout/empty_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

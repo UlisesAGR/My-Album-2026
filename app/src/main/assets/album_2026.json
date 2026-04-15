@@ -1,0 +1,7973 @@
+{
+  "totalTeams": 48,
+  "teams": [
+    {
+      "teamId": "MEX",
+      "countryName": "México",
+      "logoUrl": "https://mi-servidor.com/logos/mex.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "MEX-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "MEX-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "MEX-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "MEX-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MEX-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MEX-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MEX-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MEX-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MEX-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MEX-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MEX-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MEX-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MEX-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MEX-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "USA",
+      "countryName": "Estados Unidos",
+      "logoUrl": "https://mi-servidor.com/logos/usa.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "USA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "USA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "USA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "USA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "USA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "USA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "USA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "USA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "USA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "USA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "USA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "USA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "USA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "USA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "CAN",
+      "countryName": "Canadá",
+      "logoUrl": "https://mi-servidor.com/logos/can.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "CAN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CAN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CAN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "CAN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CAN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CAN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CAN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CAN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CAN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CAN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CAN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CAN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CAN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CAN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "ARG",
+      "countryName": "Argentina",
+      "logoUrl": "https://mi-servidor.com/logos/arg.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "ARG-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ARG-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ARG-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "ARG-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ARG-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ARG-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ARG-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ARG-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ARG-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ARG-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ARG-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ARG-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ARG-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ARG-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "BRA",
+      "countryName": "Brasil",
+      "logoUrl": "https://mi-servidor.com/logos/bra.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "BRA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "BRA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "BRA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "BRA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BRA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BRA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BRA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BRA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BRA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BRA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BRA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BRA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BRA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BRA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "URU",
+      "countryName": "Uruguay",
+      "logoUrl": "https://mi-servidor.com/logos/uru.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "URU-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "URU-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "URU-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "URU-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "URU-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "URU-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "URU-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "URU-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "URU-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "URU-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "URU-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "URU-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "URU-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "URU-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "COL",
+      "countryName": "Colombia",
+      "logoUrl": "https://mi-servidor.com/logos/col.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "COL-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "COL-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "COL-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "COL-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "COL-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "COL-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "COL-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "COL-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "COL-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "COL-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "COL-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "COL-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "COL-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "COL-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "ECU",
+      "countryName": "Ecuador",
+      "logoUrl": "https://mi-servidor.com/logos/ecu.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "ECU-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ECU-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ECU-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "ECU-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ECU-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ECU-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ECU-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ECU-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ECU-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ECU-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ECU-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ECU-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ECU-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ECU-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "PAR",
+      "countryName": "Paraguay",
+      "logoUrl": "https://mi-servidor.com/logos/par.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "PAR-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "PAR-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "PAR-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "PAR-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAR-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAR-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAR-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAR-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAR-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAR-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAR-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAR-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAR-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAR-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "FRA",
+      "countryName": "Francia",
+      "logoUrl": "https://mi-servidor.com/logos/fra.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "FRA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "FRA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "FRA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "FRA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "FRA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "FRA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "FRA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "FRA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "FRA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "FRA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "FRA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "FRA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "FRA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "FRA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "ENG",
+      "countryName": "Inglaterra",
+      "logoUrl": "https://mi-servidor.com/logos/eng.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "ENG-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ENG-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ENG-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "ENG-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ENG-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ENG-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ENG-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ENG-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ENG-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ENG-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ENG-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ENG-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ENG-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ENG-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "ESP",
+      "countryName": "España",
+      "logoUrl": "https://mi-servidor.com/logos/esp.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "ESP-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ESP-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ESP-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "ESP-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ESP-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ESP-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ESP-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ESP-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ESP-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ESP-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ESP-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ESP-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ESP-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ESP-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "GER",
+      "countryName": "Alemania",
+      "logoUrl": "https://mi-servidor.com/logos/ger.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "GER-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "GER-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "GER-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "GER-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GER-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GER-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GER-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GER-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GER-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GER-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GER-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GER-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GER-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GER-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "ITA",
+      "countryName": "Italia",
+      "logoUrl": "https://mi-servidor.com/logos/ita.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "ITA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ITA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ITA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "ITA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ITA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ITA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ITA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ITA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ITA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ITA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ITA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ITA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ITA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ITA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "POR",
+      "countryName": "Portugal",
+      "logoUrl": "https://mi-servidor.com/logos/por.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "POR-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "POR-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "POR-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "POR-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POR-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POR-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POR-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POR-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POR-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POR-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POR-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POR-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POR-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POR-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "NED",
+      "countryName": "Países Bajos",
+      "logoUrl": "https://mi-servidor.com/logos/ned.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "NED-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "NED-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "NED-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "NED-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NED-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NED-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NED-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NED-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NED-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NED-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NED-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NED-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NED-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NED-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "BEL",
+      "countryName": "Bélgica",
+      "logoUrl": "https://mi-servidor.com/logos/bel.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "BEL-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "BEL-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "BEL-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "BEL-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BEL-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BEL-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BEL-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "BEL-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BEL-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BEL-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BEL-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BEL-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "BEL-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "BEL-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "CRO",
+      "countryName": "Croacia",
+      "logoUrl": "https://mi-servidor.com/logos/cro.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "CRO-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CRO-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CRO-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "CRO-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRO-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRO-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRO-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRO-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRO-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRO-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRO-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRO-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRO-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRO-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "SUI",
+      "countryName": "Suiza",
+      "logoUrl": "https://mi-servidor.com/logos/sui.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "SUI-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SUI-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SUI-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "SUI-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SUI-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SUI-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SUI-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SUI-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SUI-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SUI-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SUI-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SUI-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SUI-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SUI-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "DEN",
+      "countryName": "Dinamarca",
+      "logoUrl": "https://mi-servidor.com/logos/den.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "DEN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "DEN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "DEN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "DEN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "DEN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "DEN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "DEN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "DEN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "DEN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "DEN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "DEN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "DEN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "DEN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "DEN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "SRB",
+      "countryName": "Serbia",
+      "logoUrl": "https://mi-servidor.com/logos/srb.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "SRB-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SRB-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SRB-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "SRB-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SRB-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SRB-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SRB-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SRB-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SRB-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SRB-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SRB-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SRB-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SRB-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SRB-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "AUT",
+      "countryName": "Austria",
+      "logoUrl": "https://mi-servidor.com/logos/aut.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "AUT-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "AUT-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "AUT-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "AUT-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUT-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUT-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUT-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUT-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUT-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUT-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUT-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUT-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUT-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUT-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "POL",
+      "countryName": "Polonia",
+      "logoUrl": "https://mi-servidor.com/logos/pol.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "POL-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "POL-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "POL-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "POL-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POL-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POL-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POL-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "POL-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POL-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POL-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POL-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POL-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "POL-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "POL-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "SWE",
+      "countryName": "Suecia",
+      "logoUrl": "https://mi-servidor.com/logos/swe.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "SWE-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SWE-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SWE-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "SWE-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SWE-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SWE-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SWE-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SWE-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SWE-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SWE-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SWE-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SWE-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SWE-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SWE-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "UKR",
+      "countryName": "Ucrania",
+      "logoUrl": "https://mi-servidor.com/logos/ukr.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "UKR-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "UKR-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "UKR-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "UKR-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UKR-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UKR-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UKR-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UKR-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UKR-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UKR-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UKR-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UKR-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UKR-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UKR-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "MAR",
+      "countryName": "Marruecos",
+      "logoUrl": "https://mi-servidor.com/logos/mar.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "MAR-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "MAR-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "MAR-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "MAR-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MAR-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MAR-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MAR-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MAR-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MAR-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MAR-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MAR-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MAR-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MAR-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MAR-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "SEN",
+      "countryName": "Senegal",
+      "logoUrl": "https://mi-servidor.com/logos/sen.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "SEN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SEN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "SEN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "SEN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SEN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SEN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SEN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "SEN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SEN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SEN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SEN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SEN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "SEN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "SEN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "NGA",
+      "countryName": "Nigeria",
+      "logoUrl": "https://mi-servidor.com/logos/nga.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "NGA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "NGA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "NGA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "NGA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NGA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NGA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NGA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NGA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NGA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NGA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NGA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NGA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NGA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NGA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "EGY",
+      "countryName": "Egipto",
+      "logoUrl": "https://mi-servidor.com/logos/egy.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "EGY-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "EGY-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "EGY-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "EGY-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "EGY-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "EGY-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "EGY-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "EGY-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "EGY-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "EGY-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "EGY-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "EGY-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "EGY-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "EGY-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "TUN",
+      "countryName": "Túnez",
+      "logoUrl": "https://mi-servidor.com/logos/tun.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "TUN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "TUN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "TUN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "TUN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "TUN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "TUN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "TUN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "TUN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "TUN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "TUN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "TUN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "TUN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "TUN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "TUN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "ALG",
+      "countryName": "Argelia",
+      "logoUrl": "https://mi-servidor.com/logos/alg.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "ALG-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ALG-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "ALG-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "ALG-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ALG-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ALG-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ALG-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "ALG-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ALG-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ALG-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ALG-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ALG-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "ALG-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "ALG-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "CMR",
+      "countryName": "Camerún",
+      "logoUrl": "https://mi-servidor.com/logos/cmr.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "CMR-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CMR-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CMR-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "CMR-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CMR-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CMR-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CMR-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CMR-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CMR-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CMR-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CMR-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CMR-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CMR-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CMR-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "GHA",
+      "countryName": "Ghana",
+      "logoUrl": "https://mi-servidor.com/logos/gha.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "GHA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "GHA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "GHA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "GHA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GHA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GHA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GHA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "GHA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GHA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GHA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GHA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GHA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "GHA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "GHA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "MLI",
+      "countryName": "Mali",
+      "logoUrl": "https://mi-servidor.com/logos/mli.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "MLI-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "MLI-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "MLI-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "MLI-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MLI-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MLI-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MLI-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "MLI-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MLI-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MLI-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MLI-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MLI-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "MLI-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "MLI-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "JPN",
+      "countryName": "Japón",
+      "logoUrl": "https://mi-servidor.com/logos/jpn.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "JPN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "JPN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "JPN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "JPN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JPN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JPN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JPN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JPN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JPN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JPN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JPN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JPN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JPN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JPN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "KOR",
+      "countryName": "Corea del Sur",
+      "logoUrl": "https://mi-servidor.com/logos/kor.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "KOR-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "KOR-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "KOR-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "KOR-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KOR-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KOR-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KOR-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KOR-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KOR-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KOR-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KOR-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KOR-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KOR-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KOR-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "KSA",
+      "countryName": "Arabia Saudita",
+      "logoUrl": "https://mi-servidor.com/logos/ksa.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "KSA-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "KSA-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "KSA-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "KSA-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KSA-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KSA-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KSA-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "KSA-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KSA-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KSA-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KSA-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KSA-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "KSA-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "KSA-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "AUS",
+      "countryName": "Australia",
+      "logoUrl": "https://mi-servidor.com/logos/aus.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "AUS-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "AUS-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "AUS-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "AUS-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUS-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUS-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUS-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "AUS-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUS-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUS-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUS-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUS-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "AUS-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "AUS-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "IRN",
+      "countryName": "Irán",
+      "logoUrl": "https://mi-servidor.com/logos/irn.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "IRN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "IRN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "IRN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "IRN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "IRQ",
+      "countryName": "Irak",
+      "logoUrl": "https://mi-servidor.com/logos/irq.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "IRQ-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "IRQ-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "IRQ-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "IRQ-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRQ-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRQ-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRQ-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "IRQ-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRQ-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRQ-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRQ-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRQ-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "IRQ-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "IRQ-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "UZB",
+      "countryName": "Uzbekistán",
+      "logoUrl": "https://mi-servidor.com/logos/uzb.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "UZB-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "UZB-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "UZB-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "UZB-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UZB-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UZB-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UZB-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "UZB-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UZB-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UZB-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UZB-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UZB-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "UZB-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "UZB-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "QAT",
+      "countryName": "Catar",
+      "logoUrl": "https://mi-servidor.com/logos/qat.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "QAT-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "QAT-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "QAT-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "QAT-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "QAT-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "QAT-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "QAT-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "QAT-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "QAT-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "QAT-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "QAT-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "QAT-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "QAT-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "QAT-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "NZL",
+      "countryName": "Nueva Zelanda",
+      "logoUrl": "https://mi-servidor.com/logos/nzl.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "NZL-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "NZL-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "NZL-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "NZL-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NZL-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NZL-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NZL-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "NZL-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NZL-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NZL-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NZL-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NZL-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "NZL-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "NZL-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "PAN",
+      "countryName": "Panamá",
+      "logoUrl": "https://mi-servidor.com/logos/pan.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "PAN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "PAN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "PAN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "PAN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "PAN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "PAN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "PAN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "CRC",
+      "countryName": "Costa Rica",
+      "logoUrl": "https://mi-servidor.com/logos/crc.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "CRC-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CRC-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "CRC-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "CRC-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRC-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRC-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRC-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "CRC-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRC-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRC-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRC-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRC-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "CRC-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "CRC-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "JAM",
+      "countryName": "Jamaica",
+      "logoUrl": "https://mi-servidor.com/logos/jam.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "JAM-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "JAM-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "JAM-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "JAM-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JAM-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JAM-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JAM-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "JAM-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JAM-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JAM-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JAM-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JAM-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "JAM-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "JAM-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "HON",
+      "countryName": "Honduras",
+      "logoUrl": "https://mi-servidor.com/logos/hon.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "HON-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "HON-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "HON-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "HON-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "HON-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "HON-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "HON-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "HON-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "HON-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "HON-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "HON-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "HON-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "HON-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "HON-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    },
+    {
+      "teamId": "VEN",
+      "countryName": "Venezuela",
+      "logoUrl": "https://mi-servidor.com/logos/ven.png",
+      "totalCards": 20,
+      "cards": [
+        {
+          "id": "VEN-01",
+          "number": 1,
+          "type": "TEAM_PHOTO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "VEN-02",
+          "number": 2,
+          "type": "LOGO",
+          "obtained": false,
+          "quantity": 0
+        },
+        {
+          "id": "VEN-03",
+          "number": 3,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "POR"
+        },
+        {
+          "id": "VEN-04",
+          "number": 4,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "VEN-05",
+          "number": 5,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "VEN-06",
+          "number": 6,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "VEN-07",
+          "number": 7,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEF"
+        },
+        {
+          "id": "VEN-08",
+          "number": 8,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "VEN-09",
+          "number": 9,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "VEN-10",
+          "number": 10,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "VEN-11",
+          "number": 11,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "VEN-12",
+          "number": 12,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "MED"
+        },
+        {
+          "id": "VEN-13",
+          "number": 13,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-14",
+          "number": 14,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-15",
+          "number": 15,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-16",
+          "number": 16,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-17",
+          "number": 17,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-18",
+          "number": 18,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-19",
+          "number": 19,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        },
+        {
+          "id": "VEN-20",
+          "number": 20,
+          "type": "PLAYER",
+          "obtained": false,
+          "quantity": 0,
+          "position": "DEL"
+        }
+      ]
+    }
+  ]
+}
