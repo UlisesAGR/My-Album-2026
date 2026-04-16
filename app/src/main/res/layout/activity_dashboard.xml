@@ -1,9 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+ - activity_dashboard.xml
+ - Copyright (c) 2026. All rights reserved
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/systemRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/md_theme_primary"
     tools:context=".presenter.ui.dashboard.container.view.DashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_background"
+        tools:context=".presenter.ui.dashboard.container.view.DashboardActivity">
+
+        <com.myalbum2026.mobile.presenter.widget.toolbar.CustomToolbar
+            android:id="@+id/dashboardToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/myCollectionTextView"
+            style="@style/text_extra.bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_32"
+            android:text="@string/my_collection_2626"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboardToolbar" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/progressMaterialCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginVertical="@dimen/margin_32"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myCollectionTextView"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginVertical="@dimen/margin_24"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myCollectionTextView">
+
+                <TextView
+                    android:id="@+id/myProgressObtainedTextView"
+                    style="@style/text_big.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_8"
+                    android:text="@string/my_progress" />
+
+                <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                    android:id="@+id/cardsObtainedCustomButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:text="@string/cards_obtained"
+                    android:textSize="16sp"
+                    app:btnType="btn_primary" />
+
+                <TextView
+                    android:id="@+id/myProgressMissingTextView"
+                    style="@style/text_big.bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:text="@string/my_progress" />
+
+                <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                    android:id="@+id/cardsMissingCustomButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:text="@string/cards_missing"
+                    android:textSize="16sp"
+                    app:btnType="btn_secondary" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/versionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="v1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

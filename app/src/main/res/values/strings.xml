@@ -29,4 +29,7 @@
     <string name="your_progress">Your progress</string>
     <string name="total_cards">Total cards</string>
     <string name="missing_cards">missing cards</string>
+    <string name="cards_obtained">Cards obtained</string>
+    <string name="my_collection_2626">My collection 2626</string>
+    <string name="my_progress">My progress</string>
 </resources>

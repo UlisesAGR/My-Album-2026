@@ -1,3 +1,7 @@
+/*
+ * WelcomeActivity.kt
+ * Copyright (c) 2026. All rights reserved
+ */
 package com.myalbum2026.mobile.presenter.ui.welcome.view
 
 import androidx.activity.viewModels
