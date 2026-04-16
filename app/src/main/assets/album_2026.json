@@ -49,6 +49,34 @@
           { "id": "MEX-19", "number": 19, "type": "PLAYER", "position": "DEL" },
           { "id": "MEX-20", "number": 20, "type": "PLAYER", "position": "DEL" }
         ]
+      },
+      {
+        "teamId": "ARG",
+        "countryName": "Argentina",
+        "logoUrl": "https://mi-servidor.com/logos/arg.png",
+        "totalCards": 20,
+        "cards": [
+          { "id": "ARG-01", "number": 1, "type": "TEAM_PHOTO", "position": "TEAM" },
+          { "id": "ARG-02", "number": 2, "type": "LOGO", "position": "LOGO" },
+          { "id": "ARG-03", "number": 3, "type": "PLAYER", "position": "POR" },
+          { "id": "ARG-04", "number": 4, "type": "PLAYER", "position": "DEF" },
+          { "id": "ARG-05", "number": 5, "type": "PLAYER", "position": "DEF" },
+          { "id": "ARG-06", "number": 6, "type": "PLAYER", "position": "DEF" },
+          { "id": "ARG-07", "number": 7, "type": "PLAYER", "position": "DEF" },
+          { "id": "ARG-08", "number": 8, "type": "PLAYER", "position": "MED" },
+          { "id": "ARG-09", "number": 9, "type": "PLAYER", "position": "MED" },
+          { "id": "ARG-10", "number": 10, "type": "PLAYER", "position": "MED" },
+          { "id": "ARG-11", "number": 11, "type": "PLAYER", "position": "MED" },
+          { "id": "ARG-12", "number": 12, "type": "PLAYER", "position": "MED" },
+          { "id": "ARG-13", "number": 13, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-14", "number": 14, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-15", "number": 15, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-16", "number": 16, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-17", "number": 17, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-18", "number": 18, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-19", "number": 19, "type": "PLAYER", "position": "DEL" },
+          { "id": "ARG-20", "number": 20, "type": "PLAYER", "position": "DEL" }
+        ]
       }
     ],
     "timeline": [

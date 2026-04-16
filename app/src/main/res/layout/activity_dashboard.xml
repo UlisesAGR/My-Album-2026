@@ -82,6 +82,12 @@
                     android:textSize="16sp"
                     app:btnType="btn_primary" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:background="@color/divider_color" />
+
                 <TextView
                     android:id="@+id/myProgressMissingTextView"
                     style="@style/text_big.bold"

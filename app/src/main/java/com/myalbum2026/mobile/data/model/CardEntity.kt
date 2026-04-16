@@ -1,3 +1,7 @@
+/*
+ * CardEntity.kt
+ * Copyright (c) 2026. All rights reserved
+ */
 package com.myalbum2026.mobile.data.model
 
 import androidx.room.Entity

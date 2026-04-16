@@ -46,9 +46,13 @@
     <color name="text_white_color">#121318</color>
     <color name="white_color">#FFFFFF</color>
     <color name="black_color">#1B1B1B</color>
-    <color name="divider_color">#D3D3D3</color>
+    <color name="divider_color">#797979</color>
     <color name="bottom_sheet_handle">#D1D1D1</color>
     <color name="button_enable">#E1E2EC</color>
     <color name="button_text">#831A1C1E</color>
     <color name="bottom_nav_color">#FBF8FF</color>
+    <!-- Countries colors -->
+    <color name="special_background">#CDCDCD</color>
+    <color name="mexico_background">#D6F5C7</color>
+    <color name="argentina_background">#C7F5EE</color>
 </resources>

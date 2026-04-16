@@ -51,4 +51,8 @@
     <color name="button_enable">#E1E2EC</color>
     <color name="button_text">#831A1C1E</color>
     <color name="bottom_nav_color">#FBF8FF</color>
+    <!-- Countries colors -->
+    <color name="special_background">#CDCDCD</color>
+    <color name="mexico_background">#D6F5C7</color>
+    <color name="argentina_background">#C7F5EE</color>
 </resources>

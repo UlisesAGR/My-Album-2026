@@ -11,7 +11,7 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/margin_8"
     android:layout_marginVertical="@dimen/margin_8"
-    android:backgroundTint="@color/md_theme_secondaryContainer"
+    android:backgroundTint="@color/special_background"
     app:cardCornerRadius="12dp"
     app:cardElevation="0dp"
     app:strokeWidth="0dp">
@@ -49,11 +49,12 @@
 
         <TextView
             android:id="@+id/cardPosition"
-            style="@style/text_regular_primary.bold"
+            style="@style/text_regular.bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_12"
             android:gravity="center"
+            android:textColor="@color/black_color"
             tools:text="POR" />
 
         <TextView

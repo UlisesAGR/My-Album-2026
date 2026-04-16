@@ -4,11 +4,14 @@
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter
 
+import android.content.Context
+import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ItemCardBinding
+import com.myalbum2026.mobile.utils.ui.getTeamColor
 
 class InnerCardsAdapter(
     private val cards: List<CardEntity>,
@@ -40,11 +43,14 @@ class InnerCardsAdapter(
         val binding: ItemCardBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
 
+        private val context: Context = binding.root.context
+
         fun render(
             card: CardEntity,
             onCardClick: (CardEntity) -> Unit,
         ) = with(binding) {
             with(card) {
+                setBackgroundCounty(card = card)
                 cardNumber.text = number.toString()
                 cardPosition.text = position.orEmpty()
                 cardQuantity.text = quantity.toString()
@@ -52,6 +58,11 @@ class InnerCardsAdapter(
                     onCardClick(this)
                 }
             }
+        }
+
+        private fun setBackgroundCounty(card: CardEntity) {
+            binding.itemRoot.backgroundTintList =
+                ColorStateList.valueOf(context.getTeamColor(card.teamId))
         }
     }
 }
