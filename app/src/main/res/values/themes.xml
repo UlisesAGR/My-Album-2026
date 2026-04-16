@@ -51,7 +51,7 @@
     <!-- Splash application theme -->
     <style name="Splash.Theme.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/md_theme_background</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/il_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/il_logo_small</item>
         <item name="postSplashScreenTheme">@style/Base.Theme.MyAlbum2026</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>

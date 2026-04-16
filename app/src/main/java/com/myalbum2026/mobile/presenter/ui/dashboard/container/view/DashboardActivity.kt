@@ -10,6 +10,7 @@ import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardViewModel
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.CardsMissingActivity
+import com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view.CardsObtainedActivity
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.extensions.navigateTo
@@ -55,7 +56,7 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
 
     private fun goToCardsObtained() {
         navigateTo(
-            destination = CardsMissingActivity::class.java,
+            destination = CardsObtainedActivity::class.java,
             finishCurrent = true,
         )
     }
