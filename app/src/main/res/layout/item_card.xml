@@ -49,7 +49,7 @@
 
         <TextView
             android:id="@+id/cardPosition"
-            style="@style/text_extra_primary.bold"
+            style="@style/text_big_primary.bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_12"
