@@ -103,7 +103,7 @@
     <color name="usa_background">#C7EAF5</color>
     <color name="uzbekistan_background">#C7F5E5</color>
 
-    <color name="time_line_background">#F5C7C7</color>
-    <color name="coca_cola_background">#C7F5E5</color>
+    <color name="time_line_background">#CDCDCD</color>
+    <color name="coca_cola_background">#F5C7C7</color>
 
 </resources>
