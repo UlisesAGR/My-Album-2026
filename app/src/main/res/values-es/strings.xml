@@ -1,0 +1,40 @@
+<!--
+ - strings.xml - spanish
+ - Copyright (c) 2026. All rights reserved
+-->
+<resources>
+    <string name="version_value" translatable="false">Versión %1$s</string>
+    <string name="cards_value" translatable="false">%1$d láminas</string>
+    <string name="title_quantity_value" translatable="false">%1$s - %2$d</string>
+    <!-- App -->
+    <string name="app_name" translatable="false">Mi Álbum 2026</string>
+    <string name="idle" translatable="false">en espera</string>
+    <string name="other" translatable="false">otro</string>
+    <string name="n_a" translatable="false">N/A</string>
+    <!-- Talk -->
+    <string name="back">Atrás</string>
+    <!-- Internet Connection -->
+    <string name="retry">Reintentar</string>
+    <string name="title_retry_error_internet_text">Se perdió la conexión a Internet</string>
+    <string name="subtitle_retry_error_internet_text">Conéctate a una red para continuar navegando</string>
+    <string name="loader_default_text">Cargando…</string>
+    <!-- Errors -->
+    <string name="check_your_internet_connection">Comprueba tu conexión a Internet</string>
+    <string name="timeout">Tiempo de espera agotado</string>
+    <string name="there_are_problems_with_the_servant_try_again_later">Hay problemas con el servidor, inténtalo de nuevo más tarde</string>
+    <string name="please_try_again_later">Por el momento no podemos realizar esta acción, por favor inténtalo de nuevo más tarde</string>
+    <!-- Welcome -->
+    <string name="start">Empezar</string>
+    <string name="welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do">Bienvenido a la app que te ayuda a organizarte para completar tu álbum 2026. Esperamos que logres tu objetivo y disfrutes de la experiencia tanto como nosotros.</string>
+    <!-- Cards -->
+    <string name="cards_missing">Faltantes</string>
+    <string name="your_progress">Tu progreso</string>
+    <string name="total_cards">Total de láminas</string>
+    <string name="missing_cards">láminas faltantes</string>
+    <string name="cards_obtained">Láminas obtenidas</string>
+    <string name="my_collection_2626">Mi colección 2026</string>
+    <string name="my_progress">Mi progreso</string>
+    <string name="enter_the_number_of_stamps_you_have">Ingresa el número de láminas que tienes</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+</resources>
