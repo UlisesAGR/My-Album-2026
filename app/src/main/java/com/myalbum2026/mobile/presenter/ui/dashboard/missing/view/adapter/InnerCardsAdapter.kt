@@ -18,13 +18,13 @@ class InnerCardsAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,
-        ): ViewHolder =
-        ViewHolder(
-            binding = ItemCardBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent, false,
-            )
+        ): ViewHolder = ViewHolder(
+        binding = ItemCardBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false,
         )
+    )
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.render(
@@ -44,11 +44,13 @@ class InnerCardsAdapter(
             card: CardEntity,
             onCardClick: (CardEntity) -> Unit,
         ) = with(binding) {
-            cardNumber.text = card.number.toString()
-            cardPosition.text = card.position.orEmpty()
-            cardQuantity.text = card.quantity.toString()
-            root.setOnClickListener {
-                onCardClick(card)
+            with(card) {
+                cardNumber.text = number.toString()
+                cardPosition.text = position.orEmpty()
+                cardQuantity.text = quantity.toString()
+                root.setOnClickListener {
+                    onCardClick(this)
+                }
             }
         }
     }

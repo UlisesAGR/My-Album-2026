@@ -33,7 +33,7 @@ class AlbumRepositoryImpl @Inject constructor(
     override suspend fun updateCardStatus(
         cardId: String,
         newQty: Int,
-        hasIt: Boolean
+        hasIt: Boolean,
     ) = albumLocalDataStore.updateCardStatus(
         cardId = cardId,
         newQty = newQty,
@@ -41,5 +41,5 @@ class AlbumRepositoryImpl @Inject constructor(
     )
 
     override fun getFullAlbum(): Flow<List<TeamWithCards>> =
-        getFullAlbum().flowOn(dispatcher)
+        albumLocalDataStore.getFullAlbum().flowOn(dispatcher)
 }

@@ -67,7 +67,9 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 cardsMissingViewModel.uiState.collect { items ->
-                    cardsMissingAdapter.updateItems(items)
+                    if (items.isNotEmpty()) {
+                        cardsMissingAdapter.updateItems(items)
+                    }
                 }
             }
         }

@@ -26,6 +26,9 @@ class CardsMissingViewModel @Inject constructor(
         .map { teamsWithCards ->
             val items = mutableListOf<CardsMissingItem>()
 
+            // 2. Agregamos publicidad opcional
+            items.add(CardsMissingItem.Publicity(url = "https://tu-link-de-ads.com"))
+
             // 1. Agregamos el item de Progreso al inicio
             val totalCards = teamsWithCards.sumOf { it.team.totalCards }
             val obtainedCards = teamsWithCards.sumOf { list ->
@@ -41,9 +44,6 @@ class CardsMissingViewModel @Inject constructor(
                     missing = missingCount.toString()
                 )
             )
-
-            // 2. Agregamos publicidad opcional
-            items.add(CardsMissingItem.Publicity(url = "https://tu-link-de-ads.com"))
 
             // 3. Mapeamos cada equipo que tenga cartas faltantes
             val teamItems = teamsWithCards.mapNotNull { teamWithCards ->

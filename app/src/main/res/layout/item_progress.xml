@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+ - item_progress.xml
+ - Copyright (c) 2026. All rights reserved
+-->
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemRoot"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/margin_16"
@@ -17,16 +21,18 @@
         android:orientation="vertical"
         android:padding="@dimen/padding_16">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_8">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tvProgressTitle"
                 style="@style/text_extra.bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
                 android:text="@string/your_progress"
                 android:textSize="16sp" />
 
@@ -35,15 +41,17 @@
                 style="@style/text_extra_primary.bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:gravity="end"
                 tools:text="45%" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <com.google.android.material.progressindicator.LinearProgressIndicator
             android:id="@+id/progressIndicator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
             app:indicatorColor="@color/md_theme_primary"
             app:trackColor="@color/md_theme_surfaceVariant"
             app:trackCornerRadius="8dp"
@@ -53,10 +61,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_12"
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -66,17 +72,18 @@
 
                 <TextView
                     style="@style/text_regular"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:text="@string/total_cards"
                     android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/tvTotalCards"
                     style="@style/text_regular.bold"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
                     tools:text="960" />
 
             </LinearLayout>
@@ -92,7 +99,7 @@
                     style="@style/text_regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:alpha="0.7"
+                    android:alpha="0.8"
                     android:text="@string/missing_cards"
                     android:textSize="12sp" />
 
@@ -101,6 +108,7 @@
                     style="@style/text_regular.bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
                     android:textColor="@color/md_theme_error"
                     tools:text="512" />
 

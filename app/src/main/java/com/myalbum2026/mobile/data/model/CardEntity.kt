@@ -19,7 +19,8 @@ import androidx.room.PrimaryKey
 )
 data class CardEntity(
     @PrimaryKey val id: String,
-    val teamId: String,
+    val teamId: String?,
+    val section: String,
     val number: Int,
     val type: String,
     val position: String?,

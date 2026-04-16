@@ -69,7 +69,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/margin_8"
-                    android:text="@string/my_progress" />
+                    android:text="@string/my_progress"
+                    android:textColor="@color/black_color" />
 
                 <com.myalbum2026.mobile.presenter.widget.button.CustomButton
                     android:id="@+id/cardsObtainedCustomButton"
@@ -88,7 +89,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/margin_8"
                     android:layout_marginTop="@dimen/margin_24"
-                    android:text="@string/my_progress" />
+                    android:text="@string/my_progress"
+                    android:textColor="@color/black_color" />
 
                 <com.myalbum2026.mobile.presenter.widget.button.CustomButton
                     android:id="@+id/cardsMissingCustomButton"
@@ -106,6 +108,7 @@
 
         <TextView
             android:id="@+id/versionTextView"
+            style="@style/text_medium.bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_16"

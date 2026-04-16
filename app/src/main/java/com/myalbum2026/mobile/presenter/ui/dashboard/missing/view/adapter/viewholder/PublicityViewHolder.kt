@@ -15,6 +15,6 @@ class PublicityViewHolder(
     fun render(
         item: CardsMissingItem.Publicity,
     ) = with(binding) {
-
+        urlTextView.text = item.url
     }
 }

@@ -7,6 +7,7 @@ package com.myalbum2026.mobile.domain.usecase.album
 import android.content.res.AssetManager
 import com.google.gson.Gson
 import com.myalbum2026.mobile.domain.model.AlbumDataResponse
+import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.domain.repository.album.AlbumRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -19,19 +20,28 @@ class InitializeAlbumUseCase @Inject constructor(
     suspend operator fun invoke(): Flow<Unit> {
         val jsonString = assetManager.open("album_2026.json")
             .bufferedReader()
-            .use { json -> json.readText() }
+            .use { it.readText() }
 
         val response = gson.fromJson(jsonString, AlbumDataResponse::class.java)
+        val sections = response.sections
 
-        val teamEntities = response.teams.map { data -> data.toTeamEntity() }
+        val teamEntities = sections.teams.map { team -> team.toTeamEntity() }
 
-        val cardEntities = response.teams.flatMap { team ->
-            team.cards.map { card -> card.toCardEntity(team.teamId) }
+        val allCards = mutableListOf<CardEntity>()
+
+        sections.teams.forEach { team ->
+            allCards.addAll(team.cards.map { it.toCardEntity(section = "teams", teamId = team.teamId) })
         }
+
+        allCards.addAll(sections.specials.map { it.toCardEntity(section = "specials") })
+
+        allCards.addAll(sections.timeline.map { it.toCardEntity(section = "timeline") })
+
+        allCards.addAll(sections.coca.map { it.toCardEntity(section = "coca") })
 
         return repository.insertFullAlbum(
             teams = teamEntities,
-            cards = cardEntities,
+            cards = allCards,
         )
     }
 }

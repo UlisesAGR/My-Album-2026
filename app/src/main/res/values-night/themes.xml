@@ -40,7 +40,7 @@
         <item name="colorPrimaryInverse">@color/md_theme_inversePrimary</item>
         <!-- Light System -->
         <item name="android:statusBarColor">@color/md_theme_background</item>
-        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@color/md_theme_background</item>
         <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
     </style>

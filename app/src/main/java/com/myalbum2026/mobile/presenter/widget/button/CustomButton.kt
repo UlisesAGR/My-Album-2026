@@ -64,7 +64,7 @@ class CustomButton @JvmOverloads constructor(
             }
             BTN_SECONDARY -> {
                 setBackgroundColor(ContextCompat.getColor(context, R.color.md_theme_secondary))
-                setTextColor(ContextCompat.getColor(context, R.color.white_color))
+                setTextColor(ContextCompat.getColor(context, R.color.text_white_color))
                 height = dpToPx(BTN_NORMAL_DEFAULT_HEIGHT)
             }
             BTN_WITHOUT_BORDERS_PRIMARY -> {

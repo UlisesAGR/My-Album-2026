@@ -43,10 +43,10 @@
                 android:paddingTop="@dimen/padding_16"
                 android:paddingBottom="@dimen/padding_64"
                 android:scrollbars="none"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 tools:itemCount="1"
-                tools:listitem="@layout/item_card"
+                tools:listitem="@layout/item_cards"
                 tools:visibility="visible" />
 
             <include

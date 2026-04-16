@@ -22,8 +22,6 @@ class CardsMissingAdapter(
     val onCardsItemClick: (CardEntity) -> Unit = {},
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private val viewPool = RecyclerView.RecycledViewPool()
-
     companion object {
         private const val TYPE_PUBLICITY = 0
         private const val TYPE_PROGRESS = 1
@@ -65,7 +63,6 @@ class CardsMissingAdapter(
                         parent,
                         false,
                     ),
-                    viewPool = viewPool,
                 )
             }
         }

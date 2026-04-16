@@ -38,7 +38,10 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
     }
 
     private fun setText() = with(binding)  {
-        versionTextView.text = getVersionName()
+        versionTextView.text = getString(
+            R.string.version_value,
+            getVersionName(),
+        )
     }
 
     private fun setListeners() = with(binding) {
