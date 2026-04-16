@@ -41,7 +41,7 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
     private fun setToolbar() {
         setupAppBar(
             toolbar = binding.cardsObtainedToolbar,
-            title = getString(R.string.cards_missing),
+            title = getString(R.string.cards_obtained),
             titleAlignment = Gravity.START,
             iconLeft = R.drawable.ic_arrow_back,
             actionLeftIcon = {

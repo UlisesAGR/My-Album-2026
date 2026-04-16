@@ -16,6 +16,7 @@ import androidx.core.text.HtmlCompat
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ToolbarBinding
 import com.myalbum2026.mobile.utils.ui.setOnSafeClickListener
+import com.myalbum2026.mobile.utils.ui.show
 
 class CustomToolbar @JvmOverloads constructor(
     context: Context,
@@ -42,11 +43,14 @@ class CustomToolbar @JvmOverloads constructor(
         binding.titleToolbarCustomTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, textSize)
     }
 
-    fun setIconLeft(icon: Int?) {
+    fun setIconLeft(icon: Int?) = with(binding) {
         icon?.let {
-            binding.leftImageView.setImageResource(icon)
-            if (icon == R.drawable.ic_arrow_back) {
-                binding.leftImageView.contentDescription = context.getString(R.string.back)
+            leftImageView.apply {
+                setImageResource(icon)
+                if (icon == R.drawable.ic_arrow_back) {
+                    leftImageView.contentDescription = context.getString(R.string.back)
+                }
+                show()
             }
         }
     }

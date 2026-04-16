@@ -108,7 +108,7 @@
 
         <TextView
             android:id="@+id/versionTextView"
-            style="@style/text_medium.bold"
+            style="@style/text_small.bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_16"
