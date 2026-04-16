@@ -24,6 +24,7 @@ class PreferencesManager @Inject constructor(
 ) {
     private object PreferencesKeys {
         val IS_FIRST_TIME = booleanPreferencesKey("is_first_time")
+        val IS_INFO_SHOWED = booleanPreferencesKey("is_info_showed")
     }
 
     val isFirstTime: Flow<Boolean> = dataStore.data
@@ -37,9 +38,26 @@ class PreferencesManager @Inject constructor(
             preferences[PreferencesKeys.IS_FIRST_TIME] ?: true
         }
 
-    suspend fun saveFirstTimeStatus(isFirstTime: Boolean) {
+    suspend fun setFirstTime(isFirstTime: Boolean) {
         dataStore.edit { preferences ->
             preferences[PreferencesKeys.IS_FIRST_TIME] = isFirstTime
+        }
+    }
+
+    val isInfoShowed: Flow<Boolean> = dataStore.data
+        .catch { exception ->
+            if (exception is IOException) {
+                emit(emptyPreferences())
+            } else {
+                throw exception
+            }
+        }.map { preferences ->
+            preferences[PreferencesKeys.IS_INFO_SHOWED] ?: true
+        }
+
+    suspend fun setInfoShowed(isInfoShowed: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[PreferencesKeys.IS_INFO_SHOWED] = isInfoShowed
         }
     }
 }

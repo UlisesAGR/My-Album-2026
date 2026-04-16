@@ -9,6 +9,7 @@ import androidx.activity.viewModels
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardViewModel
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.CardsMissingActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view.CardsObtainedActivity
@@ -16,6 +17,8 @@ import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.extensions.navigateTo
+import com.myalbum2026.mobile.utils.logger.log
+import com.myalbum2026.mobile.utils.ui.materialDialog
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -64,6 +67,12 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
                 updateProgressUI(progress = progress)
             }
         }
+        collect(dashboardViewModel.dashboardUiEvent) { state ->
+            when (state) {
+                is DashboardUiEvent.Idle -> log(message = getString(R.string.idle))
+                is DashboardUiEvent.ShowInfoDialog -> showInfoDialog()
+            }
+        }
     }
 
     private fun updateProgressUI(progress: CardsMissingItem.Progress) = with(binding) {
@@ -75,6 +84,19 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         myProgressMissingTextView.text = getString(
             R.string.progress_missing_format,
             progress.missing,
+        )
+    }
+
+    private fun showInfoDialog() {
+        materialDialog(
+            style = R.style.MaterialDialog,
+            isCancelable = false,
+            title = getString(R.string.important),
+            textPositiveButton = getString(R.string.accept),
+            message = getString(R.string.if_you_delete_your_app_you_will_lose_your_album_progress),
+            action = {
+                dashboardViewModel.onAcceptClicked()
+            },
         )
     }
 

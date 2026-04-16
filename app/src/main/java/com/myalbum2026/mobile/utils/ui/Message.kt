@@ -15,14 +15,16 @@ fun Context.toast(message: String) {
 }
 
 inline fun Context.materialDialog(
-    style: Int,
+    style: Int = 0,
+    isCancelable: Boolean = true,
     title: String,
-    textNegativeButton: String,
-    textPositiveButton: String,
+    textNegativeButton: String = "",
+    textPositiveButton: String = "",
     message: String,
     crossinline action: () -> Unit,
 ) {
     MaterialAlertDialogBuilder(this, style)
+        .setCancelable(isCancelable)
         .setTitle(title)
         .setMessage(message)
         .setNegativeButton(textNegativeButton) { dialog, _ ->

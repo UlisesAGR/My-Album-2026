@@ -8,5 +8,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface UserRepository {
     fun isFirstTime(): Flow<Boolean>
-    suspend fun saveFirstTimeStatus()
+    suspend fun setFirstTime()
+    fun isInfoShowed(): Flow<Boolean>
+    suspend fun setInfoShowed()
 }

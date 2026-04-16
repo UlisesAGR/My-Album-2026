@@ -16,6 +16,12 @@ class UserRepositoryImpl @Inject constructor(
     override fun isFirstTime(): Flow<Boolean> =
         userDataStore.isFirstTime()
 
-    override suspend fun saveFirstTimeStatus() =
-        userDataStore.saveFirstTimeStatus()
+    override suspend fun setFirstTime() =
+        userDataStore.setFirstTime()
+
+    override fun isInfoShowed(): Flow<Boolean> =
+        userDataStore.isInfoShowed()
+
+    override suspend fun setInfoShowed() =
+        userDataStore.setInfoShowed()
 }

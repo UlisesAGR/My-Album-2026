@@ -8,17 +8,44 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
 import com.myalbum2026.mobile.domain.repository.album.AlbumRepository
+import com.myalbum2026.mobile.domain.usecase.user.IsInfoShowedUseCase
+import com.myalbum2026.mobile.domain.usecase.user.SetIsInfoShowedUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 
 @HiltViewModel
 class DashboardViewModel @Inject constructor(
+    private val isInfoShowedUseCase: IsInfoShowedUseCase,
+    private val setIsInfoShowedUseCase: SetIsInfoShowedUseCase,
     repository: AlbumRepository,
 ) : ViewModel() {
+
+    private var _dashboardUiEvent = MutableStateFlow<DashboardUiEvent>(DashboardUiEvent.Idle)
+    val dashboardUiEvent: StateFlow<DashboardUiEvent> = _dashboardUiEvent.asStateFlow()
+
+    init {
+        checkInfoShowed()
+    }
+
+    private fun checkInfoShowed() = viewModelScope.launch {
+        resetUiEvent()
+        val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: true
+        if (isFirstTime) {
+            _dashboardUiEvent.emit(DashboardUiEvent.ShowInfoDialog)
+        }
+    }
+
+    fun onAcceptClicked() = viewModelScope.launch {
+        setIsInfoShowedUseCase()
+    }
 
     val uiState: StateFlow<List<CardsMissingItem>> = repository.getFullAlbum()
         .map { teamsWithCards ->
@@ -48,4 +75,8 @@ class DashboardViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5000),
             initialValue = emptyList(),
         )
+
+    private fun resetUiEvent() = viewModelScope.launch {
+        _dashboardUiEvent.emit(DashboardUiEvent.Idle)
+    }
 }

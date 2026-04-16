@@ -4,7 +4,7 @@
 -->
 <resources>
     <string name="version_value" translatable="false">Version %1$s</string>
-    <string name="cards_value" translatable="false">%1$d cards</string>
+    <string name="cards_value">%1$d cards</string>
     <string name="title_quantity_value" translatable="false">%1$s - %2$d</string>
     <string name="progress_obtained_format">Cards obtained: %1$s of %2$s</string>
     <string name="progress_missing_format">Cards missing: %1$s</string>
@@ -39,4 +39,6 @@
     <string name="enter_the_number_of_stamps_you_have">Enter the number of stamps you have</string>
     <string name="cancel">Cancel</string>
     <string name="accept">Accept</string>
+    <string name="important">IMPORTANT</string>
+    <string name="if_you_delete_your_app_you_will_lose_your_album_progress">If you delete your app, you will lose your album progress</string>
 </resources>

@@ -17,6 +17,12 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface AlbumDao {
 
+    @Query("DELETE FROM teams")
+    suspend fun clearTeams()
+
+    @Query("DELETE FROM cards")
+    suspend fun clearCards()
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTeams(teams: List<TeamEntity>)
 
@@ -28,6 +34,8 @@ interface AlbumDao {
         teams: List<TeamEntity>,
         cards: List<CardEntity>,
     ) {
+        clearTeams()
+        clearCards()
         insertTeams(teams)
         insertCards(cards)
     }
