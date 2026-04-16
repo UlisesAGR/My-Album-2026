@@ -53,6 +53,19 @@
     <color name="bottom_nav_color">#FBF8FF</color>
     <!-- Countries colors -->
     <color name="special_background">#CDCDCD</color>
-    <color name="mexico_background">#D6F5C7</color>
-    <color name="argentina_background">#C7F5EE</color>
+    <color name="usa_background">#CDCDCD</color>
+    <color name="canada_background">#BF0A30</color>
+    <color name="mexico_background">#006847</color>
+    <color name="argentina_background">#74ABDF</color>
+    <color name="spain_background">#AD1519</color>
+    <color name="france_background">#323E95</color>
+    <color name="germany_background">#444444</color>
+    <color name="japan_background">#6AA6FF</color>
+    <color name="belgium_background">#EF3340</color>
+    <color name="croatia_background">#171796</color>
+    <color name="brazil_background">#009440</color>
+    <color name="morocco_background">#C2272D</color>
+    <color name="netherlands_background">#FF653F</color>
+    <color name="england_background">#CDCDCD</color>
+    <color name="korea_background">#CDCDCD</color>
 </resources>

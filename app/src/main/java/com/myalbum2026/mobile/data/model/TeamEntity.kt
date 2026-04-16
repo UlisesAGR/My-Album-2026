@@ -7,6 +7,6 @@ import androidx.room.PrimaryKey
 data class TeamEntity(
     @PrimaryKey val id: String,
     val countryName: String,
-    val logoUrl: String,
+    val flagResource: String,
     val totalCards: Int
 )

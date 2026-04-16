@@ -4,16 +4,16 @@
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder
 
+import android.annotation.SuppressLint
 import android.content.Context
-import androidx.core.net.toUri
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
+import com.myalbum2026.mobile.data.model.TeamEntity
 import com.myalbum2026.mobile.databinding.ItemCardsBinding
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.InnerCardsAdapter
-import com.myalbum2026.mobile.utils.ui.load
 
 class CardsViewHolder(
     private val binding: ItemCardsBinding,
@@ -25,11 +25,7 @@ class CardsViewHolder(
         item: CardsMissingItem.Cards,
         onCardsItemClick: (CardEntity) -> Unit,
     ) = with(binding) {
-        logoImageView.load(
-            uri = item.team.logoUrl.toUri(),
-            loadImage = R.drawable.ic_blur_on,
-            errorImage = R.drawable.ic_blur_on,
-        )
+        setImageFlag(team = item.team)
         teamNameTextView.text = item.team.countryName
         teamCountTextView.text = context.getString(
             R.string.cards_value,
@@ -44,5 +40,15 @@ class CardsViewHolder(
                 onCardClick = onCardsItemClick,
             )
         }
+    }
+
+    @SuppressLint("DiscouragedApi")
+    private fun setImageFlag(team: TeamEntity) = with(binding) {
+        val resId = context.resources.getIdentifier(
+            team.flagResource,
+            "drawable",
+            context.packageName,
+        )
+        logoImageView.setImageResource(if (resId != 0) resId else R.drawable.il_flag_brazil)
     }
 }

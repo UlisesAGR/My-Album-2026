@@ -6,14 +6,14 @@ import com.myalbum2026.mobile.data.model.TeamEntity
 data class TeamRemoteEntity(
     @SerializedName("teamId") val teamId: String,
     @SerializedName("countryName") val countryName: String,
-    @SerializedName("logoUrl") val logoUrl: String,
+    @SerializedName("flagResource") val flagResource: String,
     @SerializedName("totalCards") val totalCards: Int,
     @SerializedName("cards") val cards: List<CardRemoteEntity>
 ) {
     fun toTeamEntity() = TeamEntity(
         id = teamId,
         countryName = countryName,
-        logoUrl = logoUrl,
+        flagResource = flagResource,
         totalCards = totalCards
     )
 }
