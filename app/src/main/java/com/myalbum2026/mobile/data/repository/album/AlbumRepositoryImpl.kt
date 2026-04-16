@@ -30,16 +30,18 @@ class AlbumRepositoryImpl @Inject constructor(
         ))
     }.flowOn(dispatcher)
 
+    override fun getFullAlbum(): Flow<List<TeamWithCards>> =
+        albumLocalDataStore.getFullAlbum().flowOn(dispatcher)
+
     override suspend fun updateCardStatus(
         cardId: String,
         quantity: Int,
         hasIt: Boolean,
-    ) = albumLocalDataStore.updateCardStatus(
-        cardId = cardId,
-        quantity = quantity,
-        hasIt = hasIt,
-    )
-
-    override fun getFullAlbum(): Flow<List<TeamWithCards>> =
-        albumLocalDataStore.getFullAlbum().flowOn(dispatcher)
+    ): Flow<Unit> = flow {
+        emit(albumLocalDataStore.updateCardStatus(
+            cardId = cardId,
+            quantity = quantity,
+            hasIt = hasIt,
+        ))
+    }.flowOn(dispatcher)
 }

@@ -24,10 +24,10 @@
     <color name="md_theme_onError">#FFDAD6</color>
     <color name="md_theme_onErrorContainer">#410002</color>
     <!-- Light background colors -->
-    <color name="md_theme_background">#FBF8FF</color>
+    <color name="md_theme_background">#FDFAFF</color>
     <color name="md_theme_onBackground">#1B1B21</color>
     <!-- Light surface colors -->
-    <color name="md_theme_surface">#FBF8FF</color>
+    <color name="md_theme_surface">#FDFAFF</color>
     <color name="md_theme_onSurface">#1B1B21</color>
     <color name="md_theme_surfaceVariant">#E4E1EC</color>
     <color name="md_theme_onSurfaceVariant">#46464F</color>

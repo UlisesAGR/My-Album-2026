@@ -5,7 +5,7 @@
 package com.myalbum2026.mobile.utils.extensions
 
 object Constants {
-    const val DELAY = 500L
+    const val DELAY = 400L
     const val ERROR = "Error"
     const val INFO = "Info"
     const val REQUEST_NO_CONTENT = 204

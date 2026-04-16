@@ -40,13 +40,6 @@ interface AlbumDao {
         insertCards(cards)
     }
 
-    @Query("UPDATE cards SET quantity = :quantity, obtained = :hasIt WHERE id = :cardId")
-    suspend fun updateCardStatus(
-        cardId: String,
-        quantity: Int,
-        hasIt: Boolean,
-    )
-
     @Transaction
     @Query("""
     SELECT * FROM teams 
@@ -60,4 +53,11 @@ interface AlbumDao {
         countryName ASC
 """)
     fun getFullAlbum(): Flow<List<TeamWithCards>>
+
+    @Query("UPDATE cards SET quantity = :quantity, obtained = :hasIt WHERE id = :cardId")
+    suspend fun updateCardStatus(
+        cardId: String,
+        quantity: Int,
+        hasIt: Boolean,
+    )
 }

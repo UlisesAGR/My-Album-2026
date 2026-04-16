@@ -7,20 +7,23 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view
 import android.view.Gravity
 import androidx.activity.addCallback
 import androidx.activity.viewModels
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ActivityCardsMissingBinding
+import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.CardsMissingAdapter
+import com.myalbum2026.mobile.presenter.ui.dashboard.missing.viewmodel.CardsMissingUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.viewmodel.CardsMissingViewModel
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
+import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.navigateTo
+import com.myalbum2026.mobile.utils.logger.log
+import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
@@ -37,7 +40,7 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
         setListeners()
         setCardsMissingAdapter()
         setCardsMissingRecyclerView()
-        flows()
+        setFlows()
     }
 
     private fun setToolbar() {
@@ -77,15 +80,30 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
         }
     }
 
-    private fun flows() {
-        lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                cardsMissingViewModel.uiState.collect { items ->
-                    if (items.isNotEmpty()) {
-                        cardsMissingAdapter.updateItems(items)
-                    }
+    private fun setFlows() {
+        collect(cardsMissingViewModel.cardsMissingUiState) { state ->
+            statusLoading(isLoading = state.isLoading)
+            setItems(items = state.items)
+        }
+        collect(cardsMissingViewModel.cardsMissingUiEvent) { state ->
+            with(state) {
+                when (this) {
+                    is CardsMissingUiEvent.Idle -> log(message = getString(R.string.idle))
+                    is CardsMissingUiEvent.ShowError -> toast(message = handleError(exception))
+                    is CardsMissingUiEvent.CardUpdated -> log(message = getString(R.string.idle))
                 }
             }
+        }
+    }
+
+    private fun statusLoading(isLoading: Boolean) {
+        if (isLoading) LoadingDialog.show(supportFragmentManager)
+        else LoadingDialog.dismiss(supportFragmentManager)
+    }
+
+    private fun setItems(items: MutableList<CardsMissingItem>) {
+        if (items.isNotEmpty()) {
+            cardsMissingAdapter.updateItems(items = items)
         }
     }
 

@@ -6,27 +6,30 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.myalbum2026.mobile.data.model.TeamWithCards
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
-import com.myalbum2026.mobile.domain.repository.album.AlbumRepository
+import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.user.IsInfoShowedUseCase
 import com.myalbum2026.mobile.domain.usecase.user.SetIsInfoShowedUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.firstOrNull
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 @HiltViewModel
 class DashboardViewModel @Inject constructor(
     private val isInfoShowedUseCase: IsInfoShowedUseCase,
     private val setIsInfoShowedUseCase: SetIsInfoShowedUseCase,
-    repository: AlbumRepository,
+    private val getFullAlbumUseCase: GetFullAlbumUseCase,
 ) : ViewModel() {
+
+    private var _dashboardUiState = MutableStateFlow(DashboardUiState())
+    val dashboardUiState: StateFlow<DashboardUiState> = _dashboardUiState.asStateFlow()
 
     private var _dashboardUiEvent = MutableStateFlow<DashboardUiEvent>(DashboardUiEvent.Idle)
     val dashboardUiEvent: StateFlow<DashboardUiEvent> = _dashboardUiEvent.asStateFlow()
@@ -36,47 +39,51 @@ class DashboardViewModel @Inject constructor(
     }
 
     private fun checkInfoShowed() = viewModelScope.launch {
-        resetUiEvent()
         val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: true
         if (isFirstTime) {
             _dashboardUiEvent.emit(DashboardUiEvent.ShowInfoDialog)
         }
+        getFullAlbum()
     }
 
     fun onAcceptClicked() = viewModelScope.launch {
         setIsInfoShowedUseCase()
     }
 
-    val uiState: StateFlow<List<CardsMissingItem>> = repository.getFullAlbum()
-        .map { teamsWithCards ->
-            val items = mutableListOf<CardsMissingItem>()
-
-            val totalCards = teamsWithCards.sumOf { it.team.totalCards }
-            val obtainedCards = teamsWithCards.sumOf { list ->
-                list.cards.count { it.obtained }
+    fun getFullAlbum() = viewModelScope.launch {
+        getFullAlbumUseCase()
+            .catch { exception ->
+                _dashboardUiEvent.emit(DashboardUiEvent.ShowError(exception = exception))
             }
-            val missingCount = totalCards - obtainedCards
-            val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
-            val obtained = totalCards - missingCount
+            .collect { items ->
+                val items = getItems(teamsWithCards = items)
+                _dashboardUiState.update { state -> state.copy(items = items) }
+            }
+    }
 
-            items.add(
-                CardsMissingItem.Progress(
-                    percentage = "$percentage%",
-                    total = totalCards.toString(),
-                    missing = missingCount.toString(),
-                    obtained = obtained.toString(),
-                )
-            )
+    private fun getItems(
+        teamsWithCards: List<TeamWithCards>,
+    ): MutableList<CardsMissingItem> {
+        val items = mutableListOf<CardsMissingItem>()
 
-            items
+        val totalCards = teamsWithCards.sumOf { it.team.totalCards }
+        val obtainedCards = teamsWithCards.sumOf { list ->
+            list.cards.count { it.obtained }
         }
-        .stateIn(
-            scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(5000),
-            initialValue = emptyList(),
+
+        val missingCount = totalCards - obtainedCards
+        val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
+        val obtained = totalCards - missingCount
+
+        items.add(
+            CardsMissingItem.Progress(
+                percentage = "$percentage%",
+                total = totalCards.toString(),
+                missing = missingCount.toString(),
+                obtained = obtained.toString(),
+            )
         )
 
-    private fun resetUiEvent() = viewModelScope.launch {
-        _dashboardUiEvent.emit(DashboardUiEvent.Idle)
+        return items
     }
 }

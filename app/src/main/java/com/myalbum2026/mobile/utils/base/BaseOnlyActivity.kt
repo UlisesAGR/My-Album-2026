@@ -30,11 +30,7 @@ abstract class BaseOnlyActivity<VB : ViewBinding> : AppCompatActivity() {
         binding = inflateBinding()
         setContentView(binding.root)
         applyEdgeToEdgeIfNeeded()
-        validateInternetConnection(
-            haveInternet = {
-                init()
-            },
-        )
+        init()
     }
 
     fun setupAppBar(

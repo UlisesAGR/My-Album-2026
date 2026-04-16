@@ -6,5 +6,6 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel
 
 sealed class DashboardUiEvent {
     internal data object Idle : DashboardUiEvent()
+    data class ShowError(val exception: Throwable) : DashboardUiEvent()
     internal data object ShowInfoDialog : DashboardUiEvent()
 }

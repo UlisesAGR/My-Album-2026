@@ -19,7 +19,9 @@ import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.logger.log
+import com.myalbum2026.mobile.utils.network.handleError
 import com.myalbum2026.mobile.utils.ui.materialDialog
+import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,7 +37,7 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         setText()
         setBanner()
         setListeners()
-        flows()
+        setFlows()
     }
 
     private fun setToolbar() {
@@ -66,31 +68,36 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         }
     }
 
-    private fun flows() {
-        collect(dashboardViewModel.uiState) { items ->
-            val progress = items.filterIsInstance<CardsMissingItem.Progress>().firstOrNull()
-            progress?.let { progress ->
-                updateProgressUI(progress = progress)
-            }
+    private fun setFlows() {
+        collect(dashboardViewModel.dashboardUiState) { state ->
+            updateProgress(items = state.items)
         }
         collect(dashboardViewModel.dashboardUiEvent) { state ->
-            when (state) {
-                is DashboardUiEvent.Idle -> log(message = getString(R.string.idle))
-                is DashboardUiEvent.ShowInfoDialog -> showInfoDialog()
+            with(state) {
+                when (this) {
+                    is DashboardUiEvent.Idle -> log(message = getString(R.string.idle))
+                    is DashboardUiEvent.ShowError -> toast(message = handleError(exception))
+                    is DashboardUiEvent.ShowInfoDialog -> showInfoDialog()
+                }
             }
         }
     }
 
-    private fun updateProgressUI(progress: CardsMissingItem.Progress) = with(binding) {
-        myProgressObtainedTextView.text = getString(
-            R.string.progress_obtained_format,
-            progress.obtained,
-            progress.total,
-        )
-        myProgressMissingTextView.text = getString(
-            R.string.progress_missing_format,
-            progress.missing,
-        )
+    private fun updateProgress(
+        items: MutableList<CardsMissingItem>,
+    ) = with(binding) {
+        val progress = items.filterIsInstance<CardsMissingItem.Progress>().firstOrNull()
+        progress?.let { progress ->
+            myProgressObtainedTextView.text = getString(
+                R.string.progress_obtained_format,
+                progress.obtained,
+                progress.total,
+            )
+            myProgressMissingTextView.text = getString(
+                R.string.progress_missing_format,
+                progress.missing,
+            )
+        }
     }
 
     private fun showInfoDialog() {

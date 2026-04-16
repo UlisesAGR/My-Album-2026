@@ -23,6 +23,9 @@ class AlbumLocalDataStoreImpl @Inject constructor(
         cards = cards,
     )
 
+    override fun getFullAlbum(): Flow<List<TeamWithCards>> =
+        albumDao.getFullAlbum()
+
     override suspend fun updateCardStatus(
         cardId: String,
         quantity: Int,
@@ -32,7 +35,4 @@ class AlbumLocalDataStoreImpl @Inject constructor(
         quantity = quantity,
         hasIt = hasIt,
     )
-
-    override fun getFullAlbum(): Flow<List<TeamWithCards>> =
-        albumDao.getFullAlbum()
 }

@@ -14,10 +14,10 @@ interface AlbumLocalDataStore {
         teams: List<TeamEntity>,
         cards: List<CardEntity>,
     )
+    fun getFullAlbum(): Flow<List<TeamWithCards>>
     suspend fun updateCardStatus(
         cardId: String,
         quantity: Int,
         hasIt: Boolean,
     )
-    fun getFullAlbum(): Flow<List<TeamWithCards>>
 }

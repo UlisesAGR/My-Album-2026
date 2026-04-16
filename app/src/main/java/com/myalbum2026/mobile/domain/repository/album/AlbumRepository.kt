@@ -14,10 +14,10 @@ interface AlbumRepository {
         teams: List<TeamEntity>,
         cards: List<CardEntity>,
     ): Flow<Unit>
+    fun getFullAlbum(): Flow<List<TeamWithCards>>
     suspend fun updateCardStatus(
         cardId: String,
         quantity: Int,
         hasIt: Boolean,
-    )
-    fun getFullAlbum(): Flow<List<TeamWithCards>>
+    ): Flow<Unit>
 }
