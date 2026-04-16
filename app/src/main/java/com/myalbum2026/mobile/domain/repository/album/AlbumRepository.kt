@@ -16,7 +16,7 @@ interface AlbumRepository {
     ): Flow<Unit>
     suspend fun updateCardStatus(
         cardId: String,
-        newQty: Int,
+        quantity: Int,
         hasIt: Boolean,
     )
     fun getFullAlbum(): Flow<List<TeamWithCards>>

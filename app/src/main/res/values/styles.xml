@@ -9,23 +9,39 @@
         <item name="android:focusable">true</item>
         <item name="android:foreground">?attr/selectableItemBackground</item>
     </style>
+
     <style name="Ripple">
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+
     <style name="Ripple.Borderless">
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>
+
     <style name="imageButton" parent="Ripple.Borderless">
         <item name="tint">@color/text_white_color</item>
     </style>
+
     <style name="bottomNavigation">
         <item name="android:background">@color/md_theme_primary</item>
         <item name="itemIconTint">@color/bottom_nav_color</item>
         <item name="itemTextColor">@color/bottom_nav_color</item>
         <item name="itemActiveIndicatorStyle">@style/App.CustomIndicator</item>
+    </style>
+
+    <style name="EditText_Enable">
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:clickable">false</item>
+        <item name="android:enabled">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:ems">4</item>
     </style>
 </resources>

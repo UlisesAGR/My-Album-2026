@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - bg_edit_text.xml
+ - Created by Ulises Gonzalez on 23/02/25
+ - Copyright (c) 2025. All rights reserved
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke
+        android:width="2dp"
+        android:color="#E9E9E9" />
+
+    <solid android:color="@color/white_color" />
+
+</shape>

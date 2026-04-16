@@ -68,18 +68,18 @@ class CardsMissingViewModel @Inject constructor(
             initialValue = emptyList()
         )
 
-    fun markCardAsObtained(card: CardEntity) {
-        viewModelScope.launch {
-            try {
-                val newQty = if (card.quantity > 0) card.quantity + 1 else 1
-                repository.updateCardStatus(
-                    cardId = card.id,
-                    newQty = newQty,
-                    hasIt = true
-                )
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
+    fun updateCardQuantity(
+        card: CardEntity,
+        quantity: Int,
+    ) = viewModelScope.launch {
+        try {
+            repository.updateCardStatus(
+                cardId = card.id,
+                quantity = quantity,
+                hasIt = quantity > 0
+            )
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 }

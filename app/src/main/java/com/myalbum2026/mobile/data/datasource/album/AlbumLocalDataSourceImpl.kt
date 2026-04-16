@@ -25,11 +25,11 @@ class AlbumLocalDataStoreImpl @Inject constructor(
 
     override suspend fun updateCardStatus(
         cardId: String,
-        newQty: Int,
+        quantity: Int,
         hasIt: Boolean
     ) = albumDao.updateCardStatus(
         cardId = cardId,
-        newQty = newQty,
+        quantity = quantity,
         hasIt = hasIt,
     )
 

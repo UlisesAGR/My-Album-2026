@@ -32,11 +32,11 @@ class AlbumRepositoryImpl @Inject constructor(
 
     override suspend fun updateCardStatus(
         cardId: String,
-        newQty: Int,
+        quantity: Int,
         hasIt: Boolean,
     ) = albumLocalDataStore.updateCardStatus(
         cardId = cardId,
-        newQty = newQty,
+        quantity = quantity,
         hasIt = hasIt,
     )
 

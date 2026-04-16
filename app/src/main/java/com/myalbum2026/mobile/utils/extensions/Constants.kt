@@ -12,4 +12,5 @@ object Constants {
     const val BTN_NORMAL_DEFAULT_HEIGHT = 64
     const val BTN_WITHOUT_BORDERS_DEFAULT_HEIGHT = 54
     const val DIALOG_CONNECTION = "DIALOG_CONNECTION"
+    const val DELAY_QUANTITY = 50L
 }

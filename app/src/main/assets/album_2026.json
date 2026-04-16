@@ -28,8 +28,8 @@
         "logoUrl": "https://mi-servidor.com/logos/mex.png",
         "totalCards": 20,
         "cards": [
-          { "id": "MEX-01", "number": 1, "type": "TEAM_PHOTO" },
-          { "id": "MEX-02", "number": 2, "type": "LOGO" },
+          { "id": "MEX-01", "number": 1, "type": "TEAM_PHOTO", "position": "TEAM" },
+          { "id": "MEX-02", "number": 2, "type": "LOGO", "position": "LOGO" },
           { "id": "MEX-03", "number": 3, "type": "PLAYER", "position": "POR" },
           { "id": "MEX-04", "number": 4, "type": "PLAYER", "position": "DEF" },
           { "id": "MEX-05", "number": 5, "type": "PLAYER", "position": "DEF" },

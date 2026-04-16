@@ -32,10 +32,10 @@ interface AlbumDao {
         insertCards(cards)
     }
 
-    @Query("UPDATE cards SET quantity = :newQty, obtained = :hasIt WHERE id = :cardId")
+    @Query("UPDATE cards SET quantity = :quantity, obtained = :hasIt WHERE id = :cardId")
     suspend fun updateCardStatus(
         cardId: String,
-        newQty: Int,
+        quantity: Int,
         hasIt: Boolean,
     )
 

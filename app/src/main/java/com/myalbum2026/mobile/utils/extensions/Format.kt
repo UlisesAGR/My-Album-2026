@@ -12,11 +12,11 @@ import java.util.Locale
 @SuppressLint("ConstantLocale")
 private val dateFormatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
 
-fun Int.intToString(): String = toString()
-
 fun EditText.getInt(): Int = text.toString().toIntOrNull() ?: 0
 
 fun EditText.getString(): String = text.toString()
 
 fun String.equalsIgnoreCase(other: String): Boolean =
     this.equals(other, ignoreCase = true)
+
+fun Int.intToString(): String = toString()
