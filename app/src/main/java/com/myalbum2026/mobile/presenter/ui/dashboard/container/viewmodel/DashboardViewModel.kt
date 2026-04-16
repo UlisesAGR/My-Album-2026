@@ -42,7 +42,6 @@ class DashboardViewModel @Inject constructor(
 
     private fun checkInfoShowed() = viewModelScope.launch {
         _dashboardUiState.update { state -> state.copy(isLoading = true) }
-        delay(DELAY)
         val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: true
         if (isFirstTime) {
             _dashboardUiEvent.emit(DashboardUiEvent.ShowInfoDialog)
@@ -62,12 +61,9 @@ class DashboardViewModel @Inject constructor(
             }
             .collect { items ->
                 val items = getItems(teamsWithCards = items)
-                _dashboardUiState.update { state ->
-                    state.copy(
-                        items = items,
-                        isLoading = false,
-                    )
-                }
+                _dashboardUiState.update { state -> state.copy(items = items) }
+                delay(DELAY)
+                _dashboardUiState.update { state -> state.copy(isLoading = false) }
             }
     }
 

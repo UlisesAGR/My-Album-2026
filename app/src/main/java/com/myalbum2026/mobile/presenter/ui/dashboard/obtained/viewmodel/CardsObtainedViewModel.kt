@@ -40,7 +40,6 @@ class CardsObtainedViewModel @Inject constructor(
 
     fun getFullAlbum() = viewModelScope.launch {
         _cardsObtainedUiState.update { state -> state.copy(isLoading = true) }
-        delay(DELAY)
         getFullAlbumUseCase()
             .catch { exception ->
                 _cardsObtainedUiState.update { state -> state.copy(isLoading = false) }
@@ -48,12 +47,9 @@ class CardsObtainedViewModel @Inject constructor(
             }
             .collect { items ->
                 val items = getItems(teamsWithCards = items)
-                _cardsObtainedUiState.update { state ->
-                    state.copy(
-                        items = items,
-                        isLoading = false,
-                    )
-                }
+                _cardsObtainedUiState.update { state -> state.copy(items = items) }
+                delay(DELAY)
+                _cardsObtainedUiState.update { state -> state.copy(isLoading = false) }
             }
     }
 

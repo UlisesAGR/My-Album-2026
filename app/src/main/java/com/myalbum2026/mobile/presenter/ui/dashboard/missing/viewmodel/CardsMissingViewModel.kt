@@ -40,7 +40,6 @@ class CardsMissingViewModel @Inject constructor(
 
     fun getFullAlbum() = viewModelScope.launch {
         _cardsMissingUiState.update { state -> state.copy(isLoading = true) }
-        delay(DELAY)
         getFullAlbumUseCase()
             .catch { exception ->
                 _cardsMissingUiState.update { state -> state.copy(isLoading = false) }
@@ -48,12 +47,9 @@ class CardsMissingViewModel @Inject constructor(
             }
             .collect { items ->
                 val items = getItems(teamsWithCards = items)
-                _cardsMissingUiState.update { state ->
-                    state.copy(
-                        items = items,
-                        isLoading = false,
-                    )
-                }
+                _cardsMissingUiState.update { state -> state.copy(items = items) }
+                delay(DELAY)
+                _cardsMissingUiState.update { state -> state.copy(isLoading = false) }
             }
     }
 
