@@ -15,12 +15,13 @@ lib-retrofit = '3.0.0'
 lib-datastore = "1.2.1"
 lib_room = "2.8.4"
 lib-firebase-core = "21.1.1"
-lib-firebase = "34.11.0"
+lib-firebase = "34.12.0"
 lib-firebase-auth = "23.2.1"
 lib-firebase-crashlytics = "19.4.4"
 lib-firebase-analytics = "22.5.0"
 lib-firebase-firestore = "25.1.4"
 lib-firebase-messaging = "24.1.2"
+lib-play-services-ads = "25.2.0"
 # ui
 lib-appcompat = "1.7.1"
 lib-constraintlayout = "2.2.1"
@@ -47,7 +48,7 @@ plugin-kotlin = "2.1.0"
 plugin-hilt = '2.59.2'
 plugin-navigation = '2.9.7'
 plugin-googleServices = "4.4.4"
-plugin-googleCrashlytics = "3.0.6"
+plugin-googleCrashlytics = "3.0.7"
 plugin-ksp = '2.1.0-1.0.29'
 plugin-ktlint = "14.2.0"
 # debug
@@ -101,6 +102,7 @@ com-firebase-crashlytics = { group = "com.google.firebase", name = "firebase-cra
 com-firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx", version.ref = "lib-firebase-analytics" }
 com-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "lib-firebase-firestore" }
 com-firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "lib-firebase-messaging" }
+com-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "lib-play-services-ads" }
 
 # test
 test-junit = { module = 'junit:junit', version.ref = 'test-junit' }

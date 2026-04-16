@@ -98,6 +98,7 @@ dependencies {
     implementation(libs.nl.konfetti)
     implementation(libs.lottie.android)
     implementation(libs.bundles.com.firebase.libs)
+    implementation(libs.com.services.ads)
     // Test
     testImplementation(libs.test.junit)
     testImplementation(libs.test.coroutines)

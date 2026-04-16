@@ -8,7 +8,7 @@ import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.data.model.TeamEntity
 
 sealed class CardsMissingItem {
-    data class Publicity(val url: String) : CardsMissingItem()
+    data object Publicity : CardsMissingItem()
     data class Progress(
         val percentage: String,
         val total: String,

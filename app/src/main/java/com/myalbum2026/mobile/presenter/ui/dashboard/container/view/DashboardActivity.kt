@@ -6,6 +6,7 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.container.view
 
 import android.view.Gravity
 import androidx.activity.viewModels
+import com.google.android.gms.ads.AdRequest
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
@@ -32,6 +33,7 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
     override fun init() {
         setToolbar()
         setText()
+        setBanner()
         setListeners()
         flows()
     }
@@ -49,6 +51,10 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
             R.string.version_value,
             getVersionName(),
         )
+    }
+
+    private fun setBanner() {
+        binding.bannerPublicity.loadAd(AdRequest.Builder().build())
     }
 
     private fun setListeners() = with(binding) {

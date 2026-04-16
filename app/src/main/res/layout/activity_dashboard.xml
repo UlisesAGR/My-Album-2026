@@ -112,6 +112,18 @@
 
         </com.google.android.material.card.MaterialCardView>
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerPublicity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_16"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            app:layout_constraintBottom_toTopOf="@+id/versionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:id="@+id/versionTextView"
             style="@style/text_small.bold"

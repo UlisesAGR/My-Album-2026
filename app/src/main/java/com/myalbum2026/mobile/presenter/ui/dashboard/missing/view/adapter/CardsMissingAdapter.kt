@@ -73,9 +73,7 @@ class CardsMissingAdapter(
     ) {
         when (val item = items[position]) {
             is CardsMissingItem.Publicity -> {
-                (holder as PublicityViewHolder).render(
-                    item = item,
-                )
+                (holder as PublicityViewHolder).render()
             }
             is CardsMissingItem.Progress -> {
                 (holder as ProgressViewHolder).render(

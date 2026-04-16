@@ -26,7 +26,7 @@ class CardsMissingViewModel @Inject constructor(
         .map { teamsWithCards ->
             val items = mutableListOf<CardsMissingItem>()
 
-            items.add(CardsMissingItem.Publicity(url = "https://tu-link-de-ads.com"))
+            items.add(CardsMissingItem.Publicity)
 
             val totalCards = teamsWithCards.sumOf { it.team.totalCards }
             val obtainedCards = teamsWithCards.sumOf { list ->
