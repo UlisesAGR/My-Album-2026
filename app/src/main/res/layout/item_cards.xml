@@ -21,7 +21,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:contentDescription="@null"
-            android:src="@drawable/il_flag_brazil" />
+            android:src="@drawable/il_flag_europe" />
 
         <TextView
             android:id="@+id/teamNameTextView"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_12"
             android:textSize="18sp"
-            tools:text="México" />
+            tools:text="Europe" />
 
         <View
             android:layout_width="0dp"

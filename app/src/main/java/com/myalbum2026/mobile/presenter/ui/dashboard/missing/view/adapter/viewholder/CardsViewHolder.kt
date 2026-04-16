@@ -49,6 +49,6 @@ class CardsViewHolder(
             "drawable",
             context.packageName,
         )
-        logoImageView.setImageResource(if (resId != 0) resId else R.drawable.il_flag_brazil)
+        logoImageView.setImageResource(if (resId != 0) resId else R.drawable.il_flag_europe)
     }
 }

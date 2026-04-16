@@ -7,5 +7,5 @@ package com.myalbum2026.mobile.domain.model
 import com.google.gson.annotations.SerializedName
 
 data class AlbumDataResponse(
-    @SerializedName("sections") val sections: SectionsRemoteEntity,
+    @SerializedName("sections") val sections: List<TeamRemoteEntity>,
 )

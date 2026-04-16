@@ -19,7 +19,7 @@
     <color name="md_theme_tertiaryContainer">#E2EF92</color>
     <color name="md_theme_onTertiaryContainer">#1A1E00</color>
     <!-- Light error colors -->
-    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_error">#FA4C4C</color>
     <color name="md_theme_errorContainer">#FFFFFF</color>
     <color name="md_theme_onError">#FFDAD6</color>
     <color name="md_theme_onErrorContainer">#410002</color>
@@ -53,19 +53,57 @@
     <color name="bottom_nav_color">#FBF8FF</color>
     <!-- Countries colors -->
     <color name="special_background">#CDCDCD</color>
-    <color name="usa_background">#CDCDCD</color>
-    <color name="canada_background">#BF0A30</color>
-    <color name="mexico_background">#006847</color>
-    <color name="argentina_background">#74ABDF</color>
-    <color name="spain_background">#AD1519</color>
-    <color name="france_background">#323E95</color>
-    <color name="germany_background">#444444</color>
-    <color name="japan_background">#6AA6FF</color>
-    <color name="belgium_background">#EF3340</color>
-    <color name="croatia_background">#171796</color>
-    <color name="brazil_background">#009440</color>
-    <color name="morocco_background">#C2272D</color>
-    <color name="netherlands_background">#FF653F</color>
-    <color name="england_background">#CDCDCD</color>
-    <color name="korea_background">#CDCDCD</color>
+
+    <color name="algeria_background">#E0F5C7</color>
+    <color name="argentina_background">#C7F5F5</color>
+    <color name="australia_background">#C7CFF5</color>
+    <color name="austria_background">#F5C7C7</color>
+    <color name="belgium_background">#F5C7C7</color>
+    <color name="bosnia_and_herzegovina_background">#C7CDF5</color>
+    <color name="brazil_background">#E0F5C7</color>
+    <color name="canada_background">#F5C7C7</color>
+    <color name="cape_verde_background">#C7D6F5</color>
+    <color name="colombia_background">#F5EDC7</color>
+    <color name="congo_background">#C7ECF5</color>
+    <color name="croatia_background">#C7CCF5</color>
+    <color name="curacao_background">#C7D8F5</color>
+    <color name="czech_republic_background">#F5C7C7</color>
+    <color name="ecuador_background">#F5EFC7</color>
+    <color name="egypt_background">#999999</color>
+    <color name="england_background">#EDEDED</color>
+    <color name="france_background">#C7D4F5</color>
+    <color name="germany_background">#999999</color>
+    <color name="ghana_background">#CAF5C7</color>
+    <color name="haiti_background">#C7D1F5</color>
+    <color name="iran_background">#CEF5C7</color>
+    <color name="iraq_background">#999999</color>
+    <color name="ivory_coast_background">#F5DCC7</color>
+    <color name="japan_background">#EDEDED</color>
+    <color name="jordan_background">#999999</color>
+    <color name="korea_background">#EDEDED</color>
+    <color name="mexico_background">#D6F5C7</color>
+    <color name="morocco_background">#F5C7C7</color>
+    <color name="netherlands_background">#F5DCC7</color>
+    <color name="new_zealand_background">#C7D9F5</color>
+    <color name="norway_background">#F5C7C7</color>
+    <color name="panama_background">#EDEDED</color>
+    <color name="paraguay_background">#C7DCF5</color>
+    <color name="portugal_background">#F5C7C7</color>
+    <color name="qatar_background">#EDEDED</color>
+    <color name="saudi_arabia_background">#C9F5C7</color>
+    <color name="scotland_background">#C7ECF5</color>
+    <color name="senegal_background">#E7F5C7</color>
+    <color name="south_africa_background">#999999</color>
+    <color name="spain_background">#F5C7C7</color>
+    <color name="sweden_background">#C7EAF5</color>
+    <color name="switzerland_background">#F5C7C7</color>
+    <color name="tunisia_background">#F5C7C7</color>
+    <color name="turkey_background">#F5C7C7</color>
+    <color name="uruguay_background">#EDEDED</color>
+    <color name="usa_background">#C7EAF5</color>
+    <color name="uzbekistan_background">#C7F5E5</color>
+
+    <color name="time_line_background">#CDCDCD</color>
+    <color name="coca_cola_background">#F5C7C7</color>
+
 </resources>

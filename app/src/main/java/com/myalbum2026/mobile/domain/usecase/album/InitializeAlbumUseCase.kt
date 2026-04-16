@@ -20,24 +20,22 @@ class InitializeAlbumUseCase @Inject constructor(
     suspend operator fun invoke(): Flow<Unit> {
         val jsonString = assetManager.open("album_2026.json")
             .bufferedReader()
-            .use { it.readText() }
+            .use { json -> json.readText() }
 
         val response = gson.fromJson(jsonString, AlbumDataResponse::class.java)
         val sections = response.sections
 
-        val teamEntities = sections.teams.map { team -> team.toTeamEntity() }
+        val teamEntities = sections.map { team -> team.toTeamEntity() }
 
         val allCards = mutableListOf<CardEntity>()
 
-        sections.teams.forEach { team ->
-            allCards.addAll(team.cards.map { it.toCardEntity(section = "teams", teamId = team.teamId) })
+        sections.forEach { team ->
+            allCards.addAll(
+                elements = team.cards.map { card ->
+                    card.toCardEntity(section = "teams", teamId = team.teamId)
+                }
+            )
         }
-
-        allCards.addAll(sections.specials.map { it.toCardEntity(section = "specials") })
-
-        allCards.addAll(sections.timeline.map { it.toCardEntity(section = "timeline") })
-
-        allCards.addAll(sections.coca.map { it.toCardEntity(section = "coca") })
 
         return repository.insertFullAlbum(
             teams = teamEntities,

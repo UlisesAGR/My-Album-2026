@@ -40,6 +40,16 @@ interface AlbumDao {
     )
 
     @Transaction
-    @Query("SELECT * FROM teams ORDER BY id ASC")
+    @Query("""
+    SELECT * FROM teams 
+    ORDER BY 
+        CASE 
+            WHEN id = 'SPECIALS' THEN 1 
+            WHEN id = 'TIMELINE' THEN 3
+            WHEN id = 'COCA-COLA' THEN 4
+            ELSE 2 
+        END, 
+        countryName ASC
+""")
     fun getFullAlbum(): Flow<List<TeamWithCards>>
 }
