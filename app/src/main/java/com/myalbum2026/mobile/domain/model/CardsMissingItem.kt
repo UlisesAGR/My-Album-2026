@@ -13,6 +13,7 @@ sealed class CardsMissingItem {
         val percentage: String,
         val total: String,
         val missing: String,
+        val obtained: String,
     ) : CardsMissingItem()
     data class Cards(
         val team: TeamEntity,

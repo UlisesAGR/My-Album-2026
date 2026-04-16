@@ -8,10 +8,12 @@ import android.view.Gravity
 import androidx.activity.viewModels
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
+import com.myalbum2026.mobile.domain.model.CardsMissingItem
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardViewModel
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.CardsMissingActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view.CardsObtainedActivity
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
+import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,6 +30,7 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         setToolbar()
         setText()
         setListeners()
+        flows()
     }
 
     private fun setToolbar() {
@@ -52,6 +55,27 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         cardsMissingCustomButton.setOnClickListener {
             goToCardsMissing()
         }
+    }
+
+    private fun flows() {
+        collect(dashboardViewModel.uiState) { items ->
+            val progress = items.filterIsInstance<CardsMissingItem.Progress>().firstOrNull()
+            progress?.let { progress ->
+                updateProgressUI(progress = progress)
+            }
+        }
+    }
+
+    private fun updateProgressUI(progress: CardsMissingItem.Progress) = with(binding) {
+        myProgressObtainedTextView.text = getString(
+            R.string.progress_obtained_format,
+            progress.obtained,
+            progress.total,
+        )
+        myProgressMissingTextView.text = getString(
+            R.string.progress_missing_format,
+            progress.missing,
+        )
     }
 
     private fun goToCardsObtained() {

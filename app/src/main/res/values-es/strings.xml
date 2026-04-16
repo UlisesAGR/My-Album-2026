@@ -6,8 +6,10 @@
     <string name="version_value" translatable="false">Versión %1$s</string>
     <string name="cards_value" translatable="false">%1$d Stampas</string>
     <string name="title_quantity_value" translatable="false">%1$s - %2$d</string>
+    <string name="progress_obtained_format">Estampas obtenidas: %1$s de %2$s</string>
+    <string name="progress_missing_format">Estampas faltantes: %1$s</string>
     <!-- App -->
-    <string name="app_name" translatable="false">Mi Álbum 2026</string>
+    <string name="app_name" translatable="false">My Album 2026</string>
     <string name="idle" translatable="false">en espera</string>
     <string name="other" translatable="false">otro</string>
     <string name="n_a" translatable="false">N/A</string>
@@ -29,12 +31,12 @@
     <!-- Cards -->
     <string name="cards_missing">Faltantes</string>
     <string name="your_progress">Tu progreso</string>
-    <string name="total_cards">Total de Stampas</string>
-    <string name="missing_cards">Stampas faltantes</string>
-    <string name="cards_obtained">Stampas obtenidas</string>
+    <string name="total_cards">Total de estampas</string>
+    <string name="missing_cards">Estampas faltantes</string>
+    <string name="cards_obtained">Estampas obtenidas</string>
     <string name="my_collection_2626">Mi colección 2026</string>
     <string name="my_progress">Mi progreso</string>
-    <string name="enter_the_number_of_stamps_you_have">Ingresa el número de Stampas que tienes</string>
+    <string name="enter_the_number_of_stamps_you_have">Ingresa el número de estampas que tienes</string>
     <string name="cancel">Cancelar</string>
     <string name="accept">Aceptar</string>
 </resources>

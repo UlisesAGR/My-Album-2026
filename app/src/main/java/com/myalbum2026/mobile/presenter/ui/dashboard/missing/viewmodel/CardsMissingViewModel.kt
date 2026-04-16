@@ -26,36 +26,34 @@ class CardsMissingViewModel @Inject constructor(
         .map { teamsWithCards ->
             val items = mutableListOf<CardsMissingItem>()
 
-            // 2. Agregamos publicidad opcional
             items.add(CardsMissingItem.Publicity(url = "https://tu-link-de-ads.com"))
 
-            // 1. Agregamos el item de Progreso al inicio
             val totalCards = teamsWithCards.sumOf { it.team.totalCards }
             val obtainedCards = teamsWithCards.sumOf { list ->
                 list.cards.count { it.obtained }
             }
             val missingCount = totalCards - obtainedCards
             val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
+            val obtained = totalCards - missingCount
 
             items.add(
                 CardsMissingItem.Progress(
                     percentage = "$percentage%",
                     total = totalCards.toString(),
-                    missing = missingCount.toString()
+                    missing = missingCount.toString(),
+                    obtained = obtained.toString(),
                 )
             )
 
-            // 3. Mapeamos cada equipo que tenga cartas faltantes
             val teamItems = teamsWithCards.mapNotNull { teamWithCards ->
                 val missingInTeam = teamWithCards.cards.filter { !it.obtained }
-
                 if (missingInTeam.isNotEmpty()) {
                     CardsMissingItem.Cards(
                         team = teamWithCards.team,
                         dates = missingInTeam
                     )
                 } else {
-                    null // Si el equipo está completo, no lo mostramos en "Faltantes"
+                    null
                 }
             }
 
