@@ -5,6 +5,7 @@
 package com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view
 
 import android.view.Gravity
+import androidx.activity.addCallback
 import androidx.activity.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -33,6 +34,7 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
 
     override fun init() {
         setToolbar()
+        setListeners()
         setCardsMissingAdapter()
         setCardsMissingRecyclerView()
         flows()
@@ -48,6 +50,16 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
                 goToDashboard()
             },
         )
+    }
+
+    private fun setListeners() {
+        setOnBackListener()
+    }
+
+    private fun setOnBackListener() {
+        onBackPressedDispatcher.addCallback(owner = this) {
+            goToDashboard()
+        }
     }
 
     private fun setCardsMissingAdapter() {
