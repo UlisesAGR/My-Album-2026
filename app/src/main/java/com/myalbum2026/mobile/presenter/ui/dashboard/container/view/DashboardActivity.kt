@@ -10,6 +10,7 @@ import com.google.android.gms.ads.AdRequest
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardViewModel
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.CardsMissingActivity
@@ -70,6 +71,7 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
 
     private fun setFlows() {
         collect(dashboardViewModel.dashboardUiState) { state ->
+            statusLoading(isLoading = state.isLoading)
             updateProgress(items = state.items)
         }
         collect(dashboardViewModel.dashboardUiEvent) { state ->
@@ -81,6 +83,11 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
                 }
             }
         }
+    }
+
+    private fun statusLoading(isLoading: Boolean) {
+        if (isLoading) LoadingDialog.show(supportFragmentManager)
+        else LoadingDialog.dismiss(supportFragmentManager)
     }
 
     private fun updateProgress(

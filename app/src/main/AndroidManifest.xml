@@ -16,17 +16,17 @@
         android:theme="@style/Theme.MyAlbum2026">
 
         <activity
-            android:name=".presenter.ui.dashboard.container.view.DashboardActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MyAlbum2026"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity
             android:name=".presenter.ui.dashboard.missing.view.CardsMissingActivity"
             android:exported="false"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.dashboard.obtained.view.CardsObtainedActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presenter.ui.dashboard.container.view.DashboardActivity"
             android:exported="false"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />

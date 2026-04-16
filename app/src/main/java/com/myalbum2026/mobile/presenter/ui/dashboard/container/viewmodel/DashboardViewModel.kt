@@ -11,8 +11,10 @@ import com.myalbum2026.mobile.domain.model.CardsMissingItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.user.IsInfoShowedUseCase
 import com.myalbum2026.mobile.domain.usecase.user.SetIsInfoShowedUseCase
+import com.myalbum2026.mobile.utils.extensions.Constants.DELAY
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -39,6 +41,8 @@ class DashboardViewModel @Inject constructor(
     }
 
     private fun checkInfoShowed() = viewModelScope.launch {
+        _dashboardUiState.update { state -> state.copy(isLoading = true) }
+        delay(DELAY)
         val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: true
         if (isFirstTime) {
             _dashboardUiEvent.emit(DashboardUiEvent.ShowInfoDialog)
@@ -53,11 +57,17 @@ class DashboardViewModel @Inject constructor(
     fun getFullAlbum() = viewModelScope.launch {
         getFullAlbumUseCase()
             .catch { exception ->
+                _dashboardUiState.update { state -> state.copy(isLoading = false) }
                 _dashboardUiEvent.emit(DashboardUiEvent.ShowError(exception = exception))
             }
             .collect { items ->
                 val items = getItems(teamsWithCards = items)
-                _dashboardUiState.update { state -> state.copy(items = items) }
+                _dashboardUiState.update { state ->
+                    state.copy(
+                        items = items,
+                        isLoading = false,
+                    )
+                }
             }
     }
 

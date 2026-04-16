@@ -39,8 +39,6 @@ class CardsMissingViewModel @Inject constructor(
     }
 
     fun getFullAlbum() = viewModelScope.launch {
-        resetUiState()
-        resetUiEvent()
         _cardsMissingUiState.update { state -> state.copy(isLoading = true) }
         delay(DELAY)
         getFullAlbumUseCase()
@@ -50,9 +48,10 @@ class CardsMissingViewModel @Inject constructor(
             }
             .collect { items ->
                 val items = getItems(teamsWithCards = items)
-                _cardsMissingUiState.update { state -> state.copy(
-                        isLoading = false,
+                _cardsMissingUiState.update { state ->
+                    state.copy(
                         items = items,
+                        isLoading = false,
                     )
                 }
             }
@@ -110,13 +109,5 @@ class CardsMissingViewModel @Inject constructor(
         }.collect {
             _cardsMissingUiEvent.emit(CardsMissingUiEvent.CardUpdated)
         }
-    }
-
-    private fun resetUiState() {
-        _cardsMissingUiState.value = CardsMissingUiState()
-    }
-
-    private fun resetUiEvent() {
-        _cardsMissingUiEvent.value = CardsMissingUiEvent.Idle
     }
 }

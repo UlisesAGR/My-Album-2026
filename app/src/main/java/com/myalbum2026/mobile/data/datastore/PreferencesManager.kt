@@ -35,7 +35,7 @@ class PreferencesManager @Inject constructor(
                 throw exception
             }
         }.map { preferences ->
-            preferences[PreferencesKeys.IS_FIRST_TIME] ?: true
+            preferences[PreferencesKeys.IS_FIRST_TIME] ?: false
         }
 
     suspend fun setFirstTime(isFirstTime: Boolean) {
@@ -52,7 +52,7 @@ class PreferencesManager @Inject constructor(
                 throw exception
             }
         }.map { preferences ->
-            preferences[PreferencesKeys.IS_INFO_SHOWED] ?: true
+            preferences[PreferencesKeys.IS_INFO_SHOWED] ?: false
         }
 
     suspend fun setInfoShowed(isInfoShowed: Boolean) {

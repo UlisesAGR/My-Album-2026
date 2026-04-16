@@ -32,8 +32,8 @@ class SplashViewModel @Inject constructor(
 
     private fun checkInitialState() = viewModelScope.launch {
         resetUiEvent()
-        val isFirstTime = isFirstTimeUseCase().firstOrNull() ?: true
-        if (isFirstTime) {
+        val isFirstTime = isFirstTimeUseCase().firstOrNull() ?: false
+        if (!isFirstTime) {
             initializeAlbum()
         } else {
             _splashUiEvent.emit(SplashUiEvent.GoToDashboard)

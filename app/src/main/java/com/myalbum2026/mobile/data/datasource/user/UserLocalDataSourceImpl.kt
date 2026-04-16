@@ -16,11 +16,11 @@ class UserLocalDataSourceImpl @Inject constructor(
         preferencesManager.isFirstTime
 
     override suspend fun setFirstTime() =
-        preferencesManager.setFirstTime(isFirstTime = false)
+        preferencesManager.setFirstTime(isFirstTime = true)
 
     override fun isInfoShowed(): Flow<Boolean> =
         preferencesManager.isInfoShowed
 
     override suspend fun setInfoShowed() =
-        preferencesManager.setInfoShowed(isInfoShowed = false)
+        preferencesManager.setInfoShowed(isInfoShowed = true)
 }

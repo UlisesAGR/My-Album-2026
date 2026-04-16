@@ -50,8 +50,8 @@ class CardsObtainedViewModel @Inject constructor(
                 val items = getItems(teamsWithCards = items)
                 _cardsObtainedUiState.update { state ->
                     state.copy(
-                        isLoading = false,
                         items = items,
+                        isLoading = false,
                     )
                 }
             }
