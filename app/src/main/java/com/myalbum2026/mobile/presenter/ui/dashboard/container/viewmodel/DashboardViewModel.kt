@@ -42,7 +42,7 @@ class DashboardViewModel @Inject constructor(
 
     private fun checkInfoShowed() = viewModelScope.launch {
         _dashboardUiState.update { state -> state.copy(isLoading = true) }
-        val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: true
+        val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: false
         if (isFirstTime) {
             _dashboardUiEvent.emit(DashboardUiEvent.ShowInfoDialog)
         }

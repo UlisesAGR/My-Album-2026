@@ -40,13 +40,14 @@
                 android:clipToPadding="false"
                 android:nestedScrollingEnabled="false"
                 android:overScrollMode="never"
+                android:paddingHorizontal="@dimen/padding_8"
                 android:paddingTop="@dimen/padding_16"
                 android:paddingBottom="@dimen/padding_64"
                 android:scrollbars="none"
                 android:visibility="visible"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 tools:itemCount="1"
-                tools:listitem="@layout/item_cards"
+                tools:listitem="@layout/item_card_single"
                 tools:visibility="visible" />
 
             <include

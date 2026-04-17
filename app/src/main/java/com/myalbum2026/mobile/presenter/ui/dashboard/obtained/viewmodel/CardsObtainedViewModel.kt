@@ -56,39 +56,40 @@ class CardsObtainedViewModel @Inject constructor(
     private fun getItems(
         teamsWithCards: List<TeamWithCards>,
     ): MutableList<CardsMissingItem> {
+
         val items = mutableListOf<CardsMissingItem>()
 
         items.add(CardsMissingItem.Publicity)
 
         val totalCards = teamsWithCards.sumOf { it.team.totalCards }
-        val obtainedCards = teamsWithCards.sumOf { list ->
-            list.cards.count { it.obtained }
-        }
-
+        val obtainedCards = teamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
         val missingCount = totalCards - obtainedCards
         val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
-        val obtained = totalCards - missingCount
 
         items.add(
             CardsMissingItem.Progress(
                 percentage = "$percentage%",
                 total = totalCards.toString(),
                 missing = missingCount.toString(),
-                obtained = obtained.toString(),
+                obtained = (totalCards - missingCount).toString(),
             )
         )
 
-        val teamItems = teamsWithCards.mapNotNull { teamWithCards ->
+        teamsWithCards.forEach { teamWithCards ->
             val missingInTeam = teamWithCards.cards.filter { it.obtained }
             if (missingInTeam.isNotEmpty()) {
-                CardsMissingItem.Cards(
-                    team = teamWithCards.team,
-                    dates = missingInTeam,
+                items.add(
+                    CardsMissingItem.TeamHeader(
+                        team = teamWithCards.team,
+                        count = missingInTeam.size,
+                    )
                 )
-            } else null
+                missingInTeam.forEach { cardEntity ->
+                    items.add(CardsMissingItem.Card(card = cardEntity))
+                }
+            }
         }
 
-        items.addAll(elements = teamItems)
         return items
     }
 

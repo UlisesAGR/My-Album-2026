@@ -15,8 +15,10 @@ class ProgressViewHolder(
     fun render(item: CardsMissingItem.Progress) = with(binding) {
         with(item) {
             tvPercentage.text = percentage
-            val progressInt = percentage.replace("%", "").toIntOrNull() ?: 0
-            progressIndicator.setProgress(progressInt, true)
+            progressIndicator.setProgress(
+                percentage.replace("%", "").toIntOrNull() ?: 0,
+                true,
+            )
             tvTotalCards.text = total
             tvMissingCards.text = missing
         }

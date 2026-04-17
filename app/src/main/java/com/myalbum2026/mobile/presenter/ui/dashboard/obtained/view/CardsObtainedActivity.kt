@@ -7,6 +7,7 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view
 import android.view.Gravity
 import androidx.activity.addCallback
 import androidx.activity.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ActivityCardsObtainedBinding
@@ -67,15 +68,25 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
 
     private fun setCardsMissingAdapter() {
         cardsMissingAdapter = CardsMissingAdapter(
-            onCardsItemClick = { card ->
+            onCardItemClick = { card ->
                 showQuantityDialog(card = card)
             },
         )
     }
 
     private fun setCardsMissingRecyclerView() {
+        val gridLayoutManager = GridLayoutManager(this, 3)
+        gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+            override fun getSpanSize(position: Int): Int =
+                when (cardsMissingAdapter.getItemViewType(position)) {
+                    0, 1, 2 -> 3
+                    3 -> 1
+                    else -> 3
+                }
+        }
         binding.cardsObtainedRecyclerView.apply {
             setHasFixedSize(true)
+            layoutManager = gridLayoutManager
             adapter = cardsMissingAdapter
         }
     }

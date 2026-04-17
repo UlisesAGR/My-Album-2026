@@ -9,63 +9,80 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.data.model.CardEntity
-import com.myalbum2026.mobile.databinding.ItemCardsBinding
+import com.myalbum2026.mobile.databinding.ItemCardSingleBinding
 import com.myalbum2026.mobile.databinding.ItemProgressBinding
 import com.myalbum2026.mobile.databinding.ItemPublicityBinding
+import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
-import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.CardsViewHolder
+import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.CardViewHolder
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.ProgressViewHolder
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.PublicityViewHolder
+import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.TeamHeaderViewHolder
 
 class CardsMissingAdapter(
     private var items: List<CardsMissingItem> = emptyList(),
-    val onCardsItemClick: (CardEntity) -> Unit = {},
+    val onCardItemClick: (CardEntity) -> Unit = {},
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
         private const val TYPE_PUBLICITY = 0
         private const val TYPE_PROGRESS = 1
-        private const val TYPE_CARDS = 2
+        private const val TYPE_TEAM_HEADER = 2
+        private const val TYPE_CARD = 3
     }
 
     override fun getItemViewType(position: Int): Int =
         when (items[position]) {
             is CardsMissingItem.Publicity -> TYPE_PUBLICITY
             is CardsMissingItem.Progress -> TYPE_PROGRESS
-            is CardsMissingItem.Cards -> TYPE_CARDS
+            is CardsMissingItem.TeamHeader -> TYPE_TEAM_HEADER
+            is CardsMissingItem.Card -> TYPE_CARD
         }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,
-    ): RecyclerView.ViewHolder =
-        when(viewType) {
-            TYPE_PUBLICITY -> PublicityViewHolder(
-                binding = ItemPublicityBinding.inflate(
-                    LayoutInflater.from(parent.context),
-                    parent,
-                    false,
+    ): RecyclerView.ViewHolder {
+        val inflater = LayoutInflater.from(parent.context)
+        return when(viewType) {
+            TYPE_PUBLICITY -> {
+                PublicityViewHolder(
+                    binding = ItemPublicityBinding.inflate(
+                        inflater,
+                        parent,
+                        false,
+                    )
                 )
-            )
+            }
             TYPE_PROGRESS -> {
                 ProgressViewHolder(
                     binding = ItemProgressBinding.inflate(
-                        LayoutInflater.from(parent.context),
+                        inflater,
                         parent,
                         false,
                     ),
                 )
             }
+            TYPE_TEAM_HEADER -> {
+                TeamHeaderViewHolder(
+                    binding = ItemTeamHeaderBinding.inflate(
+                        inflater,
+                        parent,
+                        false,
+                    )
+                )
+            }
             else -> {
-                CardsViewHolder(
-                    binding = ItemCardsBinding.inflate(
-                        LayoutInflater.from(parent.context),
+                CardViewHolder(
+                    binding = ItemCardSingleBinding.inflate(
+                        inflater,
                         parent,
                         false,
                     ),
                 )
             }
         }
+    }
 
     override fun onBindViewHolder(
         holder: RecyclerView.ViewHolder,
@@ -80,10 +97,13 @@ class CardsMissingAdapter(
                     item = item,
                 )
             }
-            is CardsMissingItem.Cards -> {
-                (holder as CardsViewHolder).render(
-                    item = item,
-                    onCardsItemClick = onCardsItemClick,
+            is CardsMissingItem.TeamHeader -> {
+                (holder as TeamHeaderViewHolder).render(item)
+            }
+            is CardsMissingItem.Card -> {
+                (holder as CardViewHolder).render(
+                    card = item.card,
+                    onCardItemClick = onCardItemClick,
                 )
             }
         }
