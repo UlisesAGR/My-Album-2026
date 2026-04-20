@@ -12,9 +12,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.myalbum2026.mobile.presenter.dialog.internet.InternetConnectionDialog
+import com.myalbum2026.mobile.presenter.widget.toolbar.CustomToolbar
 import com.myalbum2026.mobile.utils.extensions.Constants.DIALOG_CONNECTION
 import com.myalbum2026.mobile.utils.network.isInternetAvailable
-import com.myalbum2026.mobile.presenter.widget.toolbar.CustomToolbar
 
 abstract class BaseFragment<VB: ViewBinding>: Fragment() {
 
@@ -31,11 +31,7 @@ abstract class BaseFragment<VB: ViewBinding>: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        validateInternetConnection(
-            haveInternet = {
-                init()
-            },
-        )
+        init()
     }
 
     override fun onDestroyView() {

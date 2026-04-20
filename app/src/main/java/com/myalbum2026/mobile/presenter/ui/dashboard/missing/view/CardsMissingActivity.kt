@@ -21,6 +21,7 @@ import com.myalbum2026.mobile.presenter.ui.dashboard.missing.viewmodel.CardsMiss
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.navigateTo
+import com.myalbum2026.mobile.utils.extensions.shareText
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
 import com.myalbum2026.mobile.utils.ui.toast
@@ -57,6 +58,9 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
     }
 
     private fun setListeners() {
+        binding.fabShareMissing.setOnClickListener {
+            handleShareAction()
+        }
         setOnBackListener()
     }
 
@@ -115,6 +119,22 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
     private fun setItems(items: MutableList<CardsMissingItem>) {
         if (items.isNotEmpty()) {
             cardsMissingAdapter.updateItems(items = items)
+        }
+    }
+
+    private fun handleShareAction() {
+        val message = cardsMissingViewModel.getMissingCardsFormattedText(
+            title = getString(R.string.cards_missing),
+        )
+        if (message.isNotEmpty()) {
+            shareText(
+                message = message,
+                onError = {
+                    toast(message = getString(R.string.error_share_missing_cards))
+                },
+            )
+        } else {
+            toast(message = getString(R.string.no_missing_cards))
         }
     }
 

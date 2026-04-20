@@ -43,4 +43,7 @@
     <string name="accept">Accept</string>
     <string name="important">IMPORTANT</string>
     <string name="if_you_delete_your_app_you_will_lose_your_album_progress">If you delete your app, you will lose your album progress</string>
+    <string name="share_with">Share my missing cards</string>
+    <string name="no_missing_cards">Congratulations! You have no missing stickers</string>
+    <string name="error_share_missing_cards">Error share missing cards</string>
 </resources>

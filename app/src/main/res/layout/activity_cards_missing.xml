@@ -42,7 +42,7 @@
                 android:overScrollMode="never"
                 android:paddingHorizontal="@dimen/padding_8"
                 android:paddingTop="@dimen/padding_16"
-                android:paddingBottom="@dimen/padding_64"
+                android:paddingBottom="@dimen/padding_80"
                 android:scrollbars="none"
                 android:visibility="visible"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -56,6 +56,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fabShareMissing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/share_with"
+                android:textColor="@color/text_white_color"
+                app:backgroundTint="@color/md_theme_secondary"
+                app:icon="@drawable/ic_share"
+                app:iconTint="@color/text_white_color"
+                app:rippleColor="@color/text_white_color" />
 
         </FrameLayout>
 

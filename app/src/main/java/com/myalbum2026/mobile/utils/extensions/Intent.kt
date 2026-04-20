@@ -93,6 +93,18 @@ fun FragmentActivity.sendEmail(
     launchIntent(intent, onError)
 }
 
+fun FragmentActivity.shareText(
+    message: String,
+    onError: (String) -> Unit = {},
+) {
+    val intent = Intent().apply {
+        action = Intent.ACTION_SEND
+        putExtra(Intent.EXTRA_TEXT, message)
+        type = "text/plain"
+    }
+    launchIntent(intent, onError)
+}
+
 fun FragmentActivity.launchIntent(
     intent: Intent,
     onError: (String) -> Unit = {},

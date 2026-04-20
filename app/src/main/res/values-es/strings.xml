@@ -37,4 +37,7 @@
     <string name="accept">Aceptar</string>
     <string name="important">IMPORTANTE</string>
     <string name="if_you_delete_your_app_you_will_lose_your_album_progress">Si eliminas tu aplicacion perderas tu progreso de tu álbum</string>
+    <string name="share_with">Compartir mis estampas faltantes</string>
+    <string name="no_missing_cards">¡Felicidades! No tienes estampas faltantes</string>
+    <string name="error_share_missing_cards">Error al compartir tus estampas faltantes</string>
 </resources>

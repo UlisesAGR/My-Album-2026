@@ -110,4 +110,25 @@ class CardsMissingViewModel @Inject constructor(
             _cardsMissingUiEvent.emit(CardsMissingUiEvent.CardUpdated)
         }
     }
+
+    fun getMissingCardsFormattedText(title: String): String {
+        val items = _cardsMissingUiState.value.items
+        if (items.none { it is CardsMissingItem.Card }) return ""
+        return StringBuilder().apply {
+            append("⚽ *$title* ⚽\n\n")
+            var currentTeam = ""
+            items.forEach { item ->
+                when (item) {
+                    is CardsMissingItem.TeamHeader -> {
+                        currentTeam = item.team.countryName
+                        append("\n📍 *$currentTeam:*\n")
+                    }
+                    is CardsMissingItem.Card -> {
+                        append("${item.card.number}  ")
+                    }
+                    else -> Unit
+                }
+            }
+        }.toString()
+    }
 }
