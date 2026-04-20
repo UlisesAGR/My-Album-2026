@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.data.model.TeamWithCards
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.album.UpdateCardUseCase
@@ -80,8 +81,10 @@ class CardsObtainedViewModel @Inject constructor(
             if (missingInTeam.isNotEmpty()) {
                 items.add(
                     CardsMissingItem.TeamHeader(
+                        type = CardType.OBTAINED,
                         team = teamWithCards.team,
                         count = missingInTeam.size,
+                        total = teamWithCards.cards.size,
                     )
                 )
                 missingInTeam.forEach { cardEntity ->

@@ -16,8 +16,10 @@ sealed class CardsMissingItem {
         val obtained: String,
     ) : CardsMissingItem()
     data class TeamHeader(
+        val type: CardType,
         val team: TeamEntity,
         val count: Int,
+        val total: Int,
     ) : CardsMissingItem()
     data class Card(
         val card: CardEntity

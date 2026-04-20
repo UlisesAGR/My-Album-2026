@@ -40,6 +40,6 @@
         style="@style/text_medium.bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="15 cards" />
+        tools:text="10 / 20 Missing" />
 
 </LinearLayout>

@@ -4,7 +4,7 @@
 -->
 <resources>
     <string name="version_value" translatable="false">Version %1$s</string>
-    <string name="cards_value">%1$d cards</string>
+    <string name="header_format">%1$d / %2$d %3$s</string>
     <string name="title_quantity_value" translatable="false">%1$s - %2$d</string>
     <string name="progress_obtained_format">Cards obtained: %1$s of %2$s</string>
     <string name="progress_missing_format">Cards missing: %1$s</string>
@@ -29,11 +29,13 @@
     <string name="start">Start</string>
     <string name="welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do">Welcome to the app that helps you get organized to complete your 2026 album. We hope you achieve your goal and enjoy the experience as much as we do.</string>
     <!-- Cards -->
-    <string name="cards_missing">Cards Missing</string>
+    <string name="cards_missing">Cards missing</string>
+    <string name="missing">Missing</string>
     <string name="your_progress">Your progress</string>
     <string name="total_cards">Total cards</string>
     <string name="missing_cards">missing cards</string>
     <string name="cards_obtained">Cards obtained</string>
+    <string name="obtained">Obtained</string>
     <string name="my_collection_2626">My collection 2626</string>
     <string name="my_progress">My progress</string>
     <string name="enter_the_number_of_stamps_you_have">Enter the number of stamps you have</string>

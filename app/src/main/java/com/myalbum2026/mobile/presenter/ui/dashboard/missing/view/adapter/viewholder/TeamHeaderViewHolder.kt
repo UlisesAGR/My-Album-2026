@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.TeamEntity
 import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsMissingItem
 
 class TeamHeaderViewHolder(
@@ -22,10 +23,7 @@ class TeamHeaderViewHolder(
         with(item) {
             setImageFlag(team = team)
             teamNameTextView.text = team.countryName
-            teamCountTextView.text = context.getString(
-                R.string.cards_value,
-                count,
-            )
+            setHeaderText(item = this)
         }
     }
 
@@ -37,5 +35,16 @@ class TeamHeaderViewHolder(
             context.packageName,
         )
         logoImageView.setImageResource(if (resId != 0) resId else R.drawable.il_flag_europe)
+    }
+
+    private fun setHeaderText(item: CardsMissingItem.TeamHeader) = with(binding) {
+        with(item) {
+            teamCountTextView.text = context.getString(
+                R.string.header_format,
+                count,
+                total,
+                context.getString(if (type == CardType.OBTAINED) R.string.obtained else R.string.missing),
+            )
+        }
     }
 }

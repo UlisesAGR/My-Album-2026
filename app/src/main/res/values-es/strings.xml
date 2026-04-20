@@ -3,7 +3,7 @@
  - Copyright (c) 2026. All rights reserved
 -->
 <resources>
-    <string name="cards_value" translatable="false">%1$d Estampas</string>
+    <string name="header_format">%1$d / %2$d %3$s</string>
     <string name="progress_obtained_format">Estampas obtenidas: %1$s de %2$s</string>
     <string name="progress_missing_format">Estampas faltantes: %1$s</string>
     <!-- App -->
@@ -24,10 +24,12 @@
     <string name="welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do">Bienvenido a la app que te ayuda a organizarte para completar tu álbum 2026. Esperamos que logres tu objetivo y disfrutes de la experiencia tanto como nosotros.</string>
     <!-- Cards -->
     <string name="cards_missing">Faltantes</string>
+    <string name="missing">Faltantes</string>
     <string name="your_progress">Tu progreso</string>
     <string name="total_cards">Total de estampas</string>
     <string name="missing_cards">Estampas faltantes</string>
     <string name="cards_obtained">Estampas obtenidas</string>
+    <string name="obtained">Obtenidos</string>
     <string name="my_collection_2626">Mi colección 2026</string>
     <string name="my_progress">Mi progreso</string>
     <string name="enter_the_number_of_stamps_you_have">Ingresa el número de estampas que tienes</string>
