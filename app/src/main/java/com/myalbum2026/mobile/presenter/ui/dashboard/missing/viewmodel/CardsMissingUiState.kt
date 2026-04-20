@@ -4,9 +4,9 @@
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.missing.viewmodel
 
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 
 data class CardsMissingUiState(
     val isLoading: Boolean = false,
-    val items: MutableList<CardsMissingItem> = mutableListOf(),
+    val items: MutableList<CardsItem> = mutableListOf(),
 )

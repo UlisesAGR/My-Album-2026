@@ -7,7 +7,7 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.myalbum2026.mobile.data.model.TeamWithCards
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.user.IsInfoShowedUseCase
 import com.myalbum2026.mobile.domain.usecase.user.SetIsInfoShowedUseCase
@@ -69,8 +69,8 @@ class DashboardViewModel @Inject constructor(
 
     private fun getItems(
         teamsWithCards: List<TeamWithCards>,
-    ): MutableList<CardsMissingItem> {
-        val items = mutableListOf<CardsMissingItem>()
+    ): MutableList<CardsItem> {
+        val items = mutableListOf<CardsItem>()
 
         val totalCards = teamsWithCards.sumOf { it.team.totalCards }
         val obtainedCards = teamsWithCards.sumOf { list ->
@@ -82,7 +82,7 @@ class DashboardViewModel @Inject constructor(
         val obtained = totalCards - missingCount
 
         items.add(
-            CardsMissingItem.Progress(
+            CardsItem.Progress(
                 percentage = "$percentage%",
                 total = totalCards.toString(),
                 missing = missingCount.toString(),

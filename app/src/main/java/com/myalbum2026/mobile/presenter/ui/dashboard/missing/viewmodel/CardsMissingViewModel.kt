@@ -9,7 +9,7 @@ import androidx.lifecycle.viewModelScope
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.data.model.TeamWithCards
 import com.myalbum2026.mobile.domain.model.CardType
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.album.UpdateCardUseCase
 import com.myalbum2026.mobile.utils.extensions.Constants.DELAY
@@ -56,11 +56,11 @@ class CardsMissingViewModel @Inject constructor(
 
     private fun getItems(
         teamsWithCards: List<TeamWithCards>,
-    ): MutableList<CardsMissingItem> {
+    ): MutableList<CardsItem> {
 
-        val items = mutableListOf<CardsMissingItem>()
+        val items = mutableListOf<CardsItem>()
 
-        items.add(CardsMissingItem.Publicity)
+        items.add(CardsItem.Publicity)
 
         val totalCards = teamsWithCards.sumOf { it.team.totalCards }
         val obtainedCards = teamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
@@ -68,7 +68,7 @@ class CardsMissingViewModel @Inject constructor(
         val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
 
         items.add(
-            CardsMissingItem.Progress(
+            CardsItem.Progress(
                 percentage = "$percentage%",
                 total = totalCards.toString(),
                 missing = missingCount.toString(),
@@ -80,7 +80,7 @@ class CardsMissingViewModel @Inject constructor(
             val missingInTeam = teamWithCards.cards.filter { !it.obtained }
             if (missingInTeam.isNotEmpty()) {
                 items.add(
-                    CardsMissingItem.TeamHeader(
+                    CardsItem.TeamHeader(
                         type = CardType.MISSING,
                         team = teamWithCards.team,
                         count = missingInTeam.size,
@@ -88,7 +88,7 @@ class CardsMissingViewModel @Inject constructor(
                     )
                 )
                 missingInTeam.forEach { cardEntity ->
-                    items.add(CardsMissingItem.Card(card = cardEntity))
+                    items.add(CardsItem.Card(card = cardEntity))
                 }
             }
         }
@@ -113,22 +113,14 @@ class CardsMissingViewModel @Inject constructor(
 
     fun getMissingCardsFormattedText(title: String): String {
         val items = _cardsMissingUiState.value.items
-        if (items.none { it is CardsMissingItem.Card }) return ""
-        return StringBuilder().apply {
-            append("⚽ *$title* ⚽\n\n")
-            var currentTeam = ""
-            items.forEach { item ->
-                when (item) {
-                    is CardsMissingItem.TeamHeader -> {
-                        currentTeam = item.team.countryName
-                        append("\n📍 *$currentTeam:*\n")
-                    }
-                    is CardsMissingItem.Card -> {
-                        append("${item.card.number}  ")
-                    }
-                    else -> Unit
-                }
+        if (items.none { it is CardsItem.Card }) return ""
+        val body = items.joinToString("") { item ->
+            when (item) {
+                is CardsItem.TeamHeader -> "\n*$item.team.countryName:*\n"
+                is CardsItem.Card -> "${item.card.number}  "
+                else -> ""
             }
-        }.toString()
+        }
+        return "*$title*\n\n" + body.trim()
     }
 }

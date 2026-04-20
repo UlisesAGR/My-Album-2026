@@ -29,7 +29,7 @@ lib-legacySupport = "1.0.0"
 lib-material = '1.13.0'
 lib-splashscreen = '1.2.0'
 lib-navigation = "2.9.7"
-lib-glide = '5.0.5'
+lib-glide = '5.0.7'
 lib-konfetti = "2.0.5"
 lottie = "6.7.1"
 # test
@@ -42,9 +42,9 @@ test-hilt = "2.59.2"
 androidTest-junit = '1.3.0'
 androidTest-espresso = '3.7.0'
 # plugins
-plugin-agp = "8.7.3"
+plugin-agp = "9.0.1"
 plugin-library = "9.0.1"
-plugin-kotlin = "2.1.0"
+plugin-kotlin = "2.3.20"
 plugin-hilt = '2.59.2'
 plugin-navigation = '2.9.7'
 plugin-googleServices = "4.4.4"

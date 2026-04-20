@@ -14,6 +14,7 @@ import androidx.core.net.toUri
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LifecycleOwner
 import com.myalbum2026.mobile.R
+import com.myalbum2026.mobile.utils.logger.log
 
 @Suppress("DEPRECATION")
 fun FragmentActivity.navigateTo(
@@ -60,7 +61,7 @@ fun Dialog?.onBackPressed(onClick: () -> Unit) {
 
 fun FragmentActivity.makeCall(
     phoneNumber: String,
-    onError: (String) -> Unit = {},
+    onError: () -> Unit = {},
 ) {
     val intent = Intent(Intent.ACTION_DIAL).apply {
         data = "tel:$phoneNumber".toUri()
@@ -71,7 +72,7 @@ fun FragmentActivity.makeCall(
 fun FragmentActivity.sendWhatsApp(
     phoneNumber: String,
     message: String = "",
-    onError: (String) -> Unit = {},
+    onError: () -> Unit = {},
 ) {
     val uri = "https://api.whatsapp.com/send?phone=$phoneNumber&text=${Uri.encode(message)}".toUri()
     val intent = Intent(Intent.ACTION_VIEW, uri)
@@ -82,7 +83,7 @@ fun FragmentActivity.sendWhatsApp(
 fun FragmentActivity.sendEmail(
     email: String,
     subject: String = "",
-    onError: (String) -> Unit = {},
+    onError: () -> Unit = {},
 ) {
     val uriString = "mailto:${Uri.encode(email)}?subject=${Uri.encode(subject)}"
     val intent = Intent(Intent.ACTION_SENDTO).apply {
@@ -94,24 +95,31 @@ fun FragmentActivity.sendEmail(
 }
 
 fun FragmentActivity.shareText(
+    title: String,
     message: String,
-    onError: (String) -> Unit = {},
+    onError: () -> Unit = {},
 ) {
-    val intent = Intent().apply {
+    val sendIntent = Intent().apply {
         action = Intent.ACTION_SEND
         putExtra(Intent.EXTRA_TEXT, message)
         type = "text/plain"
     }
-    launchIntent(intent, onError)
+    val shareIntent = Intent.createChooser(sendIntent, title)
+    launchIntent(shareIntent, onError)
 }
 
 fun FragmentActivity.launchIntent(
     intent: Intent,
-    onError: (String) -> Unit = {},
+    onError: () -> Unit = {},
 ) {
     try {
-        this.startActivity(intent)
+        if (intent.resolveActivity(packageManager) != null) {
+            this.startActivity(intent)
+        } else {
+            onError()
+        }
     } catch (exception: Exception) {
-        onError(exception.message.toString())
+        log(message = exception.message.toString())
+        onError()
     }
 }

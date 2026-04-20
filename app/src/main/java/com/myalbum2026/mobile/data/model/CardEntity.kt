@@ -26,7 +26,6 @@ data class CardEntity(
     val teamId: String?,
     val section: String,
     val number: Int,
-    val type: String,
     val position: String?,
     val obtained: Boolean = false,
     val quantity: Int = 0,

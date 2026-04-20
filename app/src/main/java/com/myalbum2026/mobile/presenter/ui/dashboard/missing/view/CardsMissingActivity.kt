@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ActivityCardsMissingBinding
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
@@ -116,7 +116,7 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
         else LoadingDialog.dismiss(supportFragmentManager)
     }
 
-    private fun setItems(items: MutableList<CardsMissingItem>) {
+    private fun setItems(items: MutableList<CardsItem>) {
         if (items.isNotEmpty()) {
             cardsMissingAdapter.updateItems(items = items)
         }
@@ -128,6 +128,7 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
         )
         if (message.isNotEmpty()) {
             shareText(
+                title = getString(R.string.share_with),
                 message = message,
                 onError = {
                     toast(message = getString(R.string.error_share_missing_cards))

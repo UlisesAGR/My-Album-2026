@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ActivityCardsObtainedBinding
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
@@ -112,7 +112,7 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
         else LoadingDialog.dismiss(supportFragmentManager)
     }
 
-    private fun setItems(items: MutableList<CardsMissingItem>) {
+    private fun setItems(items: MutableList<CardsItem>) {
         if (items.isNotEmpty()) {
             cardsMissingAdapter.updateItems(items = items)
         }

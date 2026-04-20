@@ -9,7 +9,7 @@ import androidx.activity.viewModels
 import com.google.android.gms.ads.AdRequest
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardViewModel
@@ -91,9 +91,9 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
     }
 
     private fun updateProgress(
-        items: MutableList<CardsMissingItem>,
+        items: MutableList<CardsItem>,
     ) = with(binding) {
-        val progress = items.filterIsInstance<CardsMissingItem.Progress>().firstOrNull()
+        val progress = items.filterIsInstance<CardsItem.Progress>().firstOrNull()
         progress?.let { progress ->
             myProgressObtainedTextView.text = getString(
                 R.string.progress_obtained_format,

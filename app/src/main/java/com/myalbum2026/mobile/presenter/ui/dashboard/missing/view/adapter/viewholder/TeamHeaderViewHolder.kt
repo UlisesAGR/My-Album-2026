@@ -11,7 +11,7 @@ import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.TeamEntity
 import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
 import com.myalbum2026.mobile.domain.model.CardType
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 
 class TeamHeaderViewHolder(
     private val binding: ItemTeamHeaderBinding,
@@ -19,7 +19,7 @@ class TeamHeaderViewHolder(
 
     val context: Context = binding.root.context
 
-    fun render(item: CardsMissingItem.TeamHeader) = with(binding) {
+    fun render(item: CardsItem.TeamHeader) = with(binding) {
         with(item) {
             setImageFlag(team = team)
             teamNameTextView.text = team.countryName
@@ -37,7 +37,7 @@ class TeamHeaderViewHolder(
         logoImageView.setImageResource(if (resId != 0) resId else R.drawable.il_flag_europe)
     }
 
-    private fun setHeaderText(item: CardsMissingItem.TeamHeader) = with(binding) {
+    private fun setHeaderText(item: CardsItem.TeamHeader) = with(binding) {
         with(item) {
             teamCountTextView.text = context.getString(
                 R.string.header_format,

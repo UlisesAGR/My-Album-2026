@@ -6,13 +6,13 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewh
 
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.databinding.ItemProgressBinding
-import com.myalbum2026.mobile.domain.model.CardsMissingItem
+import com.myalbum2026.mobile.domain.model.CardsItem
 
 class ProgressViewHolder(
     private val binding: ItemProgressBinding,
 ) : RecyclerView.ViewHolder(binding.root) {
 
-    fun render(item: CardsMissingItem.Progress) = with(binding) {
+    fun render(item: CardsItem.Progress) = with(binding) {
         with(item) {
             tvPercentage.text = percentage
             progressIndicator.setProgress(
