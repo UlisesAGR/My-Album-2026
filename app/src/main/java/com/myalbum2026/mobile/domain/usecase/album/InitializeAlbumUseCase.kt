@@ -25,7 +25,9 @@ class InitializeAlbumUseCase @Inject constructor(
         val response = gson.fromJson(jsonString, AlbumDataResponse::class.java)
         val sections = response.sections
 
-        val teamEntities = sections.map { team -> team.toTeamEntity() }
+        val teamEntities = sections.mapIndexed { index, team ->
+            team.toTeamEntity(index)
+        }
 
         val allCards = mutableListOf<CardEntity>()
 

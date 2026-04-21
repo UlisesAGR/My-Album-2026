@@ -8,5 +8,6 @@ data class TeamEntity(
     @PrimaryKey val id: String,
     val countryName: String,
     val flagResource: String,
-    val totalCards: Int
+    val totalCards: Int,
+    val displayOrder: Int,
 )

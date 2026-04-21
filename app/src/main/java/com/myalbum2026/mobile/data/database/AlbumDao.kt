@@ -41,17 +41,7 @@ interface AlbumDao {
     }
 
     @Transaction
-    @Query("""
-    SELECT * FROM teams 
-    ORDER BY 
-        CASE 
-            WHEN id = 'SPECIALS' THEN 1 
-            WHEN id = 'TIMELINE' THEN 3
-            WHEN id = 'SODA' THEN 4
-            ELSE 2 
-        END, 
-        countryName ASC
-""")
+    @Query("SELECT * FROM teams ORDER BY displayOrder ASC")
     fun getFullAlbum(): Flow<List<TeamWithCards>>
 
     @Query("UPDATE cards SET quantity = :quantity, obtained = :hasIt WHERE id = :cardId")

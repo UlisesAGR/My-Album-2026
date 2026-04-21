@@ -14,10 +14,11 @@ data class TeamRemoteEntity(
     @SerializedName("totalCards") val totalCards: Int,
     @SerializedName("cards") val cards: List<CardRemoteEntity>,
 ) {
-    fun toTeamEntity() = TeamEntity(
+    fun toTeamEntity(index: Int) = TeamEntity(
         id = teamId,
         countryName = countryName,
         flagResource = flagResource,
         totalCards = totalCards,
+        displayOrder = index,
     )
 }
