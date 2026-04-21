@@ -117,7 +117,7 @@ class CardsMissingViewModel @Inject constructor(
         val body = items.joinToString("") { item ->
             when (item) {
                 is CardsItem.TeamHeader -> "\n*${item.team.id}:* "
-                is CardsItem.Card -> "${item.card.teamId}, "
+                is CardsItem.Card -> "${item.card.number}, "
                 else -> ""
             }
         }
