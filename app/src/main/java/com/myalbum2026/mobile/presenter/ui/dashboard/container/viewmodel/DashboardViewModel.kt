@@ -45,12 +45,14 @@ class DashboardViewModel @Inject constructor(
         val isFirstTime = isInfoShowedUseCase().firstOrNull() ?: false
         if (!isFirstTime) {
             _dashboardUiEvent.emit(DashboardUiEvent.ShowInfoDialog)
+        } else {
+            getFullAlbum()
         }
-        getFullAlbum()
     }
 
     fun onAcceptClicked() = viewModelScope.launch {
         setIsInfoShowedUseCase()
+        getFullAlbum()
     }
 
     fun getFullAlbum() = viewModelScope.launch {

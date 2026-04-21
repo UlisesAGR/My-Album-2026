@@ -21,7 +21,9 @@ import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.gone
 import com.myalbum2026.mobile.utils.ui.materialDialog
+import com.myalbum2026.mobile.utils.ui.show
 import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -56,8 +58,16 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         )
     }
 
-    private fun setBanner() {
-        binding.bannerPublicity.loadAd(AdRequest.Builder().build())
+    private fun setBanner() = with(binding) {
+        val shouldShowAds = resources.getBoolean(R.bool.show_ads)
+        if (shouldShowAds) {
+            bannerPublicity.apply {
+                loadAd(AdRequest.Builder().build())
+                show()
+            }
+        } else {
+            bannerPublicity.gone()
+        }
     }
 
     private fun setListeners() = with(binding) {
