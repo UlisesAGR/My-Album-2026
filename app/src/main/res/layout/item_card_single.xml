@@ -25,47 +25,38 @@
         android:paddingTop="@dimen/padding_16">
 
         <TextView
-            android:id="@+id/idNumber"
-            style="@style/text_medium.bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_circle"
-            android:gravity="center"
-            android:paddingHorizontal="@dimen/padding_8"
-            android:paddingVertical="@dimen/padding_4"
-            android:textColor="@color/black_color"
-            tools:text="FWC-01" />
-
-        <TextView
             android:id="@+id/cardPosition"
-            style="@style/text_regular.bold"
+            style="@style/text_medium.bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_12"
             android:gravity="center"
             android:textColor="@color/black_color"
             tools:text="POR" />
 
         <TextView
-            android:id="@+id/cardNumber"
-            style="@style/text_extra.bold"
-            android:layout_width="match_parent"
+            android:id="@+id/idNumber"
+            style="@style/text_medium.bold"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_12"
+            android:background="@drawable/bg_circle"
             android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_12"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingBottom="@dimen/margin_10"
             android:textColor="@color/black_color"
-            tools:text="16" />
+            tools:text="FWC-01" />
 
         <TextView
             android:id="@+id/cardQuantity"
             style="@style/text_medium.bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_24"
             android:background="@drawable/bg_square"
             android:gravity="center"
-            android:paddingHorizontal="@dimen/padding_8"
-            android:paddingVertical="@dimen/padding_4"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_6"
             android:textColor="@color/black_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

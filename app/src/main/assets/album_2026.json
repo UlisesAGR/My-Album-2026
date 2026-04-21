@@ -11,7 +11,7 @@
           { "id": "FWC-02", "number": 2, "position": "EMBLEM" },
           { "id": "FWC-03", "number": 3, "position": "MASCOT" },
           { "id": "FWC-04", "number": 4, "position": "SLOGAN" },
-          { "id": "FWC-05", "number": 5, "position": "BAll" },
+          { "id": "FWC-05", "number": 5, "position": "BALL" },
           { "id": "FWC-06", "number": 6, "position": "EMBLEM" },
           { "id": "FWC-07", "number": 7, "position": "LOGO" },
           { "id": "FWC-08", "number": 8, "position": "EMBLEM" },
@@ -1409,8 +1409,8 @@
       ]
     },
     {
-      "teamId": "COCA-COLA",
-      "countryName": "Coca cola",
+      "teamId": "SODA",
+      "countryName": "Soda",
       "flagResource": "il_flag_coca_cola",
       "totalCards": 14,
       "cards": [

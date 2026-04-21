@@ -123,9 +123,7 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
     }
 
     private fun handleShareAction() {
-        val message = cardsMissingViewModel.getMissingCardsFormattedText(
-            title = getString(R.string.cards_missing),
-        )
+        val message = cardsMissingViewModel.getMissingCardsFormattedText()
         if (message.isNotEmpty()) {
             shareText(
                 title = getString(R.string.share_with),

@@ -111,16 +111,16 @@ class CardsMissingViewModel @Inject constructor(
         }
     }
 
-    fun getMissingCardsFormattedText(title: String): String {
+    fun getMissingCardsFormattedText(): String {
         val items = _cardsMissingUiState.value.items
         if (items.none { it is CardsItem.Card }) return ""
         val body = items.joinToString("") { item ->
             when (item) {
-                is CardsItem.TeamHeader -> "\n*$item.team.countryName:*\n"
-                is CardsItem.Card -> "${item.card.number}  "
+                is CardsItem.TeamHeader -> "\n*${item.team.id}:* "
+                is CardsItem.Card -> "${item.card.teamId}, "
                 else -> ""
             }
         }
-        return "*$title*\n\n" + body.trim()
+        return body.trim()
     }
 }

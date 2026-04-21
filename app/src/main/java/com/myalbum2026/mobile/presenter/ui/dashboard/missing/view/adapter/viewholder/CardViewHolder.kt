@@ -24,7 +24,6 @@ class CardViewHolder(
         with(card) {
             setBackgroundCounty(card = card)
             idNumber.text = id
-            cardNumber.text = number.toString()
             cardPosition.text = position.orEmpty()
             cardQuantity.text = quantity.toString()
             root.setOnClickListener {
