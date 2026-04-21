@@ -1411,7 +1411,7 @@
     {
       "teamId": "SODA",
       "countryName": "Soda",
-      "flagResource": "il_flag_coca_cola",
+      "flagResource": "il_flag_soda",
       "totalCards": 14,
       "cards": [
         { "id": "CC-01", "number": 1, "position": "DEL" },
