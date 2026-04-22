@@ -1,8 +1,4 @@
-/*
- * App.kt
- * Copyright (c) 2026. All rights reserved
- */
-package com.myalbum2026.mobile
+package com.myalbum2026.mobile.base
 
 import android.app.Application
 import com.google.android.gms.ads.MobileAds

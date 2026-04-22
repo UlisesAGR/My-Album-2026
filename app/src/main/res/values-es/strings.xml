@@ -40,4 +40,8 @@
     <string name="share_with">Compartir mis estampas faltantes</string>
     <string name="no_missing_cards">¡Felicidades! No tienes estampas faltantes</string>
     <string name="error_share_missing_cards">Error al compartir tus estampas faltantes</string>
+    <!-- Update -->
+    <string name="update_required_title">Se requiere actualización</string>
+    <string name="update_required_description">Hemos detectado una versión obsoleta. Para seguir disfrutando de todas las funciones y mejoras de seguridad, debe actualizar la aplicación</string>
+    <string name="update_button">Actualizar</string>
 </resources>

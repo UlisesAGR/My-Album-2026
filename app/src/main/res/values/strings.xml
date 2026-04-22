@@ -46,4 +46,8 @@
     <string name="share_with">Share my missing cards</string>
     <string name="no_missing_cards">Congratulations! You have no missing stickers</string>
     <string name="error_share_missing_cards">Error share missing cards</string>
+    <!-- Update -->
+    <string name="update_required_title">Update required</string>
+    <string name="update_required_description">We have detected an outdated version. To continue enjoying all features and security improvements, you must update the application</string>
+    <string name="update_button">Update</string>
 </resources>

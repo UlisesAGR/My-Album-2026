@@ -9,6 +9,7 @@ activity = "1.13.0"
 lib-fragment = '1.8.9'
 lib-coroutines = "1.10.2"
 lib-runner = "1.7.0"
+appUpdateKtx = "2.1.0"
 lib-hilt = "2.59.2"
 lib-okhttp3 = '5.3.2'
 lib-retrofit = '3.0.0'
@@ -65,6 +66,7 @@ androidx-activity-ktx = { module = 'androidx.activity:activity-ktx', version.ref
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-fragment = { module = 'androidx.fragment:fragment-ktx', version.ref = 'lib-fragment' }
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "lib-runner" }
+app-update-ktx = { module = "com.google.android.play:app-update-ktx", version.ref = "appUpdateKtx" }
 
 org-coroutines = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-android', version.ref = 'lib-coroutines' }
 com-hilt = { module = 'com.google.dagger:hilt-android', version.ref = "lib-hilt" }

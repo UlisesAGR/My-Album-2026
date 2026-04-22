@@ -26,11 +26,7 @@ class SplashViewModel @Inject constructor(
     private var _splashUiEvent = MutableStateFlow<SplashUiEvent>(SplashUiEvent.Idle)
     val splashUiEvent: StateFlow<SplashUiEvent> = _splashUiEvent.asStateFlow()
 
-    init {
-        checkInitialState()
-    }
-
-    private fun checkInitialState() = viewModelScope.launch {
+    fun checkInitialState() = viewModelScope.launch {
         resetUiEvent()
         val isFirstTime = isFirstTimeUseCase().firstOrNull() ?: false
         if (!isFirstTime) {

@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.androidx.fragment)
     implementation(libs.org.coroutines)
     implementation(libs.androidx.runner)
+    implementation(libs.app.update.ktx)
     implementation(libs.com.hilt)
     implementation(libs.test.hilt)
     ksp(libs.com.hilt.compiler)

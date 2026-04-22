@@ -6,6 +6,7 @@ package com.myalbum2026.mobile.presenter.ui.splash.view
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -16,10 +17,12 @@ import com.myalbum2026.mobile.presenter.ui.splash.viewmodel.SplashUiEvent
 import com.myalbum2026.mobile.presenter.ui.splash.viewmodel.SplashViewModel
 import com.myalbum2026.mobile.presenter.ui.welcome.view.WelcomeActivity
 import com.myalbum2026.mobile.utils.binding.viewBinding
+import com.myalbum2026.mobile.utils.extensions.InAppUpdateManager
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.materialDialog
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -30,6 +33,17 @@ class SplashActivity : AppCompatActivity() {
 
     private val splashViewModel: SplashViewModel by viewModels()
 
+    private lateinit var inAppUpdateManager: InAppUpdateManager
+
+    private val updateLauncher =
+        registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+                splashViewModel.checkInitialState()
+            } else {
+                showUpdateRequiredDialog()
+            }
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         val splash = installSplashScreen()
         super.onCreate(savedInstanceState)
@@ -39,7 +53,11 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun setInitUi() {
+        inAppUpdateManager = InAppUpdateManager(this, updateLauncher)
         setFlows()
+        inAppUpdateManager.checkForImmediateUpdate {
+            splashViewModel.checkInitialState()
+        }
     }
 
     private fun setFlows() {
@@ -51,6 +69,21 @@ class SplashActivity : AppCompatActivity() {
                 is SplashUiEvent.GoToDashboard -> goToDashboard()
             }
         }
+    }
+
+    private fun showUpdateRequiredDialog() {
+        materialDialog(
+            style = R.style.MaterialDialog,
+            isCancelable = false,
+            title = getString(R.string.update_required_title),
+            message = getString(R.string.update_required_description),
+            textPositiveButton = getString(R.string.update_button),
+            action = {
+                inAppUpdateManager.checkForImmediateUpdate {
+                    splashViewModel.checkInitialState()
+                }
+            },
+        )
     }
 
     private fun goToWelcome() {
@@ -65,5 +98,10 @@ class SplashActivity : AppCompatActivity() {
             destination = DashboardActivity::class.java,
             finishCurrent = true,
         )
+    }
+
+    override fun onResume() {
+        super.onResume()
+        inAppUpdateManager.resumeIfNeeded()
     }
 }
