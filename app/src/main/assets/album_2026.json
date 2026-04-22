@@ -9,12 +9,12 @@
           { "id": "FWC-00", "number": 0, "position": "LOGO" },
           { "id": "FWC-01", "number": 1, "position": "EMBLEM" },
           { "id": "FWC-02", "number": 2, "position": "EMBLEM" },
-          { "id": "FWC-03", "number": 3, "position": "EMBLEM" },
-          { "id": "FWC-04", "number": 4, "position": "EMBLEM" },
-          { "id": "FWC-05", "number": 5, "position": "EMBLEM" },
-          { "id": "FWC-06", "number": 6, "position": "LOGO" },
-          { "id": "FWC-07", "number": 7, "position": "LOGO" },
-          { "id": "FWC-08", "number": 8, "position": "LOGO" }
+          { "id": "FWC-03", "number": 3, "position": "MASCOTS" },
+          { "id": "FWC-04", "number": 4, "position": "SLOGAN" },
+          { "id": "FWC-05", "number": 5, "position": "BALL" },
+          { "id": "FWC-06", "number": 6, "position": "COUNTRY" },
+          { "id": "FWC-07", "number": 7, "position": "COUNTRY" },
+          { "id": "FWC-08", "number": 8, "position": "COUNTRY" }
         ]
       },
     {
