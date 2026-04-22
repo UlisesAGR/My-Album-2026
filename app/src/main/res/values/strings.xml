@@ -27,7 +27,7 @@
     <string name="please_try_again_later">At the moment we cannot perform this action, please try again later</string>
     <!-- Welcome -->
     <string name="start">Start</string>
-    <string name="welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do">Welcome to the app that helps you get organized to complete your 2026 album. We hope you achieve your goal and enjoy the experience as much as we do.</string>
+    <string name="welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do">Welcome to the app that helps you get organized to complete your 2026 album. We hope you achieve your goal and enjoy the experience as much as we do</string>
     <!-- Cards -->
     <string name="cards_missing">Cards missing</string>
     <string name="missing">Missing</string>
