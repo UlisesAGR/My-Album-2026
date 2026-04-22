@@ -31,6 +31,11 @@ android {
     buildTypes {
         getByName(BuildTypes.RELEASE) {
             resValue("string", "APP_NAME", "${properties["app.name"]}")
+
+            resValue("string", "ad_app_id", "${properties["ad.app.id"]}")
+            resValue("string", "ad_banner_container", "${properties["ad.container.banner.id"]}")
+            resValue("string", "ad_banner_missing", "${properties["ad.missing.banner.id"]}")
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
@@ -42,6 +47,11 @@ android {
         }
         getByName(BuildTypes.DEBUG) {
             resValue("string", "APP_NAME", "${properties["app.name.debug"]}")
+
+            resValue("string", "ad_app_id", "${properties["ad.app.id.debug"]}")
+            resValue("string", "ad_banner_container", "${properties["ad.container.banner.id.debug"]}")
+            resValue("string", "ad_banner_missing", "${properties["ad.missing.banner.id.debug"]}")
+
             isMinifyEnabled = Build.Debug.isMinifyEnabled
             isDebuggable = Build.Debug.isDebuggable
             enableUnitTestCoverage = Build.Debug.enableUnitTestCoverage
