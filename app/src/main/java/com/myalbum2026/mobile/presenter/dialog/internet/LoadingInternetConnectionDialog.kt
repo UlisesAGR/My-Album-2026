@@ -21,7 +21,7 @@ class LoadingInternetConnectionDialog: DialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(STYLE_NORMAL, R.style.DialogAnimation)
+        setStyle(STYLE_NORMAL, R.style.DialogAnimationStyle)
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -33,7 +33,7 @@ class LoadingInternetConnectionDialog: DialogFragment() {
                 setCanceledOnTouchOutside(false)
                 window?.setBackgroundDrawable(Color.TRANSPARENT.toDrawable())
             }.also {
-                dialog?.window?.attributes?.windowAnimations = R.style.DialogAnimation
+                dialog?.window?.attributes?.windowAnimations = R.style.DialogAnimationStyle
             }
         dialog.setOnKeyListener { _, keyCode, event ->
             keyCode == KeyEvent.KEYCODE_BACK && event.action == KeyEvent.ACTION_UP

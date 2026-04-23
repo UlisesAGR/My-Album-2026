@@ -13,7 +13,7 @@ import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ActivityCardsObtainedBinding
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
-import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityDialog
+import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityBottomSheet
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.CardsMissingAdapter
 import com.myalbum2026.mobile.presenter.ui.dashboard.obtained.viewmodel.CardsObtainedUiEvent
@@ -119,23 +119,18 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
     }
 
     private fun showQuantityDialog(card: CardEntity) {
-        QuantityDialog(context = this) { selectedQuantity ->
-            cardsObtainedViewModel.updateCardQuantity(
-                card = card,
-                quantity = selectedQuantity,
-            )
-        }.apply {
-            setCancelable(true)
-            setTitleCustom(
-                getString(
-                    R.string.title_quantity_value,
-                    card.teamId,
-                    card.number,
-                )
-            )
-            setValue(card.quantity)
-            show()
-        }
+        val title = getString(
+            R.string.title_quantity_value,
+            card.teamId,
+            card.number,
+        )
+        QuantityBottomSheet(
+            initialQuantity = card.quantity,
+            title = title,
+            onConfirm = { selectedQuantity ->
+                cardsObtainedViewModel.updateCardQuantity(card, selectedQuantity)
+            },
+        ).show(supportFragmentManager, QuantityBottomSheet.TAG)
     }
 
     private fun goToDashboard() {

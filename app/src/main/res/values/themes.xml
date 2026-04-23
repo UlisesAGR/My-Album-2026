@@ -48,6 +48,13 @@
     <!-- Application theme -->
     <style name="Theme.MyAlbum2026" parent="Base.Theme.MyAlbum2026" />
 
+    <!-- Indicator Bottom Navigation -->
+    <style name="App.CustomIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/md_theme_secondary</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
     <!-- Splash application theme -->
     <style name="Splash.Theme.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/md_theme_background</item>
@@ -58,7 +65,7 @@
     </style>
 
     <!-- FullScreen Dialog theme -->
-    <style name="FullScreenDialog" parent="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
+    <style name="FullScreenDialogStyle" parent="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
         <item name="android:statusBarColor">@color/md_theme_background</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -67,26 +74,27 @@
     </style>
 
     <!-- Material Dialog theme -->
-    <style name="MaterialDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    <style name="MaterialDialogStyle" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
         <item name="colorPrimary">@color/md_theme_primary</item>
         <item name="colorPrimaryDark">@color/md_theme_onBackground</item>
         <item name="colorAccent">@color/md_theme_background</item>
         <item name="textAllCaps">false</item>
     </style>
 
-    <!-- Indicator Bottom Navigation -->
-    <style name="App.CustomIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/md_theme_secondary</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.8</item>
-    </style>
-
     <!-- Custom Bottom Sheet -->
-    <style name="CustomBottomSheetDialog" parent="Theme.Material3.DayNight.BottomSheetDialog">
+    <style name="CustomBottomSheetDialogStyle" parent="Theme.Material3.DayNight.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
     </style>
     <style name="CustomBottomSheetStyle" parent="Widget.Material3.BottomSheet.Modal">
         <item name="enableEdgeToEdge">true</item>
+    </style>
+
+    <!-- Custom Dialog Style -->
+    <style name="CustomDialogStyle" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
 
 </resources>

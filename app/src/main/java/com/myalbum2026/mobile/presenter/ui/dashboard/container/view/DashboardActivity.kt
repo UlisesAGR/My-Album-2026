@@ -119,7 +119,7 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
 
     private fun showInfoDialog() {
         materialDialog(
-            style = R.style.MaterialDialog,
+            style = R.style.MaterialDialogStyle,
             isCancelable = false,
             title = getString(R.string.important),
             textPositiveButton = getString(R.string.accept),

@@ -73,7 +73,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun showUpdateRequiredDialog() {
         materialDialog(
-            style = R.style.MaterialDialog,
+            style = R.style.MaterialDialogStyle,
             isCancelable = false,
             title = getString(R.string.update_required_title),
             message = getString(R.string.update_required_description),
