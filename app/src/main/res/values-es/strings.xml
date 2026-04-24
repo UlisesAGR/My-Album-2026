@@ -23,7 +23,7 @@
     <string name="start">Empezar</string>
     <string name="welcome_to_the_app_that_helps_you_get_organized_to_complete_your_2026_album_we_hope_you_achieve_your_goal_and_enjoy_the_experience_as_much_as_we_do">Bienvenido a la app que te ayuda a organizarte para completar tu álbum 2026. Esperamos que logres tu objetivo y disfrutes de la experiencia tanto como nosotros</string>
     <!-- Cards -->
-    <string name="cards_missing">Faltantes</string>
+    <string name="cards_missing">Estampas faltantes</string>
     <string name="missing">Faltantes</string>
     <string name="your_progress">Tu progreso</string>
     <string name="total_cards">Total de estampas</string>
@@ -52,6 +52,6 @@
     <string name="search_country">Buscar país o codigo</string>
     <string name="complete_cards">Estampas completas</string>
     <string name="congratulations_you_completed_your_album">Enhorabuena, has completado tu álbum</string>
-    <string name="you_don_t_have_a_card_yet">Aun no tienes ninguna estampa</string>
+    <string name="you_don_t_have_a_card_yet">Aun no tienes ninguna estampas</string>
     <string name="no_cards">Sin estampas</string>
 </resources>
