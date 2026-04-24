@@ -61,12 +61,14 @@ class CardsMissingViewModel @Inject constructor(
 
         val items = mutableListOf<CardsItem>()
 
-        items.add(CardsItem.Publicity)
-
         val totalCards = teamsWithCards.sumOf { it.team.totalCards }
-        val obtainedCards = teamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
+        val obtainedCards = teamsWithCards.sumOf { list -> list.cards.count { !it.obtained } }
         val missingCount = totalCards - obtainedCards
         val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
+
+        if (obtainedCards == 0) return items
+
+        items.add(CardsItem.Publicity)
 
         items.add(
             CardsItem.Progress(
@@ -113,16 +115,16 @@ class CardsMissingViewModel @Inject constructor(
         }
     }
 
-    fun getMissingCardsFormattedText(): String {
+    fun getMissingCardsFormattedText(): String? {
         val items = _cardsMissingUiState.value.items
-        if (items.none { data -> data is CardsItem.Card }) return ""
-        val body = items.joinToString("") { item ->
+        if (items?.none { data -> data is CardsItem.Card } == true) return ""
+        val body = items?.joinToString("") { item ->
             when (item) {
                 is CardsItem.TeamHeader -> "\n*${item.team.id}:* "
                 is CardsItem.Card -> "${item.card.number}, "
                 else -> ""
             }
         }
-        return body.trim()
+        return body?.trim()
     }
 }

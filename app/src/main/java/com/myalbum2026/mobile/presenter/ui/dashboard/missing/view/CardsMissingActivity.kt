@@ -24,6 +24,8 @@ import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.extensions.shareText
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.gone
+import com.myalbum2026.mobile.utils.ui.show
 import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -39,6 +41,7 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
 
     override fun init() {
         setToolbar()
+        setEmptyState()
         setListeners()
         setCardsMissingAdapter()
         setCardsMissingRecyclerView()
@@ -116,15 +119,39 @@ class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
         else LoadingDialog.dismiss(supportFragmentManager)
     }
 
-    private fun setItems(items: MutableList<CardsItem>) {
+    private fun setItems(items: MutableList<CardsItem>?) {
+        if (items == null) return
         if (items.isNotEmpty()) {
             cardsMissingAdapter.updateItems(items = items)
+            showEmptyState(isEmpty = false)
+        } else {
+            showEmptyState(isEmpty = true)
+        }
+    }
+
+    private fun showEmptyState(isEmpty: Boolean) = with(binding) {
+        if (isEmpty) {
+            cardsMissingRecyclerView.gone()
+            emptyStateView.root.show()
+            fabShareMissing.hide()
+        } else {
+            cardsMissingRecyclerView.show()
+            emptyStateView.root.gone()
+            fabShareMissing.show()
+        }
+    }
+
+    private fun setEmptyState() = with(binding) {
+        emptyStateView.apply {
+            titleTextView.text = getString(R.string.complete_cards)
+            subTitleTextView.text  = getString(R.string.congratulations_you_completed_your_album)
+            retryCustomButton.gone()
         }
     }
 
     private fun handleShareAction() {
         val message = cardsMissingViewModel.getMissingCardsFormattedText()
-        if (message.isNotEmpty()) {
+        if (!message.isNullOrEmpty()) {
             shareText(
                 title = getString(R.string.share_with),
                 message = message,

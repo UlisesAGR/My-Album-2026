@@ -61,12 +61,14 @@ class CardsObtainedViewModel @Inject constructor(
 
         val items = mutableListOf<CardsItem>()
 
-        items.add(CardsItem.Publicity)
-
         val totalCards = teamsWithCards.sumOf { it.team.totalCards }
         val obtainedCards = teamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
         val missingCount = totalCards - obtainedCards
         val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
+
+        if (obtainedCards == 0) return items
+
+        items.add(CardsItem.Publicity)
 
         items.add(
             CardsItem.Progress(

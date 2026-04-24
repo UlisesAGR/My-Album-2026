@@ -26,6 +26,8 @@ import com.myalbum2026.mobile.utils.extensions.getSerializable
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.gone
+import com.myalbum2026.mobile.utils.ui.show
 import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -45,6 +47,7 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
         cardType = intent.getSerializable<CardType>(EXTRA_CARD_TYPE) ?: CardType.MISSING
 
         setToolbar()
+        setEmptyState()
         setListeners()
         setCountriesAdapter()
         setCountriesRecyclerView()
@@ -113,9 +116,33 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
         else LoadingDialog.dismiss(supportFragmentManager)
     }
 
-    private fun setItems(items: List<CardsItem.TeamHeader>) {
+    private fun setItems(items: List<CardsItem.TeamHeader>?) {
+        if (items == null) return
         if (items.isNotEmpty()) {
             countryListAdapter.updateList(newList = items)
+            showEmptyState(isEmpty = false)
+        } else {
+            showEmptyState(isEmpty = true)
+        }
+    }
+
+    private fun showEmptyState(isEmpty: Boolean) = with(binding) {
+        if (isEmpty) {
+            countyRecyclerView.gone()
+            emptyStateView.root.show()
+            searchBox.gone()
+        } else {
+            countyRecyclerView.show()
+            emptyStateView.root.gone()
+            searchBox.show()
+        }
+    }
+
+    private fun setEmptyState() = with(binding) {
+        emptyStateView.apply {
+            titleTextView.text = getString(R.string.complete_cards)
+            subTitleTextView.text  = getString(R.string.congratulations_you_completed_your_album)
+            retryCustomButton.gone()
         }
     }
 

@@ -15,7 +15,11 @@
         android:id="@+id/screenRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/md_theme_background">
+        android:background="@color/md_theme_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -36,9 +40,11 @@
             android:layout_height="match_parent"
             android:clipToPadding="false"
             android:paddingBottom="@dimen/padding_80"
+            android:visibility="gone"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             tools:itemCount="3"
-            tools:listitem="@layout/item_card_single" />
+            tools:listitem="@layout/item_card_single"
+            tools:visibility="visible" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabShareMissing"
@@ -53,6 +59,15 @@
             app:iconTint="@color/text_white_color"
             app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
             app:rippleColor="@color/text_white_color" />
+
+        <include
+            android:id="@+id/emptyStateView"
+            layout="@layout/empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:visibility="visible" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -50,6 +50,7 @@
     <string name="update_required_title">Update required</string>
     <string name="update_required_description">We have detected an outdated version. To continue enjoying all features and security improvements, you must update the application</string>
     <string name="update_button">Update</string>
+    <!-- Cards -->
     <string name="general_search">General search</string>
     <string name="search_by_country">Search by country</string>
     <string name="country_obtained">Country obtained</string>
@@ -57,4 +58,6 @@
     <string name="country">Country</string>
     <string name="search">Search</string>
     <string name="search_country">Search country</string>
+    <string name="complete_cards">Complete cards</string>
+    <string name="congratulations_you_completed_your_album">Congratulations, you completed your album</string>
 </resources>

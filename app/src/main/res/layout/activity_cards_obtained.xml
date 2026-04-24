@@ -15,7 +15,11 @@
         android:id="@+id/screenRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/md_theme_background">
+        android:background="@color/md_theme_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.myalbum2026.mobile.presenter.widget.toolbar.CustomToolbar
             android:id="@+id/cardsObtainedToolbar"
@@ -44,6 +48,19 @@
             app:layout_constraintTop_toBottomOf="@+id/cardsObtainedToolbar"
             tools:itemCount="1"
             tools:listitem="@layout/item_card_single"
+            tools:visibility="visible" />
+
+        <include
+            android:id="@+id/emptyStateView"
+            layout="@layout/empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardsObtainedToolbar"
             tools:visibility="visible" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

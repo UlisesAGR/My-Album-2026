@@ -23,6 +23,8 @@ import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.gone
+import com.myalbum2026.mobile.utils.ui.show
 import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -38,6 +40,7 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
 
     override fun init() {
         setToolbar()
+        setEmptyState()
         setListeners()
         setCardsMissingAdapter()
         setCardsMissingRecyclerView()
@@ -112,9 +115,31 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
         else LoadingDialog.dismiss(supportFragmentManager)
     }
 
-    private fun setItems(items: MutableList<CardsItem>) {
+    private fun setItems(items: MutableList<CardsItem>?) {
+        if (items == null) return
         if (items.isNotEmpty()) {
             cardsMissingAdapter.updateItems(items = items)
+            showEmptyState(isEmpty = false)
+        } else {
+            showEmptyState(isEmpty = true)
+        }
+    }
+
+    private fun showEmptyState(isEmpty: Boolean) = with(binding) {
+        if (isEmpty) {
+            cardsObtainedRecyclerView.gone()
+            emptyStateView.root.show()
+        } else {
+            cardsObtainedRecyclerView.show()
+            emptyStateView.root.gone()
+        }
+    }
+
+    private fun setEmptyState() = with(binding) {
+        emptyStateView.apply {
+            titleTextView.text = getString(R.string.complete_cards)
+            subTitleTextView.text  = getString(R.string.congratulations_you_completed_your_album)
+            retryCustomButton.gone()
         }
     }
 
