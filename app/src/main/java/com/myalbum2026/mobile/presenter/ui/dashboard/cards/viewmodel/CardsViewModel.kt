@@ -1,8 +1,8 @@
 /*
- * CardsMissingViewModel
+ * CardsViewModel
  * Copyright © 2026. All rights reserved
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.missing.viewmodel
+package com.myalbum2026.mobile.presenter.ui.dashboard.cards.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -24,38 +24,43 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 @HiltViewModel
-class CardsMissingViewModel @Inject constructor(
+class CardsViewModel @Inject constructor(
     private val getFullAlbumUseCase: GetFullAlbumUseCase,
     private val updateCardUseCase: UpdateCardUseCase,
-): ViewModel() {
+) : ViewModel() {
 
-    private var _cardsMissingUiState = MutableStateFlow(CardsMissingUiState())
-    val cardsMissingUiState: StateFlow<CardsMissingUiState> = _cardsMissingUiState.asStateFlow()
+    private var _cardsUiState = MutableStateFlow(CardsUiState())
+    val cardsUiState: StateFlow<CardsUiState> = _cardsUiState.asStateFlow()
 
-    private var _cardsMissingUiEvent = MutableStateFlow<CardsMissingUiEvent>(CardsMissingUiEvent.Idle)
-    val cardsMissingUiEvent: StateFlow<CardsMissingUiEvent> = _cardsMissingUiEvent.asStateFlow()
+    private var _cardsUiEvent = MutableStateFlow<CardsUiEvent>(CardsUiEvent.Idle)
+    val cardsUiEvent: StateFlow<CardsUiEvent> = _cardsUiEvent.asStateFlow()
 
-    init {
-        getFullAlbum()
-    }
-
-    private fun getFullAlbum() = viewModelScope.launch {
-        _cardsMissingUiState.update { state -> state.copy(isLoading = true) }
+    fun getFullAlbum(
+        cardType: CardType,
+        teamId: String,
+    ) = viewModelScope.launch {
+        _cardsUiState.update { state -> state.copy(isLoading = true) }
         getFullAlbumUseCase()
             .catch { exception ->
-                _cardsMissingUiState.update { state -> state.copy(isLoading = false) }
-                _cardsMissingUiEvent.emit(CardsMissingUiEvent.ShowError(exception = exception))
+                _cardsUiState.update { state -> state.copy(isLoading = false) }
+                _cardsUiEvent.emit(CardsUiEvent.ShowError(exception = exception))
             }
             .collect { items ->
-                val items = getItems(teamsWithCards = items)
+                val items = getItems(
+                    cardType = cardType,
+                    teamId = teamId,
+                    teamsWithCards = items,
+                )
                 delay(DELAY)
-                _cardsMissingUiState.update { state -> state.copy(items = items) }
+                _cardsUiState.update { state -> state.copy(items = items) }
                 delay(DELAY)
-                _cardsMissingUiState.update { state -> state.copy(isLoading = false) }
+                _cardsUiState.update { state -> state.copy(isLoading = false) }
             }
     }
 
     private fun getItems(
+        cardType: CardType,
+        teamId: String,
         teamsWithCards: List<TeamWithCards>,
     ): MutableList<CardsItem> {
 
@@ -63,8 +68,14 @@ class CardsMissingViewModel @Inject constructor(
 
         items.add(CardsItem.Publicity)
 
-        val totalCards = teamsWithCards.sumOf { it.team.totalCards }
-        val obtainedCards = teamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
+        val filteredTeamsWithCards = if (teamId.isEmpty()) {
+            teamsWithCards
+        } else {
+            teamsWithCards.filter { data -> data.team.id == teamId }
+        }
+
+        val totalCards = filteredTeamsWithCards.sumOf { it.team.totalCards }
+        val obtainedCards = filteredTeamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
         val missingCount = totalCards - obtainedCards
         val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
 
@@ -77,19 +88,21 @@ class CardsMissingViewModel @Inject constructor(
             )
         )
 
-        teamsWithCards.forEach { teamWithCards ->
-            val missingInTeam = teamWithCards.cards.filter { !it.obtained }
-            if (missingInTeam.isNotEmpty()) {
+        filteredTeamsWithCards.forEach { teamWithCards ->
+            val filteredCards = teamWithCards.cards.filter {
+                if (cardType == CardType.MISSING) !it.obtained else it.obtained
+            }
+            if (filteredCards.isNotEmpty()) {
                 items.add(
                     CardsItem.TeamHeader(
-                        type = CardType.MISSING,
+                        type = cardType,
                         team = teamWithCards.team,
-                        count = missingInTeam.size,
-                        total = teamWithCards.cards.size,
+                        count = filteredCards.size,
+                        total = teamWithCards.team.totalCards,
                     )
                 )
 
-                missingInTeam.forEach { cardEntity ->
+                filteredCards.forEach { cardEntity ->
                     items.add(CardsItem.Card(card = cardEntity))
                 }
             }
@@ -107,14 +120,14 @@ class CardsMissingViewModel @Inject constructor(
             quantity = quantity,
             hasIt = quantity > 0,
         ).catch { exception ->
-            _cardsMissingUiEvent.emit(CardsMissingUiEvent.ShowError(exception = exception))
+            _cardsUiEvent.emit(CardsUiEvent.ShowError(exception = exception))
         }.collect {
-            _cardsMissingUiEvent.emit(CardsMissingUiEvent.CardUpdated)
+            _cardsUiEvent.emit(CardsUiEvent.CardUpdated)
         }
     }
 
     fun getMissingCardsFormattedText(): String {
-        val items = _cardsMissingUiState.value.items
+        val items = _cardsUiState.value.items
         if (items.none { data -> data is CardsItem.Card }) return ""
         val body = items.joinToString("") { item ->
             when (item) {

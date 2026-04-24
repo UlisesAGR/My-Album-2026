@@ -6,7 +6,9 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewh
 
 import android.content.Context
 import android.content.res.ColorStateList
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ItemCardSingleBinding
 import com.myalbum2026.mobile.utils.ui.getTeamColor
@@ -25,7 +27,7 @@ class CardViewHolder(
             setBackgroundCounty(card = card)
             idNumber.text = id
             cardPosition.text = position.orEmpty()
-            cardQuantity.text = quantity.toString()
+            setTextQuantity(quantity = quantity)
             root.setOnClickListener {
                 onCardItemClick(this)
             }
@@ -35,5 +37,17 @@ class CardViewHolder(
     private fun setBackgroundCounty(card: CardEntity) {
         binding.itemRoot.backgroundTintList =
             ColorStateList.valueOf(context.getTeamColor(card.teamId))
+    }
+
+    private fun setTextQuantity(quantity: Int) = with(binding) {
+        cardQuantity.apply {
+            setTextColor(
+                ContextCompat.getColor(
+                    context,
+                    if (quantity > 1) R.color.md_theme_error else R.color.black_color,
+                ),
+            )
+            text = quantity.toString()
+        }
     }
 }

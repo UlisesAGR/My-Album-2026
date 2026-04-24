@@ -4,6 +4,6 @@
  */
 object ReleaseConfig {
 
-    const val VERSION_CODE = 4
-    const val VERSION_NAME = "1.2.1"
+    const val VERSION_CODE = 1
+    const val VERSION_NAME = "1.0"
 }

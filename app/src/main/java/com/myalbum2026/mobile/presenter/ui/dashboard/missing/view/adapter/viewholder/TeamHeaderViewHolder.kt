@@ -19,11 +19,17 @@ class TeamHeaderViewHolder(
 
     val context: Context = binding.root.context
 
-    fun render(item: CardsItem.TeamHeader) = with(binding) {
+    fun render(
+        item: CardsItem.TeamHeader,
+        onTeamSelected: (TeamEntity) -> Unit = {},
+    ) = with(binding) {
         with(item) {
             setImageFlag(team = team)
             teamNameTextView.text = team.countryName
             setHeaderText(item = this)
+            root.setOnClickListener {
+                onTeamSelected(item.team)
+            }
         }
     }
 

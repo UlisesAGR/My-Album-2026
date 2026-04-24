@@ -7,6 +7,7 @@ package com.myalbum2026.mobile.utils.extensions
 import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.view.KeyEvent
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.OnBackPressedDispatcher
@@ -15,6 +16,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LifecycleOwner
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.utils.logger.log
+import java.io.Serializable
 
 @Suppress("DEPRECATION")
 fun FragmentActivity.navigateTo(
@@ -121,5 +123,14 @@ fun FragmentActivity.launchIntent(
     } catch (exception: Exception) {
         log(message = exception.message.toString())
         onError()
+    }
+}
+
+inline fun <reified T : Serializable> Intent.getSerializable(key: String): T? {
+    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        getSerializableExtra(key, T::class.java)
+    } else {
+        @Suppress("DEPRECATION")
+        getSerializableExtra(key) as? T
     }
 }

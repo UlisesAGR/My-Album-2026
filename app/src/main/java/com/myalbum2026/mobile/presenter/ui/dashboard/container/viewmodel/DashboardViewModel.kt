@@ -63,6 +63,7 @@ class DashboardViewModel @Inject constructor(
             }
             .collect { items ->
                 val items = getItems(teamsWithCards = items)
+                delay(DELAY)
                 _dashboardUiState.update { state -> state.copy(items = items) }
                 delay(DELAY)
                 _dashboardUiState.update { state -> state.copy(isLoading = false) }

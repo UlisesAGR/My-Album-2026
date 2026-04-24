@@ -9,13 +9,16 @@ import androidx.activity.viewModels
 import com.google.android.gms.ads.AdRequest
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardBinding
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardViewModel
+import com.myalbum2026.mobile.presenter.ui.dashboard.countries.view.CountryListActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.CardsMissingActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view.CardsObtainedActivity
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
+import com.myalbum2026.mobile.utils.extensions.Constants.EXTRA_CARD_TYPE
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.extensions.navigateTo
@@ -76,6 +79,12 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         }
         cardsMissingCustomButton.setOnClickListener {
             goToCardsMissing()
+        }
+        countyObtainedCustomButton.setOnClickListener {
+            goToCountryObtained()
+        }
+        countyMissingCustomButton.setOnClickListener {
+            goToCountryMissing()
         }
     }
 
@@ -141,6 +150,26 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         navigateTo(
             destination = CardsMissingActivity::class.java,
             finishCurrent = true,
+        )
+    }
+
+    private fun goToCountryObtained() {
+        navigateTo(
+            destination = CountryListActivity::class.java,
+            finishCurrent = true,
+            extrasBuilder = {
+                putExtra(EXTRA_CARD_TYPE, CardType.OBTAINED)
+            }
+        )
+    }
+
+    private fun goToCountryMissing() {
+        navigateTo(
+            destination = CountryListActivity::class.java,
+            finishCurrent = true,
+            extrasBuilder = {
+                putExtra(EXTRA_CARD_TYPE, CardType.MISSING)
+            }
         )
     }
 }

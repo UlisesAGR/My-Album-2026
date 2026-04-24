@@ -5,7 +5,7 @@
 package com.myalbum2026.mobile.utils.extensions
 
 object Constants {
-    const val DELAY = 800L
+    const val DELAY = 250L
     const val ERROR = "Error"
     const val INFO = "Info"
     const val REQUEST_NO_CONTENT = 204
@@ -13,4 +13,6 @@ object Constants {
     const val BTN_WITHOUT_BORDERS_DEFAULT_HEIGHT = 54
     const val DIALOG_CONNECTION = "DIALOG_CONNECTION"
     const val DELAY_QUANTITY = 50L
+    const val EXTRA_CARD_TYPE = "EXTRA_CARD_TYPE"
+    const val EXTRA_TEAM_ID = "EXTRA_TEAM_ID"
 }
