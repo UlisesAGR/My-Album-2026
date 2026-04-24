@@ -163,8 +163,8 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
 
     private fun setEmptyState() = with(binding) {
         emptyStateView.apply {
-            titleTextView.text = getString(R.string.complete_cards)
-            subTitleTextView.text  = getString(R.string.congratulations_you_completed_your_album)
+            titleTextView.text = getString(R.string.no_cards)
+            subTitleTextView.text  = getString(R.string.you_don_t_have_a_card_yet)
             retryCustomButton.gone()
         }
     }

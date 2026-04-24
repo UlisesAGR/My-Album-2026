@@ -36,7 +36,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/countyListToolbar"
-            app:startIconContentDescription="@string/search"
+            app:startIconContentDescription="@string/search_country"
             app:startIconDrawable="@drawable/ic_search">
 
             <com.google.android.material.textfield.TextInputEditText
