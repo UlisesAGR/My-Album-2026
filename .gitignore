@@ -1,0 +1,14 @@
+# Cache y archivos temporales de compilación
+.gradle/
+build/
+**/build/
+.kotlin/
+kotlin-compiler-*
+
+# Configuración personal de Android Studio
+.idea/
+*.iml
+local.properties
+
+# Seguridad: No subir llaves de firmado
+*.jks
