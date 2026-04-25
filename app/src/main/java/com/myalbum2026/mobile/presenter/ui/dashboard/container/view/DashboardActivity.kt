@@ -4,7 +4,6 @@
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.container.view
 
-import android.view.Gravity
 import androidx.activity.viewModels
 import com.google.android.gms.ads.AdRequest
 import com.myalbum2026.mobile.R
@@ -39,19 +38,10 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         ActivityDashboardBinding.inflate(layoutInflater)
 
     override fun init() {
-        setToolbar()
         setText()
         setBanner()
         setListeners()
         setFlows()
-    }
-
-    private fun setToolbar() {
-        setupAppBar(
-            toolbar = binding.dashboardToolbar,
-            title = getString(R.string.app_name),
-            titleAlignment = Gravity.CENTER,
-        )
     }
 
     private fun setText() = with(binding)  {

@@ -21,7 +21,6 @@ sealed class CardsItem {
         val team: TeamEntity,
         val count: Int,
         val total: Int,
-        val progress: Int,
     ) : CardsItem()
     data class Card(
         val card: CardEntity,

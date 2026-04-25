@@ -82,7 +82,6 @@ class CardsObtainedViewModel @Inject constructor(
 
         teamsWithCards.forEach { teamWithCards ->
             val missingInTeam = teamWithCards.cards.filter { card -> card.obtained }
-            val obtainedInTeamCount = teamWithCards.cards.count { card -> card.obtained }
             if (missingInTeam.isNotEmpty()) {
                 items.add(
                     CardsItem.TeamHeader(
@@ -90,7 +89,6 @@ class CardsObtainedViewModel @Inject constructor(
                         team = teamWithCards.team,
                         count = missingInTeam.size,
                         total = teamWithCards.cards.size,
-                        progress = obtainedInTeamCount,
                     )
                 )
 

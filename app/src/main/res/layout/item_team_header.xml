@@ -35,7 +35,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_24"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="@+id/logoImageView"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,25 +44,14 @@
 
             <TextView
                 android:id="@+id/teamNameTextView"
-                style="@style/text_medium.bold"
+                style="@style/text_big.bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Argentina" />
 
-            <com.google.android.material.progressindicator.LinearProgressIndicator
-                android:id="@+id/progressIndicator"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_8"
-                app:indicatorColor="@color/md_theme_primary"
-                app:trackColor="@color/md_theme_surfaceVariant"
-                app:trackCornerRadius="16dp"
-                app:trackThickness="6dp"
-                tools:progress="45" />
-
             <TextView
                 android:id="@+id/teamCountTextView"
-                style="@style/text_regular"
+                style="@style/text_medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_8"
