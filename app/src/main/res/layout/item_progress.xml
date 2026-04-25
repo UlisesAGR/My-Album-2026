@@ -8,7 +8,7 @@
     android:id="@+id/itemRoot"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="@dimen/margin_16"
+    android:layout_marginHorizontal="@dimen/margin_8"
     android:layout_marginVertical="@dimen/margin_8"
     app:cardCornerRadius="16dp"
     app:cardElevation="0dp"

@@ -37,7 +37,6 @@
             android:nestedScrollingEnabled="false"
             android:overScrollMode="never"
             android:paddingHorizontal="@dimen/padding_8"
-            android:paddingTop="@dimen/padding_16"
             android:paddingBottom="@dimen/padding_64"
             android:scrollbars="none"
             android:visibility="visible"
@@ -61,7 +60,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardsObtainedToolbar"
-            tools:visibility="visible" />
+            tools:visibility="gone" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
