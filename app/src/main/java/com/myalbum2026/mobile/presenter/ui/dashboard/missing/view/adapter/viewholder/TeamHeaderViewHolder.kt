@@ -26,6 +26,13 @@ class TeamHeaderViewHolder(
         with(item) {
             setImageFlag(team = team)
             teamNameTextView.text = team.countryName
+            progressIndicator.apply {
+                max = item.total
+                isIndeterminate = false
+                progress = item.progress
+                progress = 0
+                setProgressCompat(item.progress, true)
+            }
             setHeaderText(item = this)
             root.setOnClickListener {
                 onTeamSelected(item.team)

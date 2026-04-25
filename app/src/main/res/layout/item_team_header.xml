@@ -15,11 +15,9 @@
     app:strokeColor="@color/md_theme_outlineVariant"
     app:strokeWidth="1dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
         android:paddingHorizontal="@dimen/padding_16"
         android:paddingTop="@dimen/padding_16"
         android:paddingBottom="@dimen/padding_16">
@@ -29,31 +27,49 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:contentDescription="@null"
-            android:src="@drawable/il_flag_europe" />
+            android:src="@drawable/il_flag_europe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/teamNameTextView"
-            style="@style/text_extra.bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_12"
-            android:textSize="18sp"
-            tools:text="Argentina" />
-
-        <View
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginHorizontal="@dimen/margin_16"
-            android:layout_weight="1"
-            android:background="@color/divider_color" />
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_16"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/logoImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logoImageView"
+            app:layout_constraintTop_toTopOf="@+id/logoImageView">
 
-        <TextView
-            android:id="@+id/teamCountTextView"
-            style="@style/text_medium.bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="10 / 20 Missing" />
+            <TextView
+                android:id="@+id/teamNameTextView"
+                style="@style/text_medium.bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Argentina" />
 
-    </LinearLayout>
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                app:indicatorColor="@color/md_theme_primary"
+                app:trackColor="@color/md_theme_surfaceVariant"
+                app:trackCornerRadius="16dp"
+                app:trackThickness="6dp"
+                tools:progress="45" />
+
+            <TextView
+                android:id="@+id/teamCountTextView"
+                style="@style/text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                tools:text="10 / 20 Missing" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>

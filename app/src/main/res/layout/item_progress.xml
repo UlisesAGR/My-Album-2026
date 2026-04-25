@@ -54,8 +54,8 @@
             android:layout_marginTop="@dimen/margin_8"
             app:indicatorColor="@color/md_theme_primary"
             app:trackColor="@color/md_theme_surfaceVariant"
-            app:trackCornerRadius="8dp"
-            app:trackThickness="8dp"
+            app:trackCornerRadius="16dp"
+            app:trackThickness="6dp"
             tools:progress="45" />
 
         <LinearLayout
@@ -97,12 +97,13 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/missingCardsTextView"
                     style="@style/text_regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0.8"
-                    android:text="@string/missing_cards"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:text="@string/missing_cards" />
 
                 <TextView
                     android:id="@+id/tvMissingCards"

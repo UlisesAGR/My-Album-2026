@@ -22,6 +22,6 @@ fun View.invisible(): View {
 }
 
 fun View.setVisibility(state: Boolean): View {
-    visibility = if (state) View.VISIBLE else View.INVISIBLE
+    visibility = if (state) View.VISIBLE else View.GONE
     return this
 }

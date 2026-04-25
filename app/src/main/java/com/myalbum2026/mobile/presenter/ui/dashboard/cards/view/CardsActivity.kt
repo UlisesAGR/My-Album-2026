@@ -52,7 +52,6 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
 
         setToolbar()
         setEmptyState()
-        validateFabShareVisibility()
         setListeners()
         setCardsMissingAdapter()
         setCardsMissingRecyclerView()
@@ -74,10 +73,6 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
                 goToCountryListActivity()
             },
         )
-    }
-
-    private fun validateFabShareVisibility() {
-        binding.fabShareMissing.setVisibility(state = cardType == CardType.MISSING)
     }
 
     private fun setListeners() {
@@ -153,12 +148,16 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
         if (isEmpty) {
             cardsRecyclerView.gone()
             emptyStateView.root.show()
-            fabShareMissing.hide()
+            validateFabShareVisibility()
         } else {
             cardsRecyclerView.show()
             emptyStateView.root.gone()
-            fabShareMissing.show()
+            validateFabShareVisibility()
         }
+    }
+
+    private fun validateFabShareVisibility() {
+        binding.fabShareMissing.setVisibility(state = cardType == CardType.MISSING)
     }
 
     private fun setEmptyState() = with(binding) {

@@ -7,6 +7,7 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.myalbum2026.mobile.data.model.TeamWithCards
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.user.IsInfoShowedUseCase
@@ -86,6 +87,7 @@ class DashboardViewModel @Inject constructor(
 
         items.add(
             CardsItem.Progress(
+                type = CardType.MISSING,
                 percentage = "$percentage%",
                 total = totalCards.toString(),
                 missing = missingCount.toString(),

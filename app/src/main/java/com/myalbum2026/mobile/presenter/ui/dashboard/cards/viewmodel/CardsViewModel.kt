@@ -76,12 +76,15 @@ class CardsViewModel @Inject constructor(
             items.add(CardsItem.Publicity)
 
             val totalCards = filteredTeamsWithCards.sumOf { it.team.totalCards }
-            val obtainedCards = filteredTeamsWithCards.sumOf { list -> list.cards.count { it.obtained } }
+            val obtainedCards = filteredTeamsWithCards.sumOf { list -> list.cards.count { card ->
+                if (cardType == CardType.MISSING) !card.obtained else card.obtained
+            } }
             val missingCount = totalCards - obtainedCards
             val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
 
             items.add(
                 CardsItem.Progress(
+                    type = cardType,
                     percentage = "$percentage%",
                     total = totalCards.toString(),
                     missing = missingCount.toString(),
@@ -90,8 +93,11 @@ class CardsViewModel @Inject constructor(
             )
 
             filteredTeamsWithCards.forEach { teamWithCards ->
-                val filteredCards = teamWithCards.cards.filter {
-                    if (cardType == CardType.MISSING) !it.obtained else it.obtained
+                val filteredCards = teamWithCards.cards.filter { card ->
+                    if (cardType == CardType.MISSING) !card.obtained else card.obtained
+                }
+                val obtainedInTeamCount = teamWithCards.cards.count { card ->
+                    if (cardType == CardType.MISSING) !card.obtained else card.obtained
                 }
                 if (filteredCards.isNotEmpty()) {
                     items.add(
@@ -100,6 +106,7 @@ class CardsViewModel @Inject constructor(
                             team = teamWithCards.team,
                             count = filteredCards.size,
                             total = teamWithCards.team.totalCards,
+                            progress = obtainedInTeamCount,
                         )
                     )
 

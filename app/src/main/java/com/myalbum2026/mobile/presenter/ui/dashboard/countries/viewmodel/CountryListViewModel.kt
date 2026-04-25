@@ -45,6 +45,9 @@ class CountryListViewModel @Inject constructor(
                     val missingInTeam = teamWithCards.cards.filter {
                         if (cardType == CardType.MISSING) !it.obtained else it.obtained
                     }
+                    val obtainedInTeamCount = teamWithCards.cards.count { card ->
+                        if (cardType == CardType.MISSING) !card.obtained else card.obtained
+                    }
                     if (missingInTeam.isNotEmpty()) {
                         items.add(
                             CardsItem.TeamHeader(
@@ -52,6 +55,7 @@ class CountryListViewModel @Inject constructor(
                                 team = teamWithCards.team,
                                 count = missingInTeam.size,
                                 total = teamWithCards.cards.size,
+                                progress = obtainedInTeamCount,
                             )
                         )
                     }
