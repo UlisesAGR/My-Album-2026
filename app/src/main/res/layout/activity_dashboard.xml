@@ -55,9 +55,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/margin_16"
                     android:layout_marginVertical="@dimen/margin_16"
-                    android:backgroundTint="@color/md_theme_inverseOnSurface"
+                    android:backgroundTint="@color/md_theme_surface"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
+                    app:strokeColor="@color/border_color"
                     app:strokeWidth="1dp">
 
                     <LinearLayout
@@ -130,9 +131,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/margin_16"
-                    android:backgroundTint="@color/md_theme_inverseOnSurface"
+                    android:backgroundTint="@color/md_theme_surface"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
+                    app:strokeColor="@color/border_color"
                     app:strokeWidth="1dp">
 
                     <LinearLayout

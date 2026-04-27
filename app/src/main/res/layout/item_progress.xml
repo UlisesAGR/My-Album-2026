@@ -10,9 +10,10 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/margin_8"
     android:layout_marginVertical="@dimen/margin_8"
+    android:backgroundTint="@color/md_theme_surface"
     app:cardCornerRadius="16dp"
     app:cardElevation="0dp"
-    app:strokeColor="@color/md_theme_outlineVariant"
+    app:strokeColor="@color/border_color"
     app:strokeWidth="1dp">
 
     <LinearLayout
