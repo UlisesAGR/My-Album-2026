@@ -4,9 +4,9 @@
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ItemCardSingleBinding
@@ -112,9 +112,10 @@ class CardsMissingAdapter(
     override fun getItemCount(): Int =
         items.size
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun updateItems(items: List<CardsItem>) {
-        this.items = items
-        notifyDataSetChanged()
+    fun updateItems(newItems: List<CardsItem>) {
+        val diffCallback = CardsDiffCallback(this.items, newItems)
+        val diffResult = DiffUtil.calculateDiff(diffCallback)
+        this.items = newItems
+        diffResult.dispatchUpdatesTo(this)
     }
 }
