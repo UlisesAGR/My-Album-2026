@@ -137,9 +137,10 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
     private fun setItems(items: MutableList<CardsItem>?) {
         if (items == null) return
         if (items.isNotEmpty()) {
-            cardsMissingAdapter.updateItems(newItems = items)
+            cardsMissingAdapter.submitList(items)
             showEmptyState(isEmpty = false)
         } else {
+            cardsMissingAdapter.submitList(emptyList())
             showEmptyState(isEmpty = true)
         }
     }

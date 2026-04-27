@@ -6,7 +6,7 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ItemCardSingleBinding
@@ -20,9 +20,8 @@ import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewho
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.TeamHeaderViewHolder
 
 class CardsMissingAdapter(
-    private var items: List<CardsItem> = emptyList(),
     val onCardItemClick: (CardEntity) -> Unit = {},
-) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+) : ListAdapter<CardsItem, RecyclerView.ViewHolder>(CardsDiffCallback()) {
 
     companion object {
         private const val TYPE_PUBLICITY = 0
@@ -32,90 +31,30 @@ class CardsMissingAdapter(
     }
 
     override fun getItemViewType(position: Int): Int =
-        when (items[position]) {
+        when (getItem(position)) {
             is CardsItem.Publicity -> TYPE_PUBLICITY
             is CardsItem.Progress -> TYPE_PROGRESS
             is CardsItem.TeamHeader -> TYPE_TEAM_HEADER
             is CardsItem.Card -> TYPE_CARD
         }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int,
-    ): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return when(viewType) {
-            TYPE_PUBLICITY -> {
-                PublicityViewHolder(
-                    binding = ItemPublicityBinding.inflate(
-                        inflater,
-                        parent,
-                        false,
-                    )
-                )
-            }
-            TYPE_PROGRESS -> {
-                ProgressViewHolder(
-                    binding = ItemProgressBinding.inflate(
-                        inflater,
-                        parent,
-                        false,
-                    ),
-                )
-            }
-            TYPE_TEAM_HEADER -> {
-                TeamHeaderViewHolder(
-                    binding = ItemTeamHeaderBinding.inflate(
-                        inflater,
-                        parent,
-                        false,
-                    )
-                )
-            }
-            else -> {
-                CardViewHolder(
-                    binding = ItemCardSingleBinding.inflate(
-                        inflater,
-                        parent,
-                        false,
-                    ),
-                )
-            }
+        return when (viewType) {
+            TYPE_PUBLICITY -> PublicityViewHolder(ItemPublicityBinding.inflate(inflater, parent, false))
+            TYPE_PROGRESS -> ProgressViewHolder(ItemProgressBinding.inflate(inflater, parent, false))
+            TYPE_TEAM_HEADER -> TeamHeaderViewHolder(ItemTeamHeaderBinding.inflate(inflater, parent, false))
+            else -> CardViewHolder(ItemCardSingleBinding.inflate(inflater, parent, false))
         }
     }
 
-    override fun onBindViewHolder(
-        holder: RecyclerView.ViewHolder,
-        position: Int,
-    ) {
-        when (val item = items[position]) {
-            is CardsItem.Publicity -> {
-                (holder as PublicityViewHolder).render()
-            }
-            is CardsItem.Progress -> {
-                (holder as ProgressViewHolder).render(
-                    item = item,
-                )
-            }
-            is CardsItem.TeamHeader -> {
-                (holder as TeamHeaderViewHolder).render(item)
-            }
-            is CardsItem.Card -> {
-                (holder as CardViewHolder).render(
-                    card = item.card,
-                    onCardItemClick = onCardItemClick,
-                )
-            }
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        val item = getItem(position)
+        when (holder) {
+            is PublicityViewHolder -> holder.render()
+            is ProgressViewHolder -> holder.render(item as CardsItem.Progress)
+            is TeamHeaderViewHolder -> holder.render(item as CardsItem.TeamHeader)
+            is CardViewHolder -> holder.render((item as CardsItem.Card).card, onCardItemClick)
         }
-    }
-
-    override fun getItemCount(): Int =
-        items.size
-
-    fun updateItems(newItems: List<CardsItem>) {
-        val diffCallback = CardsDiffCallback(this.items, newItems)
-        val diffResult = DiffUtil.calculateDiff(diffCallback)
-        this.items = newItems
-        diffResult.dispatchUpdatesTo(this)
     }
 }

@@ -119,9 +119,10 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
     private fun setItems(items: List<CardsItem.TeamHeader>?) {
         if (items == null) return
         if (items.isNotEmpty()) {
-            countryListAdapter.updateList(newList = items)
+            countryListAdapter.updateData(items)
             showEmptyState(isEmpty = false)
         } else {
+            countryListAdapter.updateData(emptyList())
             showEmptyState(isEmpty = true)
         }
     }

@@ -7,30 +7,24 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter
 import androidx.recyclerview.widget.DiffUtil
 import com.myalbum2026.mobile.domain.model.CardsItem
 
-class CardsDiffCallback(
-    private val oldList: List<CardsItem>,
-    private val newList: List<CardsItem>
-) : DiffUtil.Callback() {
+class CardsDiffCallback : DiffUtil.ItemCallback<CardsItem>() {
 
-    override fun getOldListSize(): Int = oldList.size
-    override fun getNewListSize(): Int = newList.size
-
-    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        val oldItem = oldList[oldItemPosition]
-        val newItem = newList[newItemPosition]
-
-        return when (oldItem) {
+    override fun areItemsTheSame(
+        oldItem: CardsItem,
+        newItem: CardsItem,
+    ): Boolean =
+        when (oldItem) {
             is CardsItem.Card if newItem is CardsItem.Card ->
                 oldItem.card.id == newItem.card.id
 
             is CardsItem.TeamHeader if newItem is CardsItem.TeamHeader ->
-                oldItem.team.countryName == newItem.team.countryName
+                oldItem.team.id == newItem.team.id
 
-            else -> oldItem == newItem
+            else -> oldItem.javaClass == newItem.javaClass
         }
-    }
 
-    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        return oldList[oldItemPosition] == newList[newItemPosition]
-    }
+    override fun areContentsTheSame(
+        oldItem: CardsItem,
+        newItem: CardsItem,
+    ): Boolean = oldItem == newItem
 }
