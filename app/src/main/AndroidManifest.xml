@@ -22,49 +22,55 @@
 
         <activity
             android:name=".presenter.ui.dashboard.cards.view.CardsActivity"
+            android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.dashboard.countries.view.CountryListActivity"
+            android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.dashboard.missing.view.CardsMissingActivity"
+            android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.dashboard.obtained.view.CardsObtainedActivity"
+            android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.dashboard.container.view.DashboardActivity"
+            android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.welcome.view.WelcomeActivity"
+            android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".presenter.ui.splash.view.SplashActivity"
+            android:configChanges="uiMode"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Splash.Theme.Starting"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
