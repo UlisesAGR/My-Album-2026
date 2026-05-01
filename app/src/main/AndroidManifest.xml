@@ -19,7 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAlbum2026"
         tools:ignore="DataExtractionRules">
-
+        <activity
+            android:name=".presenter.ui.dashboard.repeated.view.CardsRepeatedActivity"
+            android:exported="false" />
         <activity
             android:name=".presenter.ui.dashboard.cards.view.CardsActivity"
             android:configChanges="uiMode"
@@ -71,6 +73,7 @@
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

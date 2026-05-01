@@ -12,6 +12,8 @@ import com.myalbum2026.mobile.data.model.TeamEntity
 import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
 import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsItem
+import com.myalbum2026.mobile.utils.ui.gone
+import com.myalbum2026.mobile.utils.ui.show
 
 class TeamHeaderViewHolder(
     private val binding: ItemTeamHeaderBinding,
@@ -45,12 +47,19 @@ class TeamHeaderViewHolder(
 
     private fun setHeaderText(item: CardsItem.TeamHeader) = with(binding) {
         with(item) {
-            teamCountTextView.text = context.getString(
-                R.string.header_format,
-                count,
-                total,
-                context.getString(if (type == CardType.OBTAINED) R.string.obtained else R.string.missing),
-            )
+            if (count != null && total != null) {
+                teamCountTextView.apply {
+                    text = context.getString(
+                        R.string.header_format,
+                        count,
+                        total,
+                        context.getString(if (type == CardType.OBTAINED) R.string.obtained else R.string.missing),
+                    )
+                    show()
+                }
+            } else {
+                teamCountTextView.gone()
+            }
         }
     }
 }

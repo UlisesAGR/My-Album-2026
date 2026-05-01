@@ -53,8 +53,7 @@
                     android:id="@+id/progressMaterialCardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/margin_16"
-                    android:layout_marginVertical="@dimen/margin_16"
+                    android:layout_margin="@dimen/margin_16"
                     android:backgroundTint="@color/md_theme_surface"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
@@ -64,12 +63,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/margin_16"
-                        android:layout_marginVertical="@dimen/margin_24"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/myCollectionTextView">
+                        android:layout_margin="@dimen/margin_16"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/text_big.bold"
@@ -84,7 +79,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="@dimen/margin_8"
-                            android:layout_marginTop="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/margin_16"
                             tools:text="Cards: 100" />
 
                         <com.myalbum2026.mobile.presenter.widget.button.CustomButton
@@ -92,7 +87,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="64dp"
                             android:layout_gravity="center"
-                            android:layout_marginTop="@dimen/margin_16"
+                            android:layout_marginTop="@dimen/margin_8"
                             android:text="@string/cards_obtained"
                             android:textSize="16sp"
                             app:btnType="btn_primary" />
@@ -100,7 +95,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:layout_marginTop="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/margin_16"
                             android:background="@color/divider_color" />
 
                         <TextView
@@ -109,7 +104,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="@dimen/margin_8"
-                            android:layout_marginTop="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/margin_16"
                             tools:text="Cards: 100" />
 
                         <com.myalbum2026.mobile.presenter.widget.button.CustomButton
@@ -117,7 +112,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="64dp"
                             android:layout_gravity="center"
-                            android:layout_marginTop="@dimen/margin_16"
+                            android:layout_marginTop="@dimen/margin_8"
                             android:text="@string/cards_missing"
                             android:textSize="16sp"
                             app:btnType="btn_secondary" />
@@ -131,6 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
                     android:backgroundTint="@color/md_theme_surface"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
@@ -140,12 +136,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/margin_16"
-                        android:layout_marginVertical="@dimen/margin_24"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/myCollectionTextView">
+                        android:layout_margin="@dimen/margin_16"
+                        android:orientation="vertical">
 
                         <TextView
                             style="@style/text_big.bold"
@@ -179,6 +171,36 @@
                             android:text="@string/county_missing"
                             android:textSize="16sp"
                             app:btnType="btn_secondary" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/repeatedMaterialCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_16"
+                    android:backgroundTint="@color/md_theme_surface"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/border_color"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_16"
+                        android:orientation="vertical">
+
+                        <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                            android:id="@+id/repeatedCustomButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center"
+                            android:text="@string/cards_repeated"
+                            android:textSize="16sp"
+                            app:btnType="btn_primary" />
 
                     </LinearLayout>
 

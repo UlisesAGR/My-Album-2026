@@ -16,6 +16,7 @@ import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.Dashboa
 import com.myalbum2026.mobile.presenter.ui.dashboard.countries.view.CountryListActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.CardsMissingActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.obtained.view.CardsObtainedActivity
+import com.myalbum2026.mobile.presenter.ui.dashboard.repeated.view.CardsRepeatedActivity
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.Constants.EXTRA_CARD_TYPE
 import com.myalbum2026.mobile.utils.extensions.collect
@@ -75,6 +76,9 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
         }
         countyMissingCustomButton.setOnClickListener {
             goToCountryMissing()
+        }
+        repeatedCustomButton.setOnClickListener {
+            goToCardsRepeated()
         }
     }
 
@@ -156,6 +160,16 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
     private fun goToCountryMissing() {
         navigateTo(
             destination = CountryListActivity::class.java,
+            finishCurrent = true,
+            extrasBuilder = {
+                putExtra(EXTRA_CARD_TYPE, CardType.MISSING)
+            }
+        )
+    }
+
+    private fun goToCardsRepeated() {
+        navigateTo(
+            destination = CardsRepeatedActivity::class.java,
             finishCurrent = true,
             extrasBuilder = {
                 putExtra(EXTRA_CARD_TYPE, CardType.MISSING)

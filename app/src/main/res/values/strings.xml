@@ -60,4 +60,9 @@
     <string name="congratulations_you_completed_your_album">Congratulations, you completed your album</string>
     <string name="you_don_t_have_a_card_yet">You don\'t have a card yet</string>
     <string name="no_cards">No cards</string>
+    <!-- Repeated -->
+    <string name="cards_repeated">Cards repeated</string>
+    <string name="share_with_repeated">Share my repeated cards</string>
+    <string name="error_share_reapeated_cards">Error share repeated cards</string>
+    <string name="no_repeated_cards">Congratulations! You have no repeated stickers</string>
 </resources>

@@ -54,4 +54,8 @@
     <string name="congratulations_you_completed_your_album">Enhorabuena, has completado tu álbum</string>
     <string name="you_don_t_have_a_card_yet">Aun no tienes ninguna estampas</string>
     <string name="no_cards">Sin estampas</string>
+    <string name="cards_repeated">Estampas repetidas</string>
+    <string name="share_with_repeated">Compartir mis estampas repetidas</string>
+    <string name="error_share_reapeated_cards">Error al compartir las estampas repetidas</string>
+    <string name="no_repeated_cards">¡Felicidades! No tienes estampas repetidas</string>
 </resources>

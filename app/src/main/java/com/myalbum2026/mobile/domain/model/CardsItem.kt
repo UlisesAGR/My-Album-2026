@@ -19,8 +19,8 @@ sealed class CardsItem {
     data class TeamHeader(
         val type: CardType,
         val team: TeamEntity,
-        val count: Int,
-        val total: Int,
+        val count: Int? = null,
+        val total: Int? = null,
     ) : CardsItem()
     data class Card(
         val card: CardEntity,
