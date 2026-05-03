@@ -6,7 +6,7 @@
     <string name="header_format">%1$d / %2$d %3$s</string>
     <string name="progress_obtained_format">Estampas obtenidas: %1$s de %2$s</string>
     <string name="progress_missing_format">Estampas faltantes: %1$s</string>
-    <!-- App -->
+    <string name="progress_repeated_format">Estampas repetidas: %1$s</string>
     <!-- Talk -->
     <string name="back">Atrás</string>
     <!-- Internet Connection -->

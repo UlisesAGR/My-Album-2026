@@ -21,6 +21,7 @@ import com.myalbum2026.mobile.utils.extensions.Constants.BTN_NORMAL_DEFAULT_HEIG
 import com.myalbum2026.mobile.utils.extensions.Constants.BTN_WITHOUT_BORDERS_DEFAULT_HEIGHT
 import com.google.android.material.button.MaterialButton
 import com.myalbum2026.mobile.R
+import com.myalbum2026.mobile.presenter.widget.button.CustomButtonType.BTN_REPEATED
 
 class CustomButton @JvmOverloads constructor(
     context: Context,
@@ -86,6 +87,11 @@ class CustomButton @JvmOverloads constructor(
             BTN_DISABLED -> {
                 setBackgroundColor(ContextCompat.getColor(context, R.color.button_enable))
                 setTextColor(ContextCompat.getColor(context, R.color.button_text))
+                height = dpToPx(BTN_NORMAL_DEFAULT_HEIGHT)
+            }
+            BTN_REPEATED -> {
+                setBackgroundColor(ContextCompat.getColor(context, R.color.md_theme_error))
+                setTextColor(ContextCompat.getColor(context, R.color.text_white_color))
                 height = dpToPx(BTN_NORMAL_DEFAULT_HEIGHT)
             }
         }

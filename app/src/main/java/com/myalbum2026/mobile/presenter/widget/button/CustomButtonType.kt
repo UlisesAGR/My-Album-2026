@@ -10,4 +10,5 @@ object CustomButtonType {
     const val BTN_SECONDARY = 2
     const val BTN_WITHOUT_BORDERS_PRIMARY = 3
     const val BTN_WITHOUT_BORDERS_SECONDARY = 4
+    const val BTN_REPEATED = 5
 }

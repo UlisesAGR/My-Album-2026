@@ -9,6 +9,7 @@
             <enum name="btn_secondary" value="2" />
             <enum name="btn_without_borders_primary" value="3" />
             <enum name="btn_without_borders_secondary" value="4" />
+            <enum name="btn_repeated" value="5" />
         </attr>
     </declare-styleable>
 </resources>

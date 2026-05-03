@@ -117,6 +117,10 @@ class DashboardActivity : BaseOnlyActivity<ActivityDashboardBinding>() {
                 R.string.progress_missing_format,
                 progress.missing,
             )
+            myProgressRepeatedTextView.text = getString(
+                R.string.progress_repeated_format,
+                progress.repeated,
+            )
         }
     }
 

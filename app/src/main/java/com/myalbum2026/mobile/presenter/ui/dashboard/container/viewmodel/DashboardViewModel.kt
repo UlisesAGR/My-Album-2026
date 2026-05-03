@@ -78,12 +78,17 @@ class DashboardViewModel @Inject constructor(
 
         val totalCards = teamsWithCards.sumOf { it.team.totalCards }
         val obtainedCards = teamsWithCards.sumOf { list ->
-            list.cards.count { it.obtained }
+            list.cards.count { card -> card.obtained }
         }
 
         val missingCount = totalCards - obtainedCards
         val percentage = if (totalCards > 0) (obtainedCards * 100 / totalCards) else 0
         val obtained = totalCards - missingCount
+        val repeatedCount = teamsWithCards.sumOf { list ->
+            list.cards.sumOf { card ->
+                if (card.quantity > 1) card.quantity - 1 else 0
+            }
+        }
 
         items.add(
             CardsItem.Progress(
@@ -92,6 +97,7 @@ class DashboardViewModel @Inject constructor(
                 total = totalCards.toString(),
                 missing = missingCount.toString(),
                 obtained = obtained.toString(),
+                repeated = repeatedCount.toString(),
             )
         )
 

@@ -15,6 +15,7 @@ sealed class CardsItem {
         val total: String,
         val missing: String,
         val obtained: String,
+        val repeated: String = "",
     ) : CardsItem()
     data class TeamHeader(
         val type: CardType,
