@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ItemCardSingleBinding
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.utils.ui.getTeamColor
 
 class CardViewHolder(
@@ -20,6 +21,7 @@ class CardViewHolder(
     private val context: Context = binding.root.context
 
     fun render(
+        cardType: CardType,
         card: CardEntity,
         onCardItemClick: (CardEntity) -> Unit,
     ) = with(binding) {
@@ -27,7 +29,10 @@ class CardViewHolder(
             setBackgroundCounty(card = card)
             idNumber.text = id
             cardPosition.text = position.orEmpty()
-            setTextQuantity(quantity = quantity)
+            setTextQuantity(
+                cardType = cardType,
+                quantity = quantity,
+            )
             root.setOnClickListener {
                 onCardItemClick(this)
             }
@@ -39,12 +44,15 @@ class CardViewHolder(
             ColorStateList.valueOf(context.getTeamColor(card.teamId))
     }
 
-    private fun setTextQuantity(quantity: Int) = with(binding) {
+    private fun setTextQuantity(
+        cardType: CardType,
+        quantity: Int,
+    ) = with(binding) {
         cardQuantity.apply {
             setTextColor(
                 ContextCompat.getColor(
                     context,
-                    if (quantity > 1) R.color.md_theme_error else R.color.black_color,
+                    if (cardType == CardType.REPEATED || quantity > 1) R.color.md_theme_error else R.color.black_color,
                 ),
             )
             text = quantity.toString()

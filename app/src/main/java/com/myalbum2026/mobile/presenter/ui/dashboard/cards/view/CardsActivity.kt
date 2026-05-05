@@ -90,6 +90,7 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
 
     private fun setCardsMissingAdapter() {
         cardsMissingAdapter = CardsMissingAdapter(
+            cardType = cardType,
             onCardItemClick = { card ->
                 showQuantityDialog(card = card)
             },

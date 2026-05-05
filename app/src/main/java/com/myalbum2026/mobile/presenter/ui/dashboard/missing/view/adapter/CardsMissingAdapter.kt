@@ -13,6 +13,7 @@ import com.myalbum2026.mobile.databinding.ItemCardSingleBinding
 import com.myalbum2026.mobile.databinding.ItemProgressBinding
 import com.myalbum2026.mobile.databinding.ItemPublicityBinding
 import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.CardViewHolder
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.ProgressViewHolder
@@ -20,6 +21,7 @@ import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewho
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.viewholder.TeamHeaderViewHolder
 
 class CardsMissingAdapter(
+    val cardType: CardType,
     val onCardItemClick: (CardEntity) -> Unit = {},
 ) : ListAdapter<CardsItem, RecyclerView.ViewHolder>(CardsDiffCallback()) {
 
@@ -41,10 +43,10 @@ class CardsMissingAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
-            TYPE_PUBLICITY -> PublicityViewHolder(ItemPublicityBinding.inflate(inflater, parent, false))
-            TYPE_PROGRESS -> ProgressViewHolder(ItemProgressBinding.inflate(inflater, parent, false))
-            TYPE_TEAM_HEADER -> TeamHeaderViewHolder(ItemTeamHeaderBinding.inflate(inflater, parent, false))
-            else -> CardViewHolder(ItemCardSingleBinding.inflate(inflater, parent, false))
+            TYPE_PUBLICITY -> PublicityViewHolder(binding = ItemPublicityBinding.inflate(inflater, parent, false))
+            TYPE_PROGRESS -> ProgressViewHolder(binding = ItemProgressBinding.inflate(inflater, parent, false))
+            TYPE_TEAM_HEADER -> TeamHeaderViewHolder(binding = ItemTeamHeaderBinding.inflate(inflater, parent, false))
+            else -> CardViewHolder(binding = ItemCardSingleBinding.inflate(inflater, parent, false))
         }
     }
 
@@ -52,9 +54,13 @@ class CardsMissingAdapter(
         val item = getItem(position)
         when (holder) {
             is PublicityViewHolder -> holder.render()
-            is ProgressViewHolder -> holder.render(item as CardsItem.Progress)
-            is TeamHeaderViewHolder -> holder.render(item as CardsItem.TeamHeader)
-            is CardViewHolder -> holder.render((item as CardsItem.Card).card, onCardItemClick)
+            is ProgressViewHolder -> holder.render(item = item as CardsItem.Progress)
+            is TeamHeaderViewHolder -> holder.render(item = item as CardsItem.TeamHeader)
+            is CardViewHolder -> holder.render(
+                cardType = cardType,
+                card = (item as CardsItem.Card).card,
+                onCardItemClick = onCardItemClick,
+            )
         }
     }
 }

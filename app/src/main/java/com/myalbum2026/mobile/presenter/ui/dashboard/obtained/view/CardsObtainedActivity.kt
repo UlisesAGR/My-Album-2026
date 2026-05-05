@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.CardEntity
 import com.myalbum2026.mobile.databinding.ActivityCardsObtainedBinding
+import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityBottomSheet
@@ -71,6 +72,7 @@ class CardsObtainedActivity : BaseOnlyActivity<ActivityCardsObtainedBinding>() {
 
     private fun setCardsMissingAdapter() {
         cardsMissingAdapter = CardsMissingAdapter(
+            cardType = CardType.OBTAINED,
             onCardItemClick = { card ->
                 showQuantityDialog(card = card)
             },

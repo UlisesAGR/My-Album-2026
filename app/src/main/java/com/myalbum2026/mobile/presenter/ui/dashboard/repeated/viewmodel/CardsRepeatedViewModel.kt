@@ -82,7 +82,8 @@ class CardsRepeatedViewModel @Inject constructor(
                 )
 
                 repeatedInTeam.forEach { cardEntity ->
-                    items.add(CardsItem.Card(card = cardEntity))
+                    val cardForUi = cardEntity.copy(quantity = cardEntity.quantity - 1)
+                    items.add(CardsItem.Card(card = cardForUi))
                 }
             }
         }
@@ -94,10 +95,11 @@ class CardsRepeatedViewModel @Inject constructor(
         card: CardEntity,
         quantity: Int,
     ) = viewModelScope.launch {
+        val totalQuantity = quantity + 1
         updateCardUseCase(
             cardId = card.id,
-            quantity = quantity,
-            hasIt = quantity > 0,
+            quantity = totalQuantity,
+            hasIt = true,
         ).catch { exception ->
             _cardsRepeatedUiEvent.emit(CardsRepeatedUiEvent.ShowError(exception = exception))
         }.collect {
