@@ -13,6 +13,7 @@ import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.album.UpdateCardUseCase
 import com.myalbum2026.mobile.utils.extensions.Constants.DELAY
+import com.myalbum2026.mobile.utils.ui.getMissingCardsFormattedText
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 import kotlinx.coroutines.delay
@@ -131,16 +132,9 @@ class CardsViewModel @Inject constructor(
         }
     }
 
-    fun getMissingCardsFormattedText(): String? {
-        val items = _cardsUiState.value.items
-        if (items?.none { data -> data is CardsItem.Card } == true) return ""
-        val body = items?.joinToString("") { item ->
-            when (item) {
-                is CardsItem.TeamHeader -> "\n*${item.team.id}:* "
-                is CardsItem.Card -> "${item.card.number}, "
-                else -> ""
-            }
+    fun getMissingCards() = viewModelScope.launch {
+        _cardsUiState.update { state ->
+            state.copy(missingCards = getMissingCardsFormattedText(cards = _cardsUiState.value.items))
         }
-        return body?.trim()
     }
 }

@@ -9,4 +9,5 @@ import com.myalbum2026.mobile.domain.model.CardsItem
 data class CardsRepeatedUiState(
     val isLoading: Boolean = false,
     val items: MutableList<CardsItem>? = null,
+    val repeatedCards: String? = null,
 )

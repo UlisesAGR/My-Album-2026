@@ -9,4 +9,5 @@ import com.myalbum2026.mobile.domain.model.CardsItem
 data class CardsMissingUiState(
     val isLoading: Boolean = false,
     val items: MutableList<CardsItem>? = null,
+    val missingCards: String? = null,
 )

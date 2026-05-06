@@ -77,7 +77,7 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
 
     private fun setListeners() {
         binding.fabShareMissing.setOnClickListener {
-            handleShareAction()
+            cardsViewModel.getMissingCards()
         }
         setOnBackListener()
     }
@@ -118,6 +118,7 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
         collect(cardsViewModel.cardsUiState) { state ->
             statusLoading(isLoading = state.isLoading)
             setItems(items = state.items)
+            handleShareAction(missingCards = state.missingCards)
         }
         collect(cardsViewModel.cardsUiEvent) { state ->
             with(state) {
@@ -170,12 +171,12 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
         }
     }
 
-    private fun handleShareAction() {
-        val message = cardsViewModel.getMissingCardsFormattedText()
-        if (!message.isNullOrEmpty()) {
+    private fun handleShareAction(missingCards: String?) {
+        if (missingCards == null) return
+        if (missingCards.isNotEmpty()) {
             shareText(
                 title = getString(R.string.share_with),
-                message = message,
+                message = missingCards,
                 onError = {
                     toast(message = getString(R.string.error_share_missing_cards))
                 },
@@ -206,7 +207,7 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
             finishCurrent = true,
             extrasBuilder = {
                 putExtra(EXTRA_CARD_TYPE, cardType)
-            }
+            },
         )
     }
 }

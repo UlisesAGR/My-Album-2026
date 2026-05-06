@@ -13,6 +13,7 @@ import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.domain.usecase.album.GetFullAlbumUseCase
 import com.myalbum2026.mobile.domain.usecase.album.UpdateCardUseCase
 import com.myalbum2026.mobile.utils.extensions.Constants.DELAY
+import com.myalbum2026.mobile.utils.ui.getRepeatedCardsFormattedText
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 import kotlinx.coroutines.delay
@@ -107,20 +108,9 @@ class CardsRepeatedViewModel @Inject constructor(
         }
     }
 
-    fun getRepeatedCardsFormattedText(): String? {
-        val items = _cardsRepeatedUiState.value.items
-        if (items?.none { it is CardsItem.Card } == true) return ""
-        val body = items?.joinToString("") { item ->
-            when (item) {
-                is CardsItem.TeamHeader -> "\n*${item.team.id}:* "
-                is CardsItem.Card -> {
-                    val count = item.card.quantity - 1
-                    if (count > 1) "${item.card.number} (x$count), "
-                    else "${item.card.number}, "
-                }
-                else -> ""
-            }
+    fun getRepeatedCards() = viewModelScope.launch {
+        _cardsRepeatedUiState.update { state ->
+            state.copy(repeatedCards = getRepeatedCardsFormattedText(cards = _cardsRepeatedUiState.value.items))
         }
-        return body?.trim()
     }
 }

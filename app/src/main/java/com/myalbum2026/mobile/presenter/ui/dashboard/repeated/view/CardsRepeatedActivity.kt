@@ -63,7 +63,7 @@ class CardsRepeatedActivity : BaseOnlyActivity<ActivityCardsRepeatedBinding>() {
 
     private fun setListeners() {
         binding.fabShareRepeated.setOnClickListener {
-            handleShareAction()
+            cardsRepeatedViewModel.getRepeatedCards()
         }
         setOnBackListener()
     }
@@ -104,6 +104,7 @@ class CardsRepeatedActivity : BaseOnlyActivity<ActivityCardsRepeatedBinding>() {
         collect(cardsRepeatedViewModel.cardsRepeatedUiState) { state ->
             statusLoading(isLoading = state.isLoading)
             setItems(items = state.items)
+            handleShareAction(repeatedCards = state.repeatedCards)
         }
         collect(cardsRepeatedViewModel.cardsRepeatedUiEvent) { state ->
             with(state) {
@@ -152,12 +153,12 @@ class CardsRepeatedActivity : BaseOnlyActivity<ActivityCardsRepeatedBinding>() {
         }
     }
 
-    private fun handleShareAction() {
-        val message = cardsRepeatedViewModel.getRepeatedCardsFormattedText()
-        if (!message.isNullOrEmpty()) {
+    private fun handleShareAction(repeatedCards: String?) {
+        if (repeatedCards == null) return
+        if (repeatedCards.isNotEmpty()) {
             shareText(
                 title = getString(R.string.share_with_repeated),
-                message = message,
+                message = repeatedCards,
                 onError = {
                     toast(message = getString(R.string.error_share_reapeated_cards))
                 },
