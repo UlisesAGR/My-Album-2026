@@ -157,7 +157,6 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
     private fun goToCards(id: String) {
         navigateTo(
             destination = CardsActivity::class.java,
-            finishCurrent = true,
             extrasBuilder = {
                 putExtra(EXTRA_CARD_TYPE, cardType)
                 putExtra(EXTRA_TEAM_ID, id)

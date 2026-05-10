@@ -66,4 +66,6 @@
     <string name="share_with_repeated">Share my repeated cards</string>
     <string name="error_share_reapeated_cards">Error share repeated cards</string>
     <string name="no_repeated_cards">Congratulations! You have no repeated stickers</string>
+    <string name="percentage_obtained">Percentage obtained</string>
+    <string name="percentage_missing">Percentage missing</string>
 </resources>

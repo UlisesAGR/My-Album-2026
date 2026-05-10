@@ -5,8 +5,8 @@
 <resources>
     <!-- Light primary colors -->
     <color name="md_theme_primary">#87D4BA</color>
-    <color name="md_theme_onPrimary">#003E30</color>
-    <color name="md_theme_primaryContainer">#00513F</color>
+    <color name="md_theme_onPrimary">#00513F</color>
+    <color name="md_theme_primaryContainer">#009473</color>
     <color name="md_theme_onPrimaryContainer">#A3F1D6</color>
     <!-- Light secondary colors -->
     <color name="md_theme_secondary">#77B65B</color>

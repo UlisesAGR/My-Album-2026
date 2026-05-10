@@ -50,16 +50,6 @@
                 android:layout_height="wrap_content"
                 tools:text="Argentina" />
 
-            <TextView
-                android:id="@+id/teamCountTextView"
-                style="@style/text_medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_8"
-                android:visibility="gone"
-                tools:text="10 / 20 Missing"
-                tools:visibility="visible" />
-
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

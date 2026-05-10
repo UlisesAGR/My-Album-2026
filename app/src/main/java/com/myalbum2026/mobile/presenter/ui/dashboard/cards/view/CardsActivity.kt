@@ -5,7 +5,6 @@
 package com.myalbum2026.mobile.presenter.ui.dashboard.cards.view
 
 import android.view.Gravity
-import androidx.activity.addCallback
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import com.myalbum2026.mobile.R
@@ -17,14 +16,12 @@ import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityBottomSheet
 import com.myalbum2026.mobile.presenter.ui.dashboard.cards.viewmodel.CardsUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.cards.viewmodel.CardsViewModel
-import com.myalbum2026.mobile.presenter.ui.dashboard.countries.view.CountryListActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.missing.view.adapter.CardsMissingAdapter
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.Constants.EXTRA_CARD_TYPE
 import com.myalbum2026.mobile.utils.extensions.Constants.EXTRA_TEAM_ID
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.getSerializable
-import com.myalbum2026.mobile.utils.extensions.navigateTo
 import com.myalbum2026.mobile.utils.extensions.shareText
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
@@ -70,7 +67,7 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
             titleAlignment = Gravity.START,
             iconLeft = R.drawable.ic_arrow_back,
             actionLeftIcon = {
-                goToCountryListActivity()
+                onBackPressedDispatcher.onBackPressed()
             },
         )
     }
@@ -78,13 +75,6 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
     private fun setListeners() {
         binding.fabShareMissing.setOnClickListener {
             cardsViewModel.getMissingCards()
-        }
-        setOnBackListener()
-    }
-
-    private fun setOnBackListener() {
-        onBackPressedDispatcher.addCallback(owner = this) {
-            goToCountryListActivity()
         }
     }
 
@@ -199,15 +189,5 @@ class CardsActivity : BaseOnlyActivity<ActivityCardsBinding>() {
                 cardsViewModel.updateCardQuantity(card, selectedQuantity)
             },
         ).show(supportFragmentManager, QuantityBottomSheet.TAG)
-    }
-
-    private fun goToCountryListActivity() {
-        navigateTo(
-            destination = CountryListActivity::class.java,
-            finishCurrent = true,
-            extrasBuilder = {
-                putExtra(EXTRA_CARD_TYPE, cardType)
-            },
-        )
     }
 }

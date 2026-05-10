@@ -58,4 +58,6 @@
     <string name="share_with_repeated">Compartir mis estampas repetidas</string>
     <string name="error_share_reapeated_cards">Error al compartir las estampas repetidas</string>
     <string name="no_repeated_cards">¡Felicidades! No tienes estampas repetidas</string>
+    <string name="percentage_obtained">Porcentaje obtenidas</string>
+    <string name="percentage_missing">Porcentaje faltantes</string>
 </resources>

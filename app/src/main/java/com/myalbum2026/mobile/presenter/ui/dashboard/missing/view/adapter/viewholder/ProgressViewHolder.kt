@@ -19,19 +19,22 @@ class ProgressViewHolder(
 
     fun render(item: CardsItem.Progress) = with(binding) {
         with(item) {
-            tvPercentage.text = percentage
+            percentageTextView.text = percentage
             progressIndicator.setProgress(
                 percentage.replace("%", "").toIntOrNull() ?: 0,
                 true,
             )
-            tvTotalCards.text = total
-            tvMissingCards.text = missing
+            totalCardsTextView.text = total
+            missingCardsTextView.text = missing
             setMissingCardsText(type = type)
         }
     }
 
-    private fun setMissingCardsText(type: CardType) {
-        binding.missingCardsTextView.text = context.getString(
+    private fun setMissingCardsText(type: CardType) = with(binding) {
+        progressTitleTextView.text = context.getString(
+            if (type == CardType.MISSING) R.string.percentage_missing else R.string.percentage_obtained
+        )
+        textMissingCardsTextView.text = context.getString(
             if (type == CardType.MISSING) R.string.cards_obtained else R.string.missing_cards
         )
     }
