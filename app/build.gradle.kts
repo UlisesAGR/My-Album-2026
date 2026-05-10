@@ -45,6 +45,23 @@ android {
             isDebuggable = Build.Release.enableUnitTestCoverage
             enableUnitTestCoverage = Build.Release.isDebuggable
         }
+
+        create(BuildTypes.QA) {
+            resValue("string", "APP_NAME", "${properties["app.name"]}")
+
+            resValue("string", "ad_app_id", "${properties["ad.app.id.debug"]}")
+            resValue("string", "ad_banner_container", "${properties["ad.container.banner.id.debug"]}")
+            resValue("string", "ad_banner_missing", "${properties["ad.missing.banner.id.debug"]}")
+
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
+            isMinifyEnabled = Build.QA.isMinifyEnabled
+            isShrinkResources = Build.QA.isShrinkResources
+            isDebuggable = Build.QA.enableUnitTestCoverage
+            enableUnitTestCoverage = Build.QA.isDebuggable
+        }
         getByName(BuildTypes.DEBUG) {
             resValue("string", "APP_NAME", "${properties["app.name.debug"]}")
 

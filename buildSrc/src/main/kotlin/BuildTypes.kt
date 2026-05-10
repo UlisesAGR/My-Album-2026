@@ -5,5 +5,6 @@
 object BuildTypes {
 
     const val DEBUG = "debug"
+    const val QA = "qa"
     const val RELEASE = "release"
 }

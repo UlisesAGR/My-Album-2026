@@ -16,6 +16,13 @@ sealed class Build {
         override val enableUnitTestCoverage = true
     }
 
+    object QA : Build() {
+        override val isMinifyEnabled = false
+        override val isShrinkResources = false
+        override val isDebuggable = false
+        override val enableUnitTestCoverage = false
+    }
+
     object Release : Build() {
         override val isMinifyEnabled = true
         override val isShrinkResources = true
