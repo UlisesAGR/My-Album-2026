@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_theme_primary"
-    tools:context=".presenter.ui.dashboard.repeated.view.CardsRepeatedActivity">
+    tools:context=".presenter.ui.dashboard.home.repeated.view.CardsRepeatedActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/screenRoot"

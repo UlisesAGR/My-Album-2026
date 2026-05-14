@@ -4,10 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature
-        android:name="android.hardware.touchscreen"
-        android:required="true" />
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:name=".base.App"
@@ -19,39 +20,57 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAlbum2026"
         tools:ignore="DataExtractionRules">
+
         <activity
-            android:name=".presenter.ui.dashboard.repeated.view.CardsRepeatedActivity"
-            android:exported="false" />
+            android:name=".presenter.ui.dashboard.container.view.DashboardContainerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.cards.view.CardsActivity"
+            android:name=".presenter.ui.dashboard.qr.scan_qr.view.ScanQrActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.countries.view.CountryListActivity"
+            android:name=".presenter.ui.dashboard.qr.show_qr.view.ShowQrActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.missing.view.CardsMissingActivity"
+            android:name=".presenter.ui.dashboard.home.repeated.view.CardsRepeatedActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.obtained.view.CardsObtainedActivity"
+            android:name=".presenter.ui.dashboard.home.cards.view.CardsActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.container.view.DashboardActivity"
+            android:name=".presenter.ui.dashboard.home.countries.view.CountryListActivity"
+            android:configChanges="uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presenter.ui.dashboard.home.missing.view.CardsMissingActivity"
+            android:configChanges="uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAlbum2026"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".presenter.ui.dashboard.home.obtained.view.CardsObtainedActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"

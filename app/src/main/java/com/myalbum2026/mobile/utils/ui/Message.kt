@@ -21,7 +21,7 @@ inline fun Context.materialDialog(
     textNegativeButton: String = "",
     textPositiveButton: String = "",
     message: String,
-    crossinline action: () -> Unit,
+    crossinline action: () -> Unit = {},
 ) {
     MaterialAlertDialogBuilder(this, style)
         .setCancelable(isCancelable)

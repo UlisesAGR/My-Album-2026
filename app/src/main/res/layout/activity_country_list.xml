@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_theme_primary"
-    tools:context=".presenter.ui.dashboard.countries.view.CountryListActivity">
+    tools:context=".presenter.ui.dashboard.home.countries.view.CountryListActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/screenRoot"

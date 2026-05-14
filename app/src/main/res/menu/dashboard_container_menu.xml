@@ -1,0 +1,19 @@
+<!--
+ - dashboard_container_menu.xml
+ - Copyright (c) 2026. All rights reserved
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/qr"
+        android:enabled="true"
+        android:icon="@drawable/ic_qr"
+        android:title="@string/qr" />
+
+</menu>

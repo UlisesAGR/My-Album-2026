@@ -1,0 +1,10 @@
+/*
+ * DashboardUiEvent.kt
+ * Copyright (c) 2026. All rights reserved
+ */
+package com.myalbum2026.mobile.presenter.ui.dashboard.home.home.viewmodel
+
+sealed class DashboardUiEvent {
+    internal data object Idle : DashboardUiEvent()
+    data class ShowError(val exception: Throwable) : DashboardUiEvent()
+}

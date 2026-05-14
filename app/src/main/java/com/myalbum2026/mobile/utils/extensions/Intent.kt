@@ -4,6 +4,7 @@
  */
 package com.myalbum2026.mobile.utils.extensions
 
+import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
@@ -34,6 +35,23 @@ fun FragmentActivity.navigateTo(
     overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     if (finishCurrent) {
         finish()
+    }
+}
+
+fun FragmentActivity.backTo(
+    enterAnim: Int = R.anim.fade_in,
+    exitAnim: Int = R.anim.fade_out,
+) {
+    finish()
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+        overrideActivityTransition(
+            Activity.OVERRIDE_TRANSITION_CLOSE,
+            enterAnim,
+            exitAnim
+        )
+    } else {
+        @Suppress("DEPRECATION")
+        overridePendingTransition(enterAnim, exitAnim)
     }
 }
 

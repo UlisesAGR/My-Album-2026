@@ -125,6 +125,7 @@ dependencies {
     ksp(libs.com.glide.compiler)
     implementation(libs.nl.konfetti)
     implementation(libs.lottie.android)
+    implementation(libs.bundles.com.zxing.libs)
     implementation(libs.bundles.com.firebase.libs)
     implementation(libs.com.services.ads)
     // Test

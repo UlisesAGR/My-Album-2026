@@ -68,4 +68,10 @@
     <string name="no_repeated_cards">Congratulations! You have no repeated stickers</string>
     <string name="percentage_obtained">Percentage obtained</string>
     <string name="percentage_missing">Percentage missing</string>
+    <!-- Qr -->
+    <string name="home">Home</string>
+    <string name="qr">Qr</string>
+    <string name="scan_qr">Scan qr</string>
+    <string name="generate_qr">Generate qr</string>
+    <string name="scan_and_generate_qr">Scan and generate qr</string>
 </resources>

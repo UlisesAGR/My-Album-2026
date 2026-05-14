@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - activity_scan_qr.xml
+ - Copyright (c) 2026. All rights reserved
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/systemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_primary"
+    tools:context=".presenter.ui.dashboard.qr.scan_qr.view.ScanQrActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.myalbum2026.mobile.presenter.widget.toolbar.CustomToolbar
+            android:id="@+id/scanQrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scanQrToolbar">
+
+            <com.journeyapps.barcodescanner.DecoratedBarcodeView
+                android:id="@+id/barcodeScanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:zxing_use_texture_view="false" />
+
+            <ImageView
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:layout_gravity="center"
+                android:alpha="1"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_scan_frame" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/text_big_white.bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_48"
+            android:gravity="center"
+            android:text="Coloque el qr en el cuadro para saber que estampas te pueden dar para intercambiar"
+            android:textColor="@color/white_color"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@ package com.myalbum2026.mobile.presenter.ui.welcome.view
 
 import androidx.activity.viewModels
 import com.myalbum2026.mobile.databinding.ActivityWelcomeBinding
-import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardActivity
+import com.myalbum2026.mobile.presenter.ui.dashboard.container.view.DashboardContainerActivity
 import com.myalbum2026.mobile.presenter.ui.welcome.viewmodel.WelcomeViewModel
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.navigateTo
@@ -33,7 +33,7 @@ class WelcomeActivity : BaseOnlyActivity<ActivityWelcomeBinding>() {
 
     private fun goToDashboard() {
         navigateTo(
-            destination = DashboardActivity::class.java,
+            destination = DashboardContainerActivity::class.java,
             finishCurrent = true,
         )
     }

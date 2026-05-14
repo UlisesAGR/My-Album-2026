@@ -16,7 +16,7 @@ lib-retrofit = '3.0.0'
 lib-datastore = "1.2.1"
 lib_room = "2.8.4"
 lib-firebase-core = "21.1.1"
-lib-firebase = "34.12.0"
+lib-firebase = "34.13.0"
 lib-firebase-auth = "23.2.1"
 lib-firebase-crashlytics = "19.4.4"
 lib-firebase-analytics = "22.5.0"
@@ -29,10 +29,12 @@ lib-constraintlayout = "2.2.1"
 lib-legacySupport = "1.0.0"
 lib-material = '1.13.0'
 lib-splashscreen = '1.2.0'
-lib-navigation = "2.9.7"
+lib-navigation = "2.9.8"
 lib-glide = '5.0.7'
 lib-konfetti = "2.0.5"
 lottie = "6.7.1"
+lib-zxing-core = "3.5.4"
+lib-zxing-android = "4.3.0"
 # test
 test-junit = '4.13.2'
 test-mockito = "5.23.0"
@@ -47,7 +49,7 @@ plugin-agp = "9.0.1"
 plugin-library = "9.0.1"
 plugin-kotlin = "2.3.20"
 plugin-hilt = '2.59.2'
-plugin-navigation = '2.9.7'
+plugin-navigation = '2.9.8'
 plugin-googleServices = "4.4.4"
 plugin-googleCrashlytics = "3.0.7"
 plugin-ksp = '2.1.0-1.0.29'
@@ -96,6 +98,8 @@ com-glide = { module = 'com.github.bumptech.glide:glide', version.ref = 'lib-gli
 com-glide-compiler = { module = 'com.github.bumptech.glide:compiler', version.ref = 'lib-glide' }
 nl-konfetti = { module = "nl.dionsegijn:konfetti-xml", version.ref = "lib-konfetti" }
 lottie-android = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+com-zxing-core = { module = "com.google.zxing:core", version.ref = "lib-zxing-core" }
+com-zxing-android = { module = "com.journeyapps:zxing-android-embedded", version.ref = "lib-zxing-android" }
 
 com-firebase-core = { group = "com.google.firebase", name = "firebase-core", version.ref = "lib-firebase-core" }
 com-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "lib-firebase" }
@@ -160,6 +164,10 @@ com-firebase-libs = [
     'com-firebase-analytics',
     'com-firebase-firestore',
     'com-firebase-messaging',
+]
+com-zxing-libs = [
+    "com-zxing-core",
+    "com-zxing-android"
 ]
 
 [plugins]
