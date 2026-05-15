@@ -4,17 +4,17 @@
 -->
 <resources>
     <!-- Light primary colors -->
-    <color name="md_theme_primary">#2A8F77</color>
+    <color name="md_theme_primary">#388E3C</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#A3F1D6</color>
     <color name="md_theme_onPrimaryContainer">#002118</color>
     <!-- Light secondary colors -->
-    <color name="md_theme_secondary">#77B65B</color>
+    <color name="md_theme_secondary">#9CCC65</color>
     <color name="md_theme_onSecondary">#FFFFFF</color>
     <color name="md_theme_secondaryContainer">#D6F5C7</color>
     <color name="md_theme_onSecondaryContainer">#0A2000</color>
     <!-- Light tertiary colors -->
-    <color name="md_theme_tertiary">#C5A059</color>
+    <color name="md_theme_tertiary">#F9A825</color>
     <color name="md_theme_onTertiary">#FFFFFF</color>
     <color name="md_theme_tertiaryContainer">#EAC989</color>
     <color name="md_theme_onTertiaryContainer">#1A1E00</color>
