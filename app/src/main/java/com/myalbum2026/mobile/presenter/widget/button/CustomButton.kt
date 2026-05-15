@@ -90,7 +90,7 @@ class CustomButton @JvmOverloads constructor(
                 height = dpToPx(BTN_NORMAL_DEFAULT_HEIGHT)
             }
             BTN_REPEATED -> {
-                setBackgroundColor(ContextCompat.getColor(context, R.color.md_theme_error))
+                setBackgroundColor(ContextCompat.getColor(context, R.color.md_theme_tertiary))
                 setTextColor(ContextCompat.getColor(context, R.color.text_white_color))
                 height = dpToPx(BTN_NORMAL_DEFAULT_HEIGHT)
             }

@@ -6,9 +6,7 @@
     <string name="version_value" translatable="false">Version %1$s</string>
     <string name="header_format">%1$d / %2$d %3$s</string>
     <string name="title_quantity_value" translatable="false">%1$s - %2$d</string>
-    <string name="progress_obtained_format">Cards obtained: %1$s of %2$s</string>
-    <string name="progress_missing_format">Cards missing: %1$s</string>
-    <string name="progress_repeated_format">Cards repeated: %1$s</string>
+    <string name="progress_obtained_format">%1$s / %2$s</string>
     <!-- App -->
     <string name="app_name" translatable="false">My Album 2026</string>
     <string name="idle" translatable="false">idle</string>
@@ -69,8 +67,8 @@
     <string name="percentage_obtained">Percentage obtained</string>
     <string name="percentage_missing">Percentage missing</string>
     <!-- Qr -->
-    <string name="home">Home</string>
-    <string name="qr">Qr</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="qr" translatable="false">Qr</string>
     <string name="scan_qr">Scan qr</string>
     <string name="show_qr">Show qr</string>
     <string name="scan_and_generate_qr">Scan and generate qr</string>
@@ -78,7 +76,8 @@
     <string name="ask_someone_to_scan_this_code_to_see_which_stamps_you_can_give_in_exchange">Ask someone to scan this code to see which stamps you can give in exchange</string>
     <string name="show_your_qr_for_your_repeated">Show your qr for your repeated</string>
     <string name="scan_the_qr_code_to_exchange">Scan the qr code to exchange</string>
+    <string name="dashboard_overview">Dashboard Overview</string>
+    <string name="total_cards_missing">Total cards missing</string>
+    <string name="total_cards_repeated">Total cards repeated</string>
     <string name="search">Search</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_theme_background"
-    tools:context=".presenter.ui.dashboard.home.HomeFragment">
+    tools:context=".presenter.ui.dashboard.home.view.HomeFragment">
 
     <TextView
         android:id="@+id/versionTextView"
@@ -22,47 +22,196 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="v1.0" />
 
+    <TextView
+        android:id="@+id/myCollectionTextView"
+        style="@style/text_extra.bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:text="@string/my_collection_2626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/versionTextView" />
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/versionTextView">
+        app:layout_constraintTop_toBottomOf="@+id/myCollectionTextView">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/myCollectionTextView"
-                style="@style/text_extra.bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/margin_16"
-                android:text="@string/my_collection_2626" />
-
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/repeatedMaterialCardView"
+                android:id="@+id/progressMaterialCardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_16"
-                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_32"
                 android:layout_marginBottom="@dimen/margin_16"
-                android:backgroundTint="@color/md_theme_surface"
+                android:backgroundTint="@color/md_theme_primary"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="0dp"
                 app:strokeColor="@color/border_color"
                 app:strokeWidth="1dp">
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_16"
-                    android:orientation="vertical">
+                    android:paddingHorizontal="@dimen/padding_16"
+                    android:paddingTop="@dimen/padding_16">
 
-                </LinearLayout>
+                    <TextView
+                        android:id="@+id/titleCardObtainedTextView"
+                        style="@style/text_big_white.bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dashboard_overview"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/titleCardTextView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/titleCardObtainedTextView"
+                        tools:progress="80" />
+
+                    <TextView
+                        android:id="@+id/percentageTextView"
+                        style="@style/text_extra_white.bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_6"
+                        app:layout_constraintBottom_toBottomOf="@id/progressBar"
+                        app:layout_constraintEnd_toEndOf="@id/progressBar"
+                        app:layout_constraintStart_toStartOf="@id/progressBar"
+                        app:layout_constraintTop_toTopOf="@id/progressBar"
+                        tools:text="100%" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_8"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/myProgressObtainedTextView"
+                            style="@style/text_big_white.bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            tools:text="795/994" />
+
+                        <TextView
+                            style="@style/text_regular_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_6"
+                            android:text="Total cards collected" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/missingAndRepeatMaterialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:backgroundTint="@color/md_theme_tertiary"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_16">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titleCardMissingAndRepeatTextView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/myProgressMissingTextView"
+                                style="@style/text_big_white.bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                tools:text="795" />
+
+                            <TextView
+                                style="@style/text_regular_white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_6"
+                                android:text="@string/total_cards_missing" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white_color" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/myProgressRepeatedTextView"
+                                style="@style/text_big_white.bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                tools:text="10" />
+
+                            <TextView
+                                style="@style/text_regular_white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_6"
+                                android:text="@string/total_cards_repeated" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
 

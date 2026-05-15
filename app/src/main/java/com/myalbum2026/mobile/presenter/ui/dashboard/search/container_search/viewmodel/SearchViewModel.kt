@@ -2,7 +2,7 @@
  * SearchViewModel.kt
  * Copyright (c) 2026. All rights reserved
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.search.home.viewmodel
+package com.myalbum2026.mobile.presenter.ui.dashboard.search.container_search.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

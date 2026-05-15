@@ -11,9 +11,9 @@ import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardContainerBinding
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardContainerUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardContainerViewModel
-import com.myalbum2026.mobile.presenter.ui.dashboard.home.HomeFragment
+import com.myalbum2026.mobile.presenter.ui.dashboard.home.view.HomeFragment
 import com.myalbum2026.mobile.presenter.ui.dashboard.qr.container_qr.ContainerQrFragment
-import com.myalbum2026.mobile.presenter.ui.dashboard.search.home.view.SearchFragment
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.container_search.view.SearchFragment
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.logger.log

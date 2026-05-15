@@ -2,7 +2,7 @@
  * SearchFragment.kt
  * Copyright (c) 2026. All rights reserved
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.search.home.view
+package com.myalbum2026.mobile.presenter.ui.dashboard.search.container_search.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,8 +12,8 @@ import com.myalbum2026.mobile.databinding.FragmentSearchBinding
 import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.view.CountryListActivity
-import com.myalbum2026.mobile.presenter.ui.dashboard.search.home.viewmodel.SearchUiEvent
-import com.myalbum2026.mobile.presenter.ui.dashboard.search.home.viewmodel.SearchViewModel
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.container_search.viewmodel.SearchUiEvent
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.container_search.viewmodel.SearchViewModel
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.CardsMissingActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.obtained.view.CardsObtainedActivity
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.repeated.view.CardsRepeatedActivity
@@ -34,7 +34,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>() {
 
     override fun inflateBinding(
         inflater: LayoutInflater,
-        container: ViewGroup?
+        container: ViewGroup?,
     ): FragmentSearchBinding =
         FragmentSearchBinding.inflate(layoutInflater)
 

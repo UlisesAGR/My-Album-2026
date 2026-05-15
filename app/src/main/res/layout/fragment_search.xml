@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_theme_background"
-    tools:context=".presenter.ui.dashboard.search.home.view.SearchFragment">
+    tools:context=".presenter.ui.dashboard.search.container_search.view.SearchFragment">
 
     <TextView
         android:id="@+id/versionTextView"
@@ -22,26 +22,29 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="v1.0" />
 
+    <TextView
+        android:id="@+id/myCollectionTextView"
+        style="@style/text_extra.bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:text="@string/my_collection_2626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/versionTextView" />
+
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/versionTextView">
+        app:layout_constraintTop_toBottomOf="@+id/myCollectionTextView">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/myCollectionTextView"
-                style="@style/text_extra.bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/margin_16"
-                android:text="@string/my_collection_2626" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/progressMaterialCardView"

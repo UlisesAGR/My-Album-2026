@@ -50,7 +50,7 @@
 
     <!-- Indicator Bottom Navigation -->
     <style name="App.CustomIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/md_theme_secondary</item>
+        <item name="android:color">@color/md_theme_tertiary</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.8</item>
     </style>

@@ -2,7 +2,7 @@
  * SearchUiState.kt
  * Copyright (c) 2026. All rights reserved
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.search.home.viewmodel
+package com.myalbum2026.mobile.presenter.ui.dashboard.search.container_search.viewmodel
 
 import com.myalbum2026.mobile.domain.model.CardsItem
 
