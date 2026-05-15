@@ -6,19 +6,23 @@ package com.myalbum2026.mobile.presenter.ui.dashboard.container.view
 
 import androidx.activity.addCallback
 import androidx.activity.viewModels
+import com.google.android.gms.ads.AdRequest
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.ActivityDashboardContainerBinding
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardContainerUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.container.viewmodel.DashboardContainerViewModel
-import com.myalbum2026.mobile.presenter.ui.dashboard.home.home.view.HomeFragment
+import com.myalbum2026.mobile.presenter.ui.dashboard.home.HomeFragment
 import com.myalbum2026.mobile.presenter.ui.dashboard.qr.container_qr.ContainerQrFragment
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.home.view.SearchFragment
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.logger.logInfo
+import com.myalbum2026.mobile.utils.ui.gone
 import com.myalbum2026.mobile.utils.ui.materialDialog
 import com.myalbum2026.mobile.utils.ui.replaceFragment
 import com.myalbum2026.mobile.utils.ui.setAnimationStart
+import com.myalbum2026.mobile.utils.ui.show
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -30,6 +34,7 @@ class DashboardContainerActivity : BaseOnlyActivity<ActivityDashboardContainerBi
         ActivityDashboardContainerBinding.inflate(layoutInflater)
 
     override fun init() {
+        setBanner()
         setBottomSheet()
         setListeners()
         setFlows()
@@ -79,6 +84,11 @@ class DashboardContainerActivity : BaseOnlyActivity<ActivityDashboardContainerBi
                     replaceFragment(adminFrameLayout, fragment = HomeFragment())
                     true
                 }
+                R.id.search -> {
+                    adminFrameLayout.setAnimationStart(animationId = R.anim.fade_in)
+                    replaceFragment(adminFrameLayout, fragment = SearchFragment())
+                    true
+                }
                 R.id.qr -> {
                     adminFrameLayout.setAnimationStart(animationId = R.anim.fade_in)
                     replaceFragment(adminFrameLayout, fragment = ContainerQrFragment())
@@ -86,6 +96,18 @@ class DashboardContainerActivity : BaseOnlyActivity<ActivityDashboardContainerBi
                 }
                 else -> false
             }
+        }
+    }
+
+    private fun setBanner() = with(binding) {
+        val shouldShowAds = resources.getBoolean(R.bool.show_ads)
+        if (shouldShowAds) {
+            bannerPublicity.apply {
+                loadAd(AdRequest.Builder().build())
+                show()
+            }
+        } else {
+            bannerPublicity.gone()
         }
     }
 }

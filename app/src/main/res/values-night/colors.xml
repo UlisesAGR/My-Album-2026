@@ -44,6 +44,7 @@
     <color name="transparent">#00000000</color>
 
     <color name="text_color">#FCFDFF</color>
+    <color name="text_black_color">#161A1D</color>
     <color name="text_white_color">#161A1D</color>
 
     <color name="white_color">#FFFFFF</color>

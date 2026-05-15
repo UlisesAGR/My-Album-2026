@@ -42,35 +42,35 @@
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.home.repeated.view.CardsRepeatedActivity"
+            android:name=".presenter.ui.dashboard.search.repeated.view.CardsRepeatedActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.home.cards.view.CardsActivity"
+            android:name=".presenter.ui.dashboard.search.cards.view.CardsActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.home.countries.view.CountryListActivity"
+            android:name=".presenter.ui.dashboard.search.countries.view.CountryListActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.home.missing.view.CardsMissingActivity"
+            android:name=".presenter.ui.dashboard.search.missing.view.CardsMissingActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MyAlbum2026"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".presenter.ui.dashboard.home.obtained.view.CardsObtainedActivity"
+            android:name=".presenter.ui.dashboard.search.obtained.view.CardsObtainedActivity"
             android:configChanges="uiMode"
             android:exported="false"
             android:screenOrientation="portrait"

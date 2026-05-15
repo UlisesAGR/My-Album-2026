@@ -61,15 +61,31 @@
                 android:gravity="center"
                 android:text="@string/scan_and_generate_qr" />
 
+            <TextView
+                style="@style/text_medium.bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_32"
+                android:text="@string/show_your_qr_for_your_repeated" />
+
             <com.myalbum2026.mobile.presenter.widget.button.CustomButton
                 android:id="@+id/generateQrCustomButton"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/margin_16"
-                android:text="@string/generate_qr"
+                android:text="@string/show_qr"
                 android:textSize="16sp"
                 app:btnType="btn_primary" />
+
+            <TextView
+                style="@style/text_medium.bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/scan_the_qr_code_to_exchange" />
 
             <com.myalbum2026.mobile.presenter.widget.button.CustomButton
                 android:id="@+id/scanQrCustomButton"

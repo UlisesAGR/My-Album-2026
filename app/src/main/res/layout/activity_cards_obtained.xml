@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_theme_primary"
-    tools:context=".presenter.ui.dashboard.home.obtained.view.CardsObtainedActivity">
+    tools:context=".presenter.ui.dashboard.search.obtained.view.CardsObtainedActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/screenRoot"

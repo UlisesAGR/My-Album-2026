@@ -1,0 +1,185 @@
+/*
+ * CardsMissingActivity
+ * Copyright © 2026. All rights reserved
+ */
+package com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view
+
+import android.view.Gravity
+import androidx.activity.addCallback
+import androidx.activity.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
+import com.myalbum2026.mobile.R
+import com.myalbum2026.mobile.data.model.CardEntity
+import com.myalbum2026.mobile.databinding.ActivityCardsMissingBinding
+import com.myalbum2026.mobile.domain.model.CardType
+import com.myalbum2026.mobile.domain.model.CardsItem
+import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
+import com.myalbum2026.mobile.presenter.dialog.quantity.QuantityBottomSheet
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter.CardsMissingAdapter
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.viewmodel.CardsMissingUiEvent
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.viewmodel.CardsMissingViewModel
+import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
+import com.myalbum2026.mobile.utils.extensions.backTo
+import com.myalbum2026.mobile.utils.extensions.collect
+import com.myalbum2026.mobile.utils.extensions.shareText
+import com.myalbum2026.mobile.utils.logger.log
+import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.gone
+import com.myalbum2026.mobile.utils.ui.show
+import com.myalbum2026.mobile.utils.ui.toast
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class CardsMissingActivity : BaseOnlyActivity<ActivityCardsMissingBinding>() {
+
+    private val cardsMissingViewModel: CardsMissingViewModel by viewModels()
+
+    private lateinit var cardsMissingAdapter: CardsMissingAdapter
+
+    override fun inflateBinding(): ActivityCardsMissingBinding =
+        ActivityCardsMissingBinding.inflate(layoutInflater)
+
+    override fun init() {
+        setToolbar()
+        setEmptyState()
+        setListeners()
+        setCardsMissingAdapter()
+        setCardsMissingRecyclerView()
+        setFlows()
+    }
+
+    private fun setToolbar() {
+        setupAppBar(
+            toolbar = binding.cardsMissingToolbar,
+            title = getString(R.string.cards_missing),
+            titleAlignment = Gravity.START,
+            iconLeft = R.drawable.ic_arrow_back,
+            actionLeftIcon = {
+                onBackPressedDispatcher.onBackPressed()
+            },
+        )
+    }
+
+    private fun setListeners() {
+        binding.fabShareMissing.setOnClickListener {
+            cardsMissingViewModel.getMissingCards()
+        }
+        setOnBackListener()
+    }
+
+    private fun setOnBackListener() {
+        onBackPressedDispatcher.addCallback(owner = this) {
+            backTo()
+        }
+    }
+
+    private fun setCardsMissingAdapter() {
+        cardsMissingAdapter =
+            CardsMissingAdapter(
+                cardType = CardType.MISSING,
+                onCardItemClick = { card ->
+                    showQuantityDialog(card = card)
+                },
+            )
+    }
+
+    private fun setCardsMissingRecyclerView() {
+        val gridLayoutManager = GridLayoutManager(this, 3)
+        gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+            override fun getSpanSize(position: Int): Int =
+                when (cardsMissingAdapter.getItemViewType(position)) {
+                    0, 1, 2 -> 3
+                    3 -> 1
+                    else -> 3
+                }
+            }
+        binding.cardsMissingRecyclerView.apply {
+            setHasFixedSize(true)
+            layoutManager = gridLayoutManager
+            adapter = cardsMissingAdapter
+        }
+    }
+
+    private fun setFlows() {
+        collect(cardsMissingViewModel.cardsMissingUiState) { state ->
+            statusLoading(isLoading = state.isLoading)
+            setItems(items = state.items)
+            handleShareAction(missingCards = state.missingCards)
+        }
+        collect(cardsMissingViewModel.cardsMissingUiEvent) { state ->
+            with(state) {
+                when (this) {
+                    is CardsMissingUiEvent.Idle -> log(message = getString(R.string.idle))
+                    is CardsMissingUiEvent.ShowError -> toast(message = handleError(exception))
+                    is CardsMissingUiEvent.CardUpdated -> log(message = getString(R.string.idle))
+                }
+            }
+        }
+    }
+
+    private fun statusLoading(isLoading: Boolean) {
+        if (isLoading) LoadingDialog.show(supportFragmentManager)
+        else LoadingDialog.dismiss(supportFragmentManager)
+    }
+
+    private fun setItems(items: MutableList<CardsItem>?) {
+        if (items == null) return
+        if (items.isNotEmpty()) {
+            cardsMissingAdapter.submitList(items)
+            showEmptyState(isEmpty = false)
+        } else {
+            cardsMissingAdapter.submitList(emptyList())
+            showEmptyState(isEmpty = true)
+        }
+    }
+
+    private fun showEmptyState(isEmpty: Boolean) = with(binding) {
+        if (isEmpty) {
+            cardsMissingRecyclerView.gone()
+            emptyStateView.root.show()
+            fabShareMissing.hide()
+        } else {
+            cardsMissingRecyclerView.show()
+            emptyStateView.root.gone()
+            fabShareMissing.show()
+        }
+    }
+
+    private fun setEmptyState() = with(binding) {
+        emptyStateView.apply {
+            titleTextView.text = getString(R.string.complete_cards)
+            subTitleTextView.text  = getString(R.string.congratulations_you_completed_your_album)
+            retryCustomButton.gone()
+        }
+    }
+
+    private fun handleShareAction(missingCards: String?) {
+        if (missingCards == null) return
+        if (missingCards.isNotEmpty()) {
+            shareText(
+                title = getString(R.string.share_with),
+                message = missingCards,
+                onError = {
+                    toast(message = getString(R.string.error_share_missing_cards))
+                },
+            )
+        } else {
+            toast(message = getString(R.string.no_missing_cards))
+        }
+    }
+
+    private fun showQuantityDialog(card: CardEntity) {
+        val title = getString(
+            R.string.title_quantity_value,
+            card.teamId,
+            card.number,
+        )
+        QuantityBottomSheet(
+            initialQuantity = card.quantity,
+            title = title,
+            onConfirm = { selectedQuantity ->
+                cardsMissingViewModel.updateCardQuantity(card, selectedQuantity)
+            },
+        ).show(supportFragmentManager, QuantityBottomSheet.TAG)
+    }
+}

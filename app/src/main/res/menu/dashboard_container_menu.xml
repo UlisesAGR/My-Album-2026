@@ -11,6 +11,12 @@
         android:title="@string/home" />
 
     <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+    <item
         android:id="@+id/qr"
         android:enabled="true"
         android:icon="@drawable/ic_qr"

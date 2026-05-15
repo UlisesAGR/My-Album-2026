@@ -21,6 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/bannerPublicity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ad_banner_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
         <FrameLayout
             android:id="@+id/adminFrameLayout"
             android:layout_width="match_parent"
@@ -28,7 +41,7 @@
             app:layout_constraintBottom_toTopOf="@+id/adminBottomNavigation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/bannerPublicity" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/adminBottomNavigation"

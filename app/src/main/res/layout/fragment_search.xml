@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - fragment_search.xml
+ - Copyright (c) 2026. All rights reserved
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_background"
+    tools:context=".presenter.ui.dashboard.search.home.view.SearchFragment">
+
+    <TextView
+        android:id="@+id/versionTextView"
+        style="@style/text_small.bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="v1.0" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/versionTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myCollectionTextView"
+                style="@style/text_extra.bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:text="@string/my_collection_2626" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/progressMaterialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:backgroundTint="@color/md_theme_surface"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_big.bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/general_search" />
+
+                    <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                        android:id="@+id/cardsObtainedCustomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:text="@string/cards_obtained"
+                        android:textSize="16sp"
+                        app:btnType="btn_primary" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:background="@color/divider_color" />
+
+                    <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                        android:id="@+id/cardsMissingCustomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:text="@string/cards_missing"
+                        android:textSize="16sp"
+                        app:btnType="btn_secondary" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/countryMaterialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:backgroundTint="@color/md_theme_surface"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_big.bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/search_by_country" />
+
+                    <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                        android:id="@+id/countyObtainedCustomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:text="@string/country_obtained"
+                        android:textSize="16sp"
+                        app:btnType="btn_primary" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:background="@color/divider_color" />
+
+                    <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                        android:id="@+id/countyMissingCustomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:text="@string/county_missing"
+                        android:textSize="16sp"
+                        app:btnType="btn_secondary" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/repeatedMaterialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:backgroundTint="@color/md_theme_surface"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_big.bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cards_repeated" />
+
+                    <com.myalbum2026.mobile.presenter.widget.button.CustomButton
+                        android:id="@+id/repeatedCustomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:text="@string/cards_repeated"
+                        android:textSize="16sp"
+                        app:btnType="btn_repeated" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
