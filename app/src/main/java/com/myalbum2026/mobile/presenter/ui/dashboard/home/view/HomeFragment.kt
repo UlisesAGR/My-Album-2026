@@ -14,6 +14,7 @@ import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.extensions.getVersionName
 import com.myalbum2026.mobile.utils.logger.log
 import com.myalbum2026.mobile.utils.network.handleError
+import com.myalbum2026.mobile.utils.ui.startParty
 import com.myalbum2026.mobile.utils.ui.toast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -63,7 +64,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private fun updateProgress(items: MutableList<CardsItem>) = with(binding) {
         items.filterIsInstance<CardsItem.Progress>().firstOrNull()?.let { progress ->
             with(progress) {
-                progressBar.progress = percentage.replace("%", "").toIntOrNull() ?: 0
+                val percentageNoFormat = percentage.replace("%", "").toIntOrNull() ?: 0
+
+                progressBar.progress = percentageNoFormat
                 percentageTextView.text = percentage
                 myProgressObtainedTextView.text = getString(
                     R.string.progress_obtained_format,
@@ -73,7 +76,15 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
                 myProgressMissingTextView.text = missing
                 myProgressRepeatedTextView.text = repeated
+
+                validateIfAlbumIsCompleted(percentageNoFormat)
             }
+        }
+    }
+
+    private fun validateIfAlbumIsCompleted(percentageNoFormat: Int) {
+        if (percentageNoFormat == 4) {
+            binding.completeConfettiView.startParty()
         }
     }
 }

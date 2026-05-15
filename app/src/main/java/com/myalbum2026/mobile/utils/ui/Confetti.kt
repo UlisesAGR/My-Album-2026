@@ -17,8 +17,8 @@ fun KonfettiView.startParty() {
             maxSpeed = 30f,
             damping = 0.9f,
             spread = 360,
-            colors = listOf(0x8087F2, 0x5D5D72, 0x7B526A, 0xFFFFFF),
-            emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+            colors = listOf(0x388E3C, 0x9CCC65, 0xF9A825, 0xFFFFFF),
+            emitter = Emitter(duration = 200, TimeUnit.MILLISECONDS).max(100),
             position = Position.Relative(0.5, 0.1),
         )
     )
