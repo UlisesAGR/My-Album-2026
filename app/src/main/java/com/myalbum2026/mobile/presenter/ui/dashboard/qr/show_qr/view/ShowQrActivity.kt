@@ -43,7 +43,7 @@ class ShowQrActivity : BaseOnlyActivity<ActivityShowQrBinding>() {
     private fun setToolbar() {
         setupAppBar(
             toolbar = binding.showQrToolbar,
-            title = "Show qr",
+            title = getString(R.string.show_qr),
             titleAlignment = Gravity.START,
             iconLeft = R.drawable.ic_arrow_back,
             actionLeftIcon = {

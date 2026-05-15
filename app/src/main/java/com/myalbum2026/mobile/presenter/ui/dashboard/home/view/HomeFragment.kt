@@ -83,7 +83,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     private fun validateIfAlbumIsCompleted(percentageNoFormat: Int) {
-        if (percentageNoFormat == 4) {
+        if (percentageNoFormat == 100) {
             binding.completeConfettiView.startParty()
         }
     }

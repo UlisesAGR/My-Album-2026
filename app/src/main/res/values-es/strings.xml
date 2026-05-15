@@ -60,7 +60,7 @@
     <string name="percentage_obtained">Porcentaje obtenidas</string>
     <string name="percentage_missing">Porcentaje faltantes</string>
     <!-- Qr -->
-    <string name="scan_qr">Escanee el codigo qr</string>
+    <string name="scan_qr">Escanea el codigo qr</string>
     <string name="show_qr">Mostrar codigo qr</string>
     <string name="scan_and_generate_qr">Escanea y genera el codigo qr</string>
     <string name="your_repeat_qr_code">Tu codigo qr</string>
@@ -71,4 +71,7 @@
     <string name="total_cards_missing">Total de cartas faltantes</string>
     <string name="total_cards_repeated">Total de cartas repetidas</string>
     <string name="search">Buscar</string>
+    <string name="camera_permission_is_required_to_scan">Se requiere el permiso de camara para escanear</string>
+    <string name="exchange_found">Intercambio encontrado</string>
+    <string name="cards_that_are_useful_to_you">Estampas que te sirven: \n</string>
 </resources>

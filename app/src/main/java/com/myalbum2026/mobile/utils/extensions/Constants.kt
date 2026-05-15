@@ -15,4 +15,5 @@ object Constants {
     const val DELAY_QUANTITY = 50L
     const val EXTRA_CARD_TYPE = "EXTRA_CARD_TYPE"
     const val EXTRA_TEAM_ID = "EXTRA_TEAM_ID"
+    const val SEPARATOR = ", "
 }

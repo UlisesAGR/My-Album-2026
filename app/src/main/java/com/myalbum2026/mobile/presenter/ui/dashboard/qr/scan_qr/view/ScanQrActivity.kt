@@ -18,6 +18,7 @@ import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.qr.scan_qr.viewmodel.ScanQrUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.qr.scan_qr.viewmodel.ScanQrViewModel
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
+import com.myalbum2026.mobile.utils.extensions.Constants.SEPARATOR
 import com.myalbum2026.mobile.utils.extensions.backTo
 import com.myalbum2026.mobile.utils.extensions.collect
 import com.myalbum2026.mobile.utils.logger.log
@@ -39,7 +40,7 @@ class ScanQrActivity : BaseOnlyActivity<ActivityScanQrBinding>() {
         if (isGranted) {
             binding.barcodeScanner.resume()
         } else {
-            toast(message = "Se requiere el permiso de cámara para escanear")
+            toast(message = getString(R.string.camera_permission_is_required_to_scan))
             backTo()
         }
     }
@@ -56,7 +57,7 @@ class ScanQrActivity : BaseOnlyActivity<ActivityScanQrBinding>() {
     private fun setToolbar() {
         setupAppBar(
             toolbar = binding.scanQrToolbar,
-            title = "Scan qr",
+            title = getString(R.string.scan_qr),
             titleAlignment = Gravity.START,
             iconLeft = R.drawable.ic_arrow_back,
             actionLeftIcon = {
@@ -118,18 +119,15 @@ class ScanQrActivity : BaseOnlyActivity<ActivityScanQrBinding>() {
 
     private fun showComparisonSuccess(cards: List<CardEntity>) {
         val message = buildString {
-            append("Estampas que te sirven: \n")
-            append(cards.joinToString(", ") { it.id })
+            append(getString(R.string.cards_that_are_useful_to_you))
+            append(cards.joinToString(SEPARATOR) { card -> card.id })
         }
         materialDialog(
             style = R.style.MaterialDialogStyle,
-            title = "Intercambio Encontrado",
+            title = getString(R.string.exchange_found),
             message = message,
-            textPositiveButton = "Confirmar",
-            textNegativeButton = "Cancelar",
-            action = {
-                log("Intercambio confirmado")
-            }
+            textPositiveButton = getString(R.string.accept),
+            textNegativeButton = getString(R.string.cancel),
         )
     }
 

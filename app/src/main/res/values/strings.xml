@@ -80,4 +80,7 @@
     <string name="total_cards_missing">Total cards missing</string>
     <string name="total_cards_repeated">Total cards repeated</string>
     <string name="search">Search</string>
+    <string name="camera_permission_is_required_to_scan">Camera permission is required to scan</string>
+    <string name="exchange_found">Exchange found</string>
+    <string name="cards_that_are_useful_to_you">Cards that are useful to you: \n</string>
 </resources>
