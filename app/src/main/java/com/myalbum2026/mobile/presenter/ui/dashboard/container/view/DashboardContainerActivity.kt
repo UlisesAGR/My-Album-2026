@@ -35,13 +35,14 @@ class DashboardContainerActivity : BaseOnlyActivity<ActivityDashboardContainerBi
 
     override fun init() {
         setBanner()
-        setBottomSheet()
+        setInitViewInBottomNavigation()
         setListeners()
         setFlows()
     }
 
     private fun setListeners() {
         setOnBackListener()
+        setBottomSheetListener()
     }
 
     private fun setOnBackListener() {
@@ -74,10 +75,11 @@ class DashboardContainerActivity : BaseOnlyActivity<ActivityDashboardContainerBi
         )
     }
 
-    private fun setBottomSheet() = with(binding) {
-        adminFrameLayout.setAnimationStart(animationId = R.anim.fade_in)
-        replaceFragment(adminFrameLayout, fragment = HomeFragment())
+    private fun setBottomSheetListener() = with(binding) {
         adminBottomNavigation.setOnItemSelectedListener { itemMenu ->
+            if (itemMenu.itemId == adminBottomNavigation.selectedItemId) {
+                return@setOnItemSelectedListener true
+            }
             when (itemMenu.itemId) {
                 R.id.home -> {
                     adminFrameLayout.setAnimationStart(animationId = R.anim.fade_in)
@@ -109,5 +111,10 @@ class DashboardContainerActivity : BaseOnlyActivity<ActivityDashboardContainerBi
         } else {
             bannerPublicity.gone()
         }
+    }
+
+    private fun setInitViewInBottomNavigation() = with(binding) {
+        adminFrameLayout.setAnimationStart(animationId = R.anim.fade_in)
+        replaceFragment(adminFrameLayout, fragment = HomeFragment())
     }
 }

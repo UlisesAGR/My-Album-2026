@@ -1,3 +1,7 @@
+/*
+ * HomeFragment
+ * Copyright © 2026. All rights reserved
+ */
 package com.myalbum2026.mobile.presenter.ui.dashboard.home.view
 
 import android.view.LayoutInflater
@@ -7,6 +11,7 @@ import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.databinding.FragmentHomeBinding
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
+import com.myalbum2026.mobile.presenter.ui.dashboard.home.view.adapter.CountryListAdapter
 import com.myalbum2026.mobile.presenter.ui.dashboard.home.viewmodel.HomeUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.home.viewmodel.HomeViewModel
 import com.myalbum2026.mobile.utils.base.BaseFragment
@@ -23,14 +28,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     private val homeViewModel: HomeViewModel by activityViewModels()
 
+    private lateinit var countryListAdapter: CountryListAdapter
+
     override fun inflateBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
-    ): FragmentHomeBinding =
-        FragmentHomeBinding.inflate(layoutInflater)
+    ): FragmentHomeBinding = FragmentHomeBinding.inflate(layoutInflater)
 
     override fun init() {
         setText()
+        setCountriesAdapter()
+        setCountriesRecyclerView()
         setFlows()
     }
 
@@ -45,6 +53,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         collect(homeViewModel.homeUiState) { state ->
             statusLoading(isLoading = state.isLoading)
             updateProgress(items = state.items)
+            setCountries(countries = state.countries)
         }
         collect(homeViewModel.homeUiEvent) { state ->
             with(state) {
@@ -79,6 +88,26 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
                 validateIfAlbumIsCompleted(percentageNoFormat)
             }
+        }
+    }
+
+    private fun setCountries(countries: List<CardsItem.TeamHeader>?) {
+        if (countries == null) return
+        if (countries.isNotEmpty()) {
+            countryListAdapter.updateData(newList = countries)
+        } else {
+            countryListAdapter.updateData(newList = emptyList())
+        }
+    }
+
+    private fun setCountriesAdapter() {
+        countryListAdapter = CountryListAdapter()
+    }
+
+    private fun setCountriesRecyclerView() {
+        binding.countyRecyclerView.apply {
+            setHasFixedSize(true)
+            adapter = countryListAdapter
         }
     }
 

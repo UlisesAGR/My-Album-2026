@@ -1,19 +1,18 @@
 /*
- * TeamHeaderViewHolder.kt
- * Copyright (c) 2026. All rights reserved
+ * CountryViewHolder.kt
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter.viewholder
+package com.myalbum2026.mobile.presenter.ui.dashboard.home.view.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
 import com.myalbum2026.mobile.R
 import com.myalbum2026.mobile.data.model.TeamEntity
-import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
+import com.myalbum2026.mobile.databinding.ItemCountryHeaderBinding
 import com.myalbum2026.mobile.domain.model.CardsItem
 
-class TeamHeaderViewHolder(
-    private val binding: ItemTeamHeaderBinding,
+class CountryViewHolder(
+    private val binding: ItemCountryHeaderBinding,
 ) : RecyclerView.ViewHolder(binding.root) {
 
     val context: Context = binding.root.context
@@ -25,6 +24,14 @@ class TeamHeaderViewHolder(
         with(item) {
             setImageFlag(team = team)
             countryNameTextView.text = team.countryName
+            progressBarCountry.progress = progress
+            progressTextView.text = context.getString(
+                R.string.progress_obtained_format,
+                obtained.toString(),
+                total.toString(),
+            )
+            missingCountTextView.text = missing.toString()
+
             root.setOnClickListener {
                 onTeamSelected(item.team)
             }

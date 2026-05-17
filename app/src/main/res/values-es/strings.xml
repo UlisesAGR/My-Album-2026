@@ -74,4 +74,5 @@
     <string name="camera_permission_is_required_to_scan">Se requiere el permiso de camara para escanear</string>
     <string name="exchange_found">Intercambio encontrado</string>
     <string name="cards_that_are_useful_to_you">Estampas que te sirven: \n</string>
+    <string name="total_cards_collected">Total de cartas obtenidas</string>
 </resources>

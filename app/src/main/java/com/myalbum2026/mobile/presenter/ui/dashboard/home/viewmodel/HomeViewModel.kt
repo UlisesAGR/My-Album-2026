@@ -1,5 +1,5 @@
 /*
- * SearchViewModel.kt
+ * HomeViewModel.kt
  * Copyright (c) 2026. All rights reserved
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.home.viewmodel
@@ -43,10 +43,14 @@ class HomeViewModel @Inject constructor(
                 _homeUiState.update { state -> state.copy(isLoading = false) }
                 _homeUiEvent.emit(HomeUiEvent.ShowError(exception = exception))
             }
-            .collect { items ->
-                val items = getItems(teamsWithCards = items)
+            .collect { teams ->
+                val items = getItems(teamsWithCards = teams)
+                val countries = getCountries(teamsWithCards = teams)
                 delay(DELAY)
-                _homeUiState.update { state -> state.copy(items = items) }
+                _homeUiState.update { state -> state.copy(
+                    items = items,
+                    countries = countries,
+                )}
                 delay(DELAY)
                 _homeUiState.update { state -> state.copy(isLoading = false) }
             }
@@ -57,7 +61,7 @@ class HomeViewModel @Inject constructor(
     ): MutableList<CardsItem> {
         val items = mutableListOf<CardsItem>()
 
-        val totalCards = teamsWithCards.sumOf { it.team.totalCards }
+        val totalCards = teamsWithCards.sumOf { card -> card.team.totalCards }
         val obtainedCards = teamsWithCards.sumOf { list ->
             list.cards.count { card -> card.obtained }
         }
@@ -84,4 +88,26 @@ class HomeViewModel @Inject constructor(
 
         return items
     }
+
+    private fun getCountries(
+        teamsWithCards: List<TeamWithCards>,
+    ): List<CardsItem.TeamHeader> =
+        teamsWithCards.map { teamWithCards ->
+            val missing = teamWithCards.cards.count { card -> !card.obtained }
+            val obtained = teamWithCards.cards.count { card -> card.obtained }
+
+            val totalCards = teamWithCards.cards.size
+            val progressPercentage = if (totalCards > 0) {
+                (obtained * 100 / totalCards)
+            } else 0
+
+            CardsItem.TeamHeader(
+                type = CardType.MISSING,
+                team = teamWithCards.team,
+                missing = missing,
+                obtained = obtained,
+                total = teamWithCards.cards.size,
+                progress = progressPercentage,
+            )
+        }
 }

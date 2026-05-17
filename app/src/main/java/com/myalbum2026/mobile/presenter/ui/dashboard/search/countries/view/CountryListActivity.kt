@@ -14,7 +14,7 @@ import com.myalbum2026.mobile.domain.model.CardType
 import com.myalbum2026.mobile.domain.model.CardsItem
 import com.myalbum2026.mobile.presenter.dialog.loading.LoadingDialog
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.cards.view.CardsActivity
-import com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.view.adapter.CountryListAdapter
+import com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.view.adapter.TeamListAdapter
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.viewmodel.CountryListUiEvent
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.viewmodel.CountryListViewModel
 import com.myalbum2026.mobile.utils.base.BaseOnlyActivity
@@ -37,7 +37,7 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
 
     private val countryListViewModel: CountryListViewModel by viewModels()
 
-    private lateinit var countryListAdapter: CountryListAdapter
+    private lateinit var teamListAdapter: TeamListAdapter
 
     private lateinit var cardType: CardType
 
@@ -71,7 +71,7 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
 
     private fun setListeners() {
         binding.searchEditText.doOnTextChanged { text, _, _, _ ->
-            countryListAdapter.filter.filter(text)
+            teamListAdapter.filter.filter(text)
         }
         setOnBackListener()
     }
@@ -83,7 +83,7 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
     }
 
     private fun setCountriesAdapter() {
-        countryListAdapter = CountryListAdapter(
+        teamListAdapter = TeamListAdapter(
             onTeamSelected = { team ->
                 resetFinderToNavigate()
                 goToCards(id = team.id)
@@ -94,7 +94,7 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
     private fun setCountriesRecyclerView() {
         binding.countyRecyclerView.apply {
             setHasFixedSize(true)
-            adapter = countryListAdapter
+            adapter = teamListAdapter
         }
     }
 
@@ -121,10 +121,10 @@ class CountryListActivity : BaseOnlyActivity<ActivityCountryListBinding>() {
     private fun setItems(items: List<CardsItem.TeamHeader>?) {
         if (items == null) return
         if (items.isNotEmpty()) {
-            countryListAdapter.updateData(items)
+            teamListAdapter.updateData(newList = items)
             showEmptyState(isEmpty = false)
         } else {
-            countryListAdapter.updateData(emptyList())
+            teamListAdapter.updateData(newList = emptyList())
             showEmptyState(isEmpty = true)
         }
     }

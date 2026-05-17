@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:clipToPadding="false"
-            android:nestedScrollingEnabled="false"
+            android:nestedScrollingEnabled="true"
             android:overScrollMode="never"
             android:paddingHorizontal="@dimen/padding_8"
             android:paddingBottom="@dimen/padding_64"

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ - item_country_header.xml
+ - Copyright (c) 2026. All rights reserved
+-->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemRoot"
+    style="@style/selectableStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_8"
+    android:layout_marginVertical="@dimen/margin_8"
+    android:clickable="false"
+    android:focusable="false"
+    android:backgroundTint="@color/md_theme_surface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/border_color"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_16"
+        android:paddingVertical="@dimen/padding_8">
+
+        <ImageView
+            android:id="@+id/flagImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/il_flag_europe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/countryNameTextView"
+            style="@style/text_big.bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayoutInfo"
+            app:layout_constraintStart_toEndOf="@+id/flagImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Mexico" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCountry"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:progressDrawable="@drawable/bg_progress_bar"
+            app:layout_constraintEnd_toEndOf="@+id/countryNameTextView"
+            app:layout_constraintStart_toStartOf="@+id/countryNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/countryNameTextView"
+            tools:progress="20" />
+
+        <TextView
+            android:id="@+id/progressTextView"
+            style="@style/text_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="@+id/progressBarCountry"
+            app:layout_constraintStart_toStartOf="@+id/progressBarCountry"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarCountry"
+            tools:text="12 of 20 cards" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/missingCountTextView"
+                style="@style/text_medium_error.bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="8" />
+
+            <TextView
+                android:id="@+id/missingTextView"
+                style="@style/text_small_error.bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/missing" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

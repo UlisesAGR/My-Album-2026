@@ -9,4 +9,5 @@ import com.myalbum2026.mobile.domain.model.CardsItem
 data class HomeUiState(
     val isLoading: Boolean = false,
     val items: MutableList<CardsItem> = mutableListOf(),
+    val countries: List<CardsItem.TeamHeader>? = null,
 )

@@ -4,7 +4,6 @@
  */
 package com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter
 
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +18,7 @@ import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter.viewholder.ProgressViewHolder
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter.viewholder.PublicityViewHolder
 import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter.viewholder.TeamHeaderViewHolder
+import com.myalbum2026.mobile.utils.binding.inflateBinding
 
 class CardsMissingAdapter(
     val cardType: CardType,
@@ -40,15 +40,13 @@ class CardsMissingAdapter(
             is CardsItem.Card -> TYPE_CARD
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        return when (viewType) {
-            TYPE_PUBLICITY -> PublicityViewHolder(binding = ItemPublicityBinding.inflate(inflater, parent, false))
-            TYPE_PROGRESS -> ProgressViewHolder(binding = ItemProgressBinding.inflate(inflater, parent, false))
-            TYPE_TEAM_HEADER -> TeamHeaderViewHolder(binding = ItemTeamHeaderBinding.inflate(inflater, parent, false))
-            else -> CardViewHolder(binding = ItemCardSingleBinding.inflate(inflater, parent, false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder =
+        when (viewType) {
+            TYPE_PUBLICITY -> PublicityViewHolder(binding = parent.inflateBinding(bindingInflater = ItemPublicityBinding::inflate))
+            TYPE_PROGRESS -> ProgressViewHolder(binding = parent.inflateBinding(bindingInflater = ItemProgressBinding::inflate))
+            TYPE_TEAM_HEADER -> TeamHeaderViewHolder(binding = parent.inflateBinding(bindingInflater = ItemTeamHeaderBinding::inflate))
+            else -> CardViewHolder(binding = parent.inflateBinding(bindingInflater = ItemCardSingleBinding::inflate))
         }
-    }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val item = getItem(position)

@@ -1,12 +1,12 @@
 /*
- * TeamDiffCallback.kt
+ * CountryDiffCallback.kt
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.view.adapter
+package com.myalbum2026.mobile.presenter.ui.dashboard.home.view.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 import com.myalbum2026.mobile.domain.model.CardsItem
 
-class TeamDiffCallback : DiffUtil.ItemCallback<CardsItem.TeamHeader>() {
+class CountryDiffCallback : DiffUtil.ItemCallback<CardsItem.TeamHeader>() {
 
     override fun areItemsTheSame(
         oldItem: CardsItem.TeamHeader,

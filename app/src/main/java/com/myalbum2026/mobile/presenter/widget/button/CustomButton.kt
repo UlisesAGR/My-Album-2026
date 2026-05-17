@@ -41,7 +41,7 @@ class CustomButton @JvmOverloads constructor(
             }
         }
 
-        typeface = ResourcesCompat.getFont(context, R.font.amx_medium)
+        typeface = ResourcesCompat.getFont(context, R.font.roboto_flex)
         letterSpacing = 0.01f
         gravity = Gravity.CENTER
         cornerRadius = 70

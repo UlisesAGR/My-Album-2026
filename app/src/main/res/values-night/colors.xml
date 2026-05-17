@@ -9,12 +9,12 @@
     <color name="md_theme_primaryContainer">#009473</color>
     <color name="md_theme_onPrimaryContainer">#A3F1D6</color>
     <!-- Light secondary colors -->
-    <color name="md_theme_secondary">#C5E1A5</color>
+    <color name="md_theme_secondary">#E5F6D4</color>
     <color name="md_theme_onSecondary">#FFFFFF</color>
     <color name="md_theme_secondaryContainer">#D6F5C7</color>
     <color name="md_theme_onSecondaryContainer">#0A2000</color>
     <!-- Light tertiary colors -->
-    <color name="md_theme_tertiary">#FDD835</color>
+    <color name="md_theme_tertiary">#FFDF56</color>
     <color name="md_theme_onTertiary">#FFFFFF</color>
     <color name="md_theme_tertiaryContainer">#EAC989</color>
     <color name="md_theme_onTertiaryContainer">#1A1E00</color>

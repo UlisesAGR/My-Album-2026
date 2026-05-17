@@ -4,7 +4,6 @@
 -->
 <resources>
     <string name="version_value" translatable="false">Version %1$s</string>
-    <string name="header_format">%1$d / %2$d %3$s</string>
     <string name="title_quantity_value" translatable="false">%1$s - %2$d</string>
     <string name="progress_obtained_format">%1$s / %2$s</string>
     <!-- App -->
@@ -83,4 +82,5 @@
     <string name="camera_permission_is_required_to_scan">Camera permission is required to scan</string>
     <string name="exchange_found">Exchange found</string>
     <string name="cards_that_are_useful_to_you">Cards that are useful to you: \n</string>
+    <string name="total_cards_collected">Total cards collected</string>
 </resources>

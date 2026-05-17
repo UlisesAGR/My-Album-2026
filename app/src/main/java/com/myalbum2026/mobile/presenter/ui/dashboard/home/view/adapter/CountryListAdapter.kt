@@ -1,39 +1,34 @@
 /*
  * CountryListAdapter.kt
  */
-package com.myalbum2026.mobile.presenter.ui.dashboard.search.countries.view.adapter
+package com.myalbum2026.mobile.presenter.ui.dashboard.home.view.adapter
 
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.ListAdapter
 import com.myalbum2026.mobile.data.model.TeamEntity
-import com.myalbum2026.mobile.databinding.ItemTeamHeaderBinding
+import com.myalbum2026.mobile.databinding.ItemCountryHeaderBinding
 import com.myalbum2026.mobile.domain.model.CardsItem
-import com.myalbum2026.mobile.presenter.ui.dashboard.search.missing.view.adapter.viewholder.TeamHeaderViewHolder
+import com.myalbum2026.mobile.utils.binding.inflateBinding
 
 class CountryListAdapter(
     private val onTeamSelected: (TeamEntity) -> Unit = {},
-) : ListAdapter<CardsItem.TeamHeader, TeamHeaderViewHolder>(CountryDiffCallback()), Filterable {
+) : ListAdapter<CardsItem.TeamHeader, CountryViewHolder>(CountryDiffCallback()), Filterable {
 
     private var fullList: List<CardsItem.TeamHeader> = listOf()
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,
-    ): TeamHeaderViewHolder {
-        val binding = ItemTeamHeaderBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false,
-        )
-        return TeamHeaderViewHolder(
-            binding
-        )
-    }
+    ): CountryViewHolder = CountryViewHolder(
+        binding = parent.inflateBinding(bindingInflater = ItemCountryHeaderBinding::inflate),
+    )
 
-    override fun onBindViewHolder(holder: TeamHeaderViewHolder, position: Int) {
+    override fun onBindViewHolder(
+        holder: CountryViewHolder,
+        position: Int,
+    ) {
         holder.render(
             item = getItem(position),
             onTeamSelected = onTeamSelected,
