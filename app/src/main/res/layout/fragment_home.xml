@@ -163,17 +163,19 @@
                             <TextView
                                 android:id="@+id/myProgressMissingTextView"
                                 style="@style/text_big_white.bold"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:gravity="center"
                                 tools:text="795" />
 
                             <TextView
                                 style="@style/text_regular_white"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginTop="@dimen/margin_6"
+                                android:gravity="center"
                                 android:text="@string/total_cards_missing" />
 
                         </LinearLayout>
@@ -181,6 +183,7 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
+                            android:layout_marginHorizontal="@dimen/margin_8"
                             android:background="@color/white_color" />
 
                         <LinearLayout
@@ -192,17 +195,19 @@
                             <TextView
                                 android:id="@+id/myProgressRepeatedTextView"
                                 style="@style/text_big_white.bold"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:gravity="center"
                                 tools:text="10" />
 
                             <TextView
                                 style="@style/text_regular_white"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginTop="@dimen/margin_6"
+                                android:gravity="center"
                                 android:text="@string/total_cards_repeated" />
 
                         </LinearLayout>
